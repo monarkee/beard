@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Beard</title>
+
+    <link rel="stylesheet" href="dist/beard.css"/>
+</head>
+<body>
+    <h1>Beard</h1>
+
+
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="dist/beard.js"></script>
+    <script>
+        $(document).on('ready', function()
+        {
+            Beard.Dropdown.init();
+            Beard.Menu.init();
+        });
+    </script>
+</body>
+</html>
