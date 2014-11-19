@@ -1,0 +1,133 @@
+// Padding Helpers
+// ------------------------------------------------------------------------------------
+%xp,
+.xp {
+  padding: 0;
+}
+
+%xpv,
+.xpv {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.pv {
+  padding-top: $spacing-vert-sm;
+  padding-bottom: $spacing-vert-sm;
+  @include media($md) {
+    padding-top: $spacing-vert-md;
+    padding-bottom: $spacing-vert-md;
+  }
+
+  @include media($lg) {
+    padding-top: $spacing-vert-lg;
+    padding-bottom: $spacing-vert-lg;
+  }
+}
+
+.pvt {
+  @extend .pt;
+}
+
+.pt {
+  padding-top: $spacing-vert-sm;
+  @include media($md) {
+    padding-top: $spacing-vert-md;
+  }
+
+  @include media($lg) {
+    padding-top: $spacing-vert-lg;
+  }
+}
+
+.pb {
+  padding-bottom: $spacing-vert-sm;
+  @include media($md) {
+    padding-bottom: $spacing-vert-md;
+  }
+
+  @include media($lg) {
+    padding-bottom: $spacing-vert-lg;
+  }
+}
+.pvb {
+  @extend .pb;
+}
+
+.pvs {
+  padding-top: $spacing-vert-sm / 2;
+  padding-bottom: $spacing-vert-sm / 2;
+  @include media($md) {
+    padding-top: $spacing-vert-md / 2;
+    padding-bottom: $spacing-vert-md / 2;
+  }
+
+  @include media($lg) {
+    padding-top: $spacing-vert-lg / 2;
+    padding-bottom: $spacing-vert-lg / 2;
+  }
+}
+
+.pvxs {
+  padding-top: $spacing-vert-sm / 4;
+  padding-bottom: $spacing-vert-sm / 4;
+  @include media($md) {
+    padding-top: $spacing-vert-md / 4;
+    padding-bottom: $spacing-vert-md / 4;
+  }
+
+  @include media($lg) {
+    padding-top: $spacing-vert-lg / 4;
+    padding-bottom: $spacing-vert-lg / 4;
+  }
+}
+
+.pvbs {
+  padding-bottom: $spacing-vert-sm / 2;
+  @include media($md) {
+    padding-bottom: $spacing-vert-md / 2;
+  }
+
+  @include media($lg) {
+    padding-bottom: $spacing-vert-lg / 2;
+  }
+}
+
+.ph {
+  padding-left: $spacing-horz-sm;
+  padding-right: $spacing-horz-sm;
+  @include media($md) {
+    padding-left: $spacing-horz-md;
+    padding-right: $spacing-horz-md;
+  }
+
+  @include media($lg) {
+    padding-left: $spacing-horz-lg;
+    padding-right: $spacing-horz-lg;
+  }
+}
+
+.phs {
+  padding-left: $spacing-horz-sm / 2;
+  padding-right: $spacing-horz-sm / 2;
+  @include media($md) {
+    padding-left: $spacing-horz-md / 2;
+    padding-right: $spacing-horz-md / 2;
+  }
+
+  @include media($lg) {
+    padding-left: $spacing-horz-lg / 2;
+    padding-right: $spacing-horz-lg / 2;
+  }
+}
+
+.phl {
+  padding-left: $spacing-horz-sm / 2;
+  @include media($md) {
+    padding-left: $spacing-horz-md / 2;
+  }
+
+  @include media($lg) {
+    padding-left: $spacing-horz-lg / 2;
+  }
+}

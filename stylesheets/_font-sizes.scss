@@ -1,0 +1,214 @@
+// Font Sizes
+// ------------------------------------------------------------------------------------ */
+$ft-1: 1.2rem;
+$ft-2: 1.4rem;
+$ft-3: 1.6rem;
+$ft-4: 1.8rem;
+$ft-5: 2.1rem;
+$ft-6: 2.4rem;
+$ft-7: 3.6rem;
+$ft-8: 4.8rem;
+$ft-9: 6.0rem;
+$ft-10: 7.2rem;
+
+.ft-1 { font-size: $ft-1; }
+.ft-2 { font-size: $ft-2; }
+.ft-3 { font-size: $ft-3; }
+.ft-4 { font-size: $ft-4; }
+.ft-5 { font-size: $ft-5; }
+.ft-6 { font-size: $ft-6; }
+.ft-7 { font-size: $ft-7; }
+.ft-8 { font-size: $ft-8; }
+.ft-9 { font-size: $ft-9; }
+.ft-10 { font-size: $ft-10; }
+
+// Responsive Font Sizes
+// ------------------------------------------------------------------------------------ */
+.sm-ft-1 {
+  @include media($only-sm)
+  {
+      font-size: $ft-1 !important;
+  }
+}
+
+.sm-ft-2 {
+  @include media($only-sm)
+  {
+    font-size: $ft-2 !important;
+  }
+}
+
+.sm-ft-3 {
+  @include media($only-sm)
+  {
+    font-size: $ft-3 !important;
+  }
+}
+
+.sm-ft-4 {
+  @include media($only-sm)
+  {
+    font-size: $ft-4 !important;
+  }
+}
+
+.sm-ft-5 {
+  @include media($only-sm)
+  {
+    font-size: $ft-5 !important;
+  }
+}
+
+.sm-ft-6 {
+  @include media($only-sm)
+  {
+    font-size: $ft-6 !important;
+  }
+}
+
+.sm-ft-7 {
+  @include media($only-sm)
+  {
+    font-size: $ft-7 !important;
+  }
+}
+
+.sm-ft-8 {
+  @include media($only-sm)
+  {
+    font-size: $ft-8 !important;
+  }
+}
+
+.sm-ft-9 {
+  @include media($only-sm)
+  {
+    font-size: $ft-9 !important;
+  }
+}
+
+.md-ft-1 {
+  @include media($md)
+  {
+    font-size: $ft-1 !important;
+  }
+}
+
+.md-ft-2 {
+  @include media($md)
+  {
+    font-size: $ft-2 !important;
+  }
+}
+
+.md-ft-3 {
+  @include media($md)
+  {
+    font-size: $ft-3 !important;
+  }
+}
+
+.md-ft-4 {
+  @include media($md)
+  {
+    font-size: $ft-4 !important;
+  }
+}
+
+.md-ft-5 {
+  @include media($md)
+  {
+    font-size: $ft-5 !important;
+  }
+}
+
+.md-ft-6 {
+  @include media($md)
+  {
+    font-size: $ft-6 !important;
+  }
+}
+
+.md-ft-7 {
+  @include media($md)
+  {
+    font-size: $ft-7 !important;
+  }
+}
+
+.md-ft-8 {
+  @include media($md)
+  {
+    font-size: $ft-8 !important;
+  }
+}
+
+.md-ft-9 {
+  @include media($md)
+  {
+    font-size: $ft-9 !important;
+  }
+}
+
+.lg-ft-1 {
+  @include media($lg)
+  {
+    font-size: $ft-1 !important;
+  }
+}
+
+.lg-ft-2 {
+  @include media($lg)
+  {
+    font-size: $ft-2 !important;
+  }
+}
+
+.lg-ft-3 {
+  @include media($lg)
+  {
+    font-size: $ft-3 !important;
+  }
+}
+
+.lg-ft-4 {
+  @include media($lg)
+  {
+    font-size: $ft-4 !important;
+  }
+}
+
+.lg-ft-5 {
+  @include media($lg)
+  {
+    font-size: $ft-5 !important;
+  }
+}
+
+.lg-ft-6 {
+  @include media($lg)
+  {
+    font-size: $ft-6 !important;
+  }
+}
+
+.lg-ft-7 {
+  @include media($lg)
+  {
+    font-size: $ft-7 !important;
+  }
+}
+
+.lg-ft-8 {
+  @include media($lg)
+  {
+    font-size: $ft-8 !important;
+  }
+}
+
+.lg-ft-9 {
+  @include media($lg)
+  {
+    font-size: $ft-9 !important;
+  }
+}

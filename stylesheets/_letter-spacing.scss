@@ -1,0 +1,243 @@
+// Letter-spacing Options
+//
+// Description: These styles are useful when you want to space a button's text out
+// or provide a heading with some space
+//
+// Note: There are responsive letter-spacing options because the letter-spacing
+// option in CSS doesn't allow for a unit-less value. If it ever does, then we'd
+// be able to specify something like "letter-spacing: 4" and be done with it.
+// ------------------------------------------------------------------------------------ */
+
+$ls-1:  0.1rem;
+$ls-2:  0.2rem;
+$ls-3:  0.3rem;
+$ls-4:  0.4rem;
+$ls-5:  0.5rem;
+$ls-6:  0.6rem;
+$ls-7:  0.7rem;
+$ls-8:  0.8rem;
+$ls-9:  0.9rem;
+$ls-10: 1.0rem;
+
+.ls-1 { letter-spacing: $ls-1 }
+.ls-2 { letter-spacing: $ls-2 }
+.ls-3 { letter-spacing: $ls-3 }
+.ls-4 { letter-spacing: $ls-4 }
+.ls-5 { letter-spacing: $ls-5 }
+.ls-6 { letter-spacing: $ls-6 }
+.ls-7 { letter-spacing: $ls-7 }
+.ls-8 { letter-spacing: $ls-8 }
+.ls-9 { letter-spacing: $ls-9 }
+.ls-10 { letter-spacing: $ls-10 }
+
+// Responsive Letter-spacing Helpers
+// ------------------------------------------------------------------------------------ */
+.sm-ls-1 {
+  @include media($only-sm)
+  {
+    letter-spacing: $ls-1;
+  }
+}
+
+.sm-ls-2 {
+  @include media($only-sm)
+  {
+    letter-spacing: $ls-2;
+  }
+}
+
+.sm-ls-3 {
+  @include media($only-sm)
+  {
+    letter-spacing: $ls-3;
+  }
+}
+
+.sm-ls-4 {
+  @include media($only-sm)
+  {
+    letter-spacing: $ls-4;
+  }
+}
+
+.sm-ls-5 {
+  @include media($only-sm)
+  {
+    letter-spacing: $ls-5;
+  }
+}
+
+.sm-ls-6 {
+  @include media($only-sm)
+  {
+    letter-spacing: $ls-6;
+  }
+}
+
+.sm-ls-7 {
+  @include media($only-sm)
+  {
+    letter-spacing: $ls-7;
+  }
+}
+
+.sm-ls-8 {
+  @include media($only-sm)
+  {
+    letter-spacing: $ls-8;
+  }
+}
+
+.sm-ls-9 {
+  @include media($only-sm)
+  {
+    letter-spacing: $ls-9;
+  }
+}
+
+.sm-ls-10 {
+  @include media($only-sm)
+  {
+    letter-spacing: $ls-10;
+  }
+}
+
+.md-ls-1 {
+  @include media($md)
+  {
+    letter-spacing: $ls-1;
+  }
+}
+
+.md-ls-2 {
+  @include media($md)
+  {
+    letter-spacing: $ls-2;
+  }
+}
+
+.md-ls-3 {
+  @include media($md)
+  {
+    letter-spacing: $ls-3;
+  }
+}
+
+.md-ls-4 {
+  @include media($md)
+  {
+    letter-spacing: $ls-4;
+  }
+}
+
+.md-ls-5 {
+  @include media($md)
+  {
+    letter-spacing: $ls-5;
+  }
+}
+
+.md-ls-6 {
+  @include media($md)
+  {
+    letter-spacing: $ls-6;
+  }
+}
+
+.md-ls-7 {
+  @include media($md)
+  {
+    letter-spacing: $ls-7;
+  }
+}
+
+.md-ls-8 {
+  @include media($md)
+  {
+    letter-spacing: $ls-8;
+  }
+}
+
+.md-ls-9 {
+  @include media($md)
+  {
+    letter-spacing: $ls-9;
+  }
+}
+
+.md-ls-10 {
+  @include media($md)
+  {
+    letter-spacing: $ls-10;
+  }
+}
+
+.lg-ls-1 {
+  @include media($lg)
+  {
+    letter-spacing: $ls-1;
+  }
+}
+
+.lg-ls-2 {
+  @include media($lg)
+  {
+    letter-spacing: $ls-2;
+  }
+}
+
+.lg-ls-3 {
+  @include media($lg)
+  {
+    letter-spacing: $ls-3;
+  }
+}
+
+.lg-ls-4 {
+  @include media($lg)
+  {
+    letter-spacing: $ls-4;
+  }
+}
+
+.lg-ls-5 {
+  @include media($lg)
+  {
+    letter-spacing: $ls-5;
+  }
+}
+
+.lg-ls-6 {
+  @include media($lg)
+  {
+    letter-spacing: $ls-6;
+  }
+}
+
+.lg-ls-7 {
+  @include media($lg)
+  {
+    letter-spacing: $ls-7;
+  }
+}
+
+.lg-ls-8 {
+  @include media($lg)
+  {
+    letter-spacing: $ls-8;
+  }
+}
+
+.lg-ls-9 {
+  @include media($lg)
+  {
+    letter-spacing: $ls-9;
+  }
+}
+
+.lg-ls-10 {
+  @include media($lg)
+  {
+    letter-spacing: $ls-10;
+  }
+}

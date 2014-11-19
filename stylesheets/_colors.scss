@@ -1,0 +1,185 @@
+// Global Colors
+// ------------------------------------------------------------------------------------ */
+$brand-color-1: #13a89e; // Music Bed/Film Supply Teal
+$bg1: $brand-color-1;
+$tc1: $brand-color-1;
+$bc1: $brand-color-1;
+$success-color: #4AB471;
+$warning-color: #F3AE4E;
+$danger-color: #CF5C60;
+
+// Miscellaneous Color Helpers
+// ------------------------------------------------------------------------------------ */
+$bgw: $white;
+.bgw {
+  background-color: $bgw;
+}
+
+.xbg {
+  background: none;
+}
+
+.bg1 {
+  background: $bg1;
+}
+
+$tcw: $white;
+.tcw {
+  color: $tcw;
+}
+
+.tc1 {
+  color: $tc1
+}
+
+$bcw: $white;
+.bcw {
+  color: $bcw;
+}
+
+.bc1 {
+  color: $bc1
+}
+
+// Grayscale Colors
+// ------------------------------------------------------------------------------------ */
+$g05: darken($white, 5%);
+$g10: darken($white, 10%);
+$g20: darken($white, 20%);
+$g30: darken($white, 30%);
+$g40: darken($white, 40%);
+$g50: darken($white, 50%);
+$g60: darken($white, 60%);
+$g70: darken($white, 70%);
+$g80: darken($white, 80%);
+$g90: darken($white, 85%);
+
+// Background Colors
+// ------------------------------------------------------------------------------------ */
+$bgg05: $g05;
+$bgg10: $g10;
+$bgg20: $g20;
+$bgg30: $g30;
+$bgg40: $g40;
+$bgg50: $g50;
+$bgg60: $g60;
+$bgg70: $g70;
+$bgg80: $g80;
+$bgg90: $g90;
+
+.bgg05 { background-color: $bgg05 }
+.bgg10 { background-color: $bgg10 }
+.bgg20 { background-color: $bgg20 }
+.bgg30 { background-color: $bgg30 }
+.bgg40 { background-color: $bgg40 }
+.bgg50 { background-color: $bgg50 }
+.bgg60 { background-color: $bgg60 }
+.bgg70 { background-color: $bgg70 }
+.bgg80 { background-color: $bgg80 }
+.bgg90 { background-color: $bgg90 }
+
+// Transparent Background Colors
+// ------------------------------------------------------------------------------------ */
+$bgtg05: rgba($black, 0.05);
+$bgtg10: rgba($black, 0.1);
+$bgtg20: rgba($black, 0.2);
+$bgtg30: rgba($black, 0.3);
+$bgtg40: rgba($black, 0.4);
+$bgtg50: rgba($black, 0.5);
+$bgtg60: rgba($black, 0.6);
+$bgtg70: rgba($black, 0.7);
+$bgtg80: rgba($black, 0.8);
+$bgtg90: rgba($black, 0.9);
+
+.bgtg05 { background-color: $bgtg05 }
+.bgtg10 { background-color: $bgtg10 }
+.bgtg20 { background-color: $bgtg20 }
+.bgtg30 { background-color: $bgtg30 }
+.bgtg40 { background-color: $bgtg40 }
+.bgtg50 { background-color: $bgtg50 }
+.bgtg60 { background-color: $bgtg60 }
+.bgtg70 { background-color: $bgtg70 }
+.bgtg80 { background-color: $bgtg80 }
+.bgtg90 { background-color: $bgtg90 }
+
+// Text Colors
+// ------------------------------------------------------------------------------------ */
+$tcg05: $g05;
+$tcg10: $g10;
+$tcg20: $g20;
+$tcg30: $g30;
+$tcg40: $g40;
+$tcg50: $g50;
+$tcg60: $g60;
+$tcg70: $g70;
+$tcg80: $g80;
+$tcg90: $g90;
+
+.tcg05 { color: $tcg05 }
+.tcg10 { color: $tcg10 }
+.tcg20 { color: $tcg20 }
+.tcg30 { color: $tcg30 }
+.tcg40 { color: $tcg40 }
+.tcg50 { color: $tcg50 }
+.tcg60 { color: $tcg60 }
+.tcg70 { color: $tcg70 }
+.tcg80 { color: $tcg80 }
+.tcg90 { color: $tcg90 }
+
+// Border Colors
+// ------------------------------------------------------------------------------------ */
+$bcg05: $g05;
+$bcg10: $g10;
+$bcg20: $g20;
+$bcg30: $g30;
+$bcg40: $g40;
+$bcg50: $g50;
+$bcg60: $g60;
+$bcg70: $g70;
+$bcg80: $g80;
+$bcg90: $g90;
+
+.bc1 { border-color: $bc1 }
+.bcg05 { border-color: $bcg05 }
+.bcg10 { border-color: $bcg10 }
+.bcg20 { border-color: $bcg20 }
+.bcg30 { border-color: $bcg30 }
+.bcg40 { border-color: $bcg40 }
+.bcg50 { border-color: $bcg50 }
+.bcg60 { border-color: $bcg60 }
+.bcg70 { border-color: $bcg70 }
+.bcg80 { border-color: $bcg80 }
+.bcg90 { border-color: $bcg90 }
+
+// Icon Colors
+// ------------------------------------------------------------------------------------ */
+$icw: $white;
+$ic1: $brand-color-1;
+$ic-error: $danger-color;
+
+$icg05: $g05;
+$icg10: $g10;
+$icg20: $g20;
+$icg30: $g30;
+$icg40: $g40;
+$icg50: $g50;
+$icg60: $g60;
+$icg70: $g70;
+$icg80: $g80;
+$icg90: $g90;
+
+.ic-error { fill: $ic-error }
+.icw   { fill: $icw }
+.ic1   { fill: $ic1 }
+.icg05 { fill: $icg05 }
+.icg10 { fill: $icg10 }
+.icg20 { fill: $icg20 }
+.icg30 { fill: $icg30 }
+.icg40 { fill: $icg40 }
+.icg50 { fill: $icg50 }
+.icg60 { fill: $icg60 }
+.icg70 { fill: $icg70 }
+.icg80 { fill: $icg80 }
+.icg90 { fill: $icg90 }
+
+.icy   { fill: yellow }

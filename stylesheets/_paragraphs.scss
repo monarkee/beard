@@ -1,5 +1,7 @@
-// We use this number to make rem units easier to work with
+// Paragraphs
 // ------------------------------------------------------------------------------------ */
-html {
-  font-size: 62.5%;
+.basic-text {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 3rem;
 }

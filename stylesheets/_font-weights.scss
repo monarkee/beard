@@ -1,0 +1,23 @@
+// Font Weights
+// Notes: Currently this uses Amaretto's font-weight variables, but this could be
+// moved to other weights if we wanted to not use Amaretto's or any other reason
+// ------------------------------------------------------------------------------------ */
+$fw-thin: $thin;
+$fw-xlight: $xlight;
+$fw-light: $light;
+$fw-normal: $normal;
+$fw-medium: $medium;
+$fw-semibold: $semibold;
+$fw-bold: $bold;
+$fw-xbold: $xbold;
+$fw-xxbold: $xxbold;
+
+%fw-thin, .fw-thin { font-weight: $fw-thin !important; }
+%fw-xlight, .fw-xlight { font-weight: $fw-xlight !important; }
+%fw-light, .fw-light { font-weight: $fw-light !important; }
+%fw-normal, .fw-normal { font-weight: $fw-normal !important; }
+%fw-medium, .fw-medium { font-weight: $fw-medium !important; }
+%fw-semibold, .fw-semibold { font-weight: $fw-semibold !important; }
+%fw-bold , .fw-bold { font-weight: $fw-bold !important; }
+%fw-xbold, .fw-xbold { font-weight: $fw-xbold !important; }
+%fw-xxbold, .fw-xxbold { font-weight: $fw-xxbold !important; }

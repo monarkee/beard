@@ -1,0 +1,17 @@
+// Border Radius Helpers
+// ------------------------------------------------------------------------------------
+$br-sm: 0.4rem;
+$br-md: 0.6rem;
+$br-lg: 0.8rem;
+
+%br1, .br1 {
+  border-radius: $br-sm;
+}
+
+%br2, .br2 {
+  border-radius: $br-md;
+}
+
+%br3, .br3 {
+  border-radius: $br-lg;
+}

@@ -1,0 +1,11 @@
+// Responsive Breakpoints
+//-------------------------------------------------------------------------- */
+$sm: 'only screen and (min-width: 300px)';
+$md: 'only screen and (min-width: 600px)';
+$lg: 'only screen and (min-width: 900px)';
+$xlg: 'only screen and (min-width: 1440px)';
+
+$only-sm: 'only screen and (max-width: 599px)';
+$only-md: 'only screen and (min-width: 600px) and (max-width: 899px)';
+$only-lg: 'only screen and (min-width: 900px) and (max-width: 1439px)';
+$only-xlg: 'only screen and (min-width: 1440px)';

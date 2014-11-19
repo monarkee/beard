@@ -1,0 +1,22 @@
+// Flexbox Helpers
+// ------------------------------------------------------------------------------------ */
+.flex { display: flex; }
+.inline-flex { display: inline-flex; }
+
+.jcc { justify-content: center; }
+.jcsb { justify-content: space-between; }
+.jcsa { justify-content: space-around; }
+.jcfs { justify-content: flex-start; }
+.jcfe { justify-content: flex-end; }
+
+.aic { align-items: center; }
+.aifs { align-items: flex-start; }
+.aife { align-items: flex-end; }
+.ais { align-items: stretch; }
+.aib { align-items: baseline; }
+
+.acc { align-content: center; }
+.acfs { align-content: flex-start; }
+.acfe { align-content: flex-end; }
+.acs { align-content: stretch; }
+.acb { align-content: baseline; }

@@ -1,0 +1,86 @@
+// Import Amaretto
+// ------------------------------------------------------------------------------------ */
+@import 'amaretto';
+
+// Site-wide Spacing
+// ------------------------------------------------------------------------------------ */
+$site-width-lg: 126.5rem;
+$site-width-md: 115rem;
+$site-width-sm: 90rem;
+
+$gutter-width: 6rem;
+$spacing-vert-lg: 6rem;
+$spacing-vert-md: 4rem;
+$spacing-vert-sm: 2rem;
+
+$spacing-horz-lg: 6rem;
+$spacing-horz-md: 4rem;
+$spacing-horz-sm: 2rem;
+
+// Base Typeface Definitions
+//-------------------------------------------------------------------------- */
+$proxima: proxima-nova, 'Proxima Nova', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+.proxima {
+  font-family: $proxima;
+}
+
+$merriweather: Merriweather, Georgia, serif;
+.merriweather {
+  font-family: $merriweather;
+}
+
+$code: Menlo, Consolas, Monaco, 'Andale Mono', monospace;
+.menlo {
+  font-family: $code;
+}
+
+$sans: $proxima;
+
+.sans {
+  @extend .proxima;
+}
+
+$serif: $merriweather;
+
+.serif {
+  @extend .merriweather;
+}
+
+// Base Elements
+//-------------------------------------------------------------------------- */
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+body {
+  font-family: $proxima;
+  margin: 0;
+  user-select: none;
+  min-height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 { font-weight: $fw-normal; }
+
+img {
+  @include user-drag(none);
+  width: 100%;
+  height: auto;
+
+}
+
+a {
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+hr {
+    background: none;
+    border-top: 1px solid rgba(0,0,0,0.2);
+    margin: 0;
+}

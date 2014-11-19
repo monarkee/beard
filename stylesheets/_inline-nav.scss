@@ -1,0 +1,17 @@
+// Inline Nav
+// ------------------------------------------------------------------------------------ */
+.inline-nav {
+  @include clearfix;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.inline-nav__item {
+  float: left;
+  margin-right: 6rem;
+}
+
+.inline-nav__link {
+  display: inline-block;
+}

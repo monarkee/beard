@@ -1,0 +1,128 @@
+// Forms
+// ------------------------------------------------------------------------------------ */
+button, input, select, textarea {
+  font-family: $proxima;
+  font-size: 100%;
+  margin: 0;
+}
+
+// Inputs
+// ------------------------------------------------------------------------------------ */
+.input {
+  border: none;
+  outline: none;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.input--default {
+  border: 1px solid $bcg20;
+}
+
+.input--focus-1:focus {
+  background-color: $bgg05
+}
+
+.input--inverse {
+  background: none;
+  outline: none;
+  border: 3px solid $white;
+  padding: 1rem 1.5rem;
+  font-size: 1.6rem;
+  color: $white;
+
+  &::placeholder {
+    color: #fff;
+  }
+}
+
+// Input Sizes
+// ------------------------------------------------------------------------------------ */
+.input--44 {
+  height: 4.4rem;
+}
+
+.input--66 {
+  height: 6.6rem;
+}
+
+.input--sm {
+  padding: 1rem 1.5rem;
+}
+
+.input--push-bot {
+  margin-bottom: 1rem;
+}
+
+// Auth Box
+// ------------------------------------------------------------------------------------ */
+.auth-box {
+  max-width: 43.4rem;
+}
+
+// Controls
+// ------------------------------------------------------------------------------------ */
+.control {
+  position: relative;
+  margin-bottom: 3rem;
+
+  @include media($md)
+  {
+      &:last-child {
+        margin-bottom: 0;
+      }
+  }
+}
+
+.control--center {
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.label {
+
+}
+
+.label--44 {
+  height: 4.4rem;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.label--right {
+  margin-right: 2rem;
+  justify-content: flex-end;
+}
+
+// Input Status
+// ------------------------------------------------------------------------------------ */
+.input-status {
+  position: absolute;
+  top: 1.6rem;
+  right: 1rem;
+}
+
+// Help Text
+// ------------------------------------------------------------------------------------ */
+.help-text {
+  margin: 0;
+}
+
+.help-text--error {
+  color: $danger-color
+}
+
+// Select
+// ------------------------------------------------------------------------------------ */
+.select {
+  @include appearance(none);
+  background-image: url('../img/icon-select-triangle.svg');
+  background-repeat: no-repeat;
+  background-position: right 1.2rem center;
+  background-color: $white;
+  border-radius: 0;
+  color: $tcg40;
+}

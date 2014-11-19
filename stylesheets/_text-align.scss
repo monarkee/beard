@@ -1,0 +1,67 @@
+// Text Aligment Helpers
+// ------------------------------------------------------------------------------------
+.tal {
+  text-align: left;
+}
+
+.sm-tal {
+  @include media($sm) {
+    text-align: left !important;
+  }
+}
+
+.md-tal {
+  @include media($md) {
+    text-align: left !important;
+  }
+}
+
+.lg-tal {
+  @include media($md) {
+    text-align: left !important;
+  }
+}
+
+.tac {
+  text-align: center;
+}
+
+.sm-tac {
+  @include media($sm) {
+    text-align: left !important;
+  }
+}
+
+.md-tac {
+  @include media($md) {
+    text-align: left !important;
+  }
+}
+
+.lg-tac {
+  @include media($lg) {
+    text-align: left !important;
+  }
+}
+
+.tar {
+  text-align: right;
+}
+
+.sm-tar {
+  @include media($sm) {
+    text-align: right !important;
+  }
+}
+
+.md-tar {
+  @include media($md) {
+    text-align: right !important;
+  }
+}
+
+.lg-tar {
+  @include media($lg) {
+    text-align: right !important;
+  }
+}
