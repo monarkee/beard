@@ -8,16 +8,16 @@
 // be able to specify something like "letter-spacing: 4" and be done with it.
 // ------------------------------------------------------------------------------------ */
 
-$ls-1:  0.1rem;
-$ls-2:  0.2rem;
-$ls-3:  0.3rem;
-$ls-4:  0.4rem;
-$ls-5:  0.5rem;
-$ls-6:  0.6rem;
-$ls-7:  0.7rem;
-$ls-8:  0.8rem;
-$ls-9:  0.9rem;
-$ls-10: 1.0rem;
+$ls-1:  0.1rem !default;
+$ls-2:  0.2rem !default;
+$ls-3:  0.3rem !default;
+$ls-4:  0.4rem !default;
+$ls-5:  0.5rem !default;
+$ls-6:  0.6rem !default;
+$ls-7:  0.7rem !default;
+$ls-8:  0.8rem !default;
+$ls-9:  0.9rem !default;
+$ls-10: 1.0rem !default;
 
 .ls-1 { letter-spacing: $ls-1 }
 .ls-2 { letter-spacing: $ls-2 }

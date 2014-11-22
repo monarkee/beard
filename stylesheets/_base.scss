@@ -4,18 +4,18 @@
 
 // Site-wide Spacing
 // ------------------------------------------------------------------------------------ */
-$site-width-lg: 126.5rem;
-$site-width-md: 115rem;
-$site-width-sm: 90rem;
+$site-width-lg: 126.5rem !default;
+$site-width-md: 115rem !default;
+$site-width-sm: 90rem !default;
 
-$gutter-width: 6rem;
-$spacing-vert-lg: 6rem;
-$spacing-vert-md: 4rem;
-$spacing-vert-sm: 2rem;
+$gutter-width: 6rem !default;
+$spacing-vert-lg: 6rem !default;
+$spacing-vert-md: 4rem !default;
+$spacing-vert-sm: 2rem !default;
 
-$spacing-horz-lg: 6rem;
-$spacing-horz-md: 4rem;
-$spacing-horz-sm: 2rem;
+$spacing-horz-lg: 6rem !default;
+$spacing-horz-md: 4rem !default;
+$spacing-horz-sm: 2rem !default;
 
 // Base Typeface Definitions
 //-------------------------------------------------------------------------- */
@@ -34,13 +34,13 @@ $code: Menlo, Consolas, Monaco, 'Andale Mono', monospace;
   font-family: $code;
 }
 
-$sans: $proxima;
+$sans: $proxima !default;
 
 .sans {
   @extend .proxima;
 }
 
-$serif: $merriweather;
+$serif: $merriweather !default;
 
 .serif {
   @extend .merriweather;
@@ -65,7 +65,9 @@ body {
   min-height: 100%;
 }
 
-h1, h2, h3, h4, h5, h6 { font-weight: $fw-normal; }
+h1, h2, h3, h4, h5, h6 {
+  font-weight: $fw-normal;
+}
 
 img {
   @include user-drag(none);
