@@ -36,8 +36,8 @@ gulp.task('scss', function() {
         .pipe(autoprefixer('last 2 version'))
         // .pipe(rename({suffix: '.min'}))
         .pipe(minifycss())
-        .pipe(gulp.dest(DIST))
-        .pipe(notify({message: 'Beard: scss compiled.'}));
+        .pipe(gulp.dest(DIST));
+        //.pipe(notify({message: 'Beard: scss compiled.'}));
 });
 
 /**
