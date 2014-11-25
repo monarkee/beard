@@ -8,236 +8,236 @@
 // be able to specify something like "letter-spacing: 4" and be done with it.
 // ------------------------------------------------------------------------------------ */
 
-$ls-1:  0.1rem !default;
-$ls-2:  0.2rem !default;
-$ls-3:  0.3rem !default;
-$ls-4:  0.4rem !default;
-$ls-5:  0.5rem !default;
-$ls-6:  0.6rem !default;
-$ls-7:  0.7rem !default;
-$ls-8:  0.8rem !default;
-$ls-9:  0.9rem !default;
-$ls-10: 1.0rem !default;
+$ls1:  0.1rem !default;
+$ls2:  0.2rem !default;
+$ls3:  0.3rem !default;
+$ls4:  0.4rem !default;
+$ls5:  0.5rem !default;
+$ls6:  0.6rem !default;
+$ls7:  0.7rem !default;
+$ls8:  0.8rem !default;
+$ls9:  0.9rem !default;
+$ls10: 1.0rem !default;
 
-.ls-1 { letter-spacing: $ls-1 }
-.ls-2 { letter-spacing: $ls-2 }
-.ls-3 { letter-spacing: $ls-3 }
-.ls-4 { letter-spacing: $ls-4 }
-.ls-5 { letter-spacing: $ls-5 }
-.ls-6 { letter-spacing: $ls-6 }
-.ls-7 { letter-spacing: $ls-7 }
-.ls-8 { letter-spacing: $ls-8 }
-.ls-9 { letter-spacing: $ls-9 }
-.ls-10 { letter-spacing: $ls-10 }
+.ls1 { letter-spacing: $ls1 }
+.ls2 { letter-spacing: $ls2 }
+.ls3 { letter-spacing: $ls3 }
+.ls4 { letter-spacing: $ls4 }
+.ls5 { letter-spacing: $ls5 }
+.ls6 { letter-spacing: $ls6 }
+.ls7 { letter-spacing: $ls7 }
+.ls8 { letter-spacing: $ls8 }
+.ls9 { letter-spacing: $ls9 }
+.ls10 { letter-spacing: $ls10 }
 
 // Responsive Letter-spacing Helpers
 // ------------------------------------------------------------------------------------ */
-.sm-ls-1 {
+.sm-ls1 {
   @include media($only-sm)
   {
-    letter-spacing: $ls-1;
+    letter-spacing: $ls1;
   }
 }
 
-.sm-ls-2 {
+.sm-ls2 {
   @include media($only-sm)
   {
-    letter-spacing: $ls-2;
+    letter-spacing: $ls2;
   }
 }
 
-.sm-ls-3 {
+.sm-ls3 {
   @include media($only-sm)
   {
-    letter-spacing: $ls-3;
+    letter-spacing: $ls3;
   }
 }
 
-.sm-ls-4 {
+.sm-ls4 {
   @include media($only-sm)
   {
-    letter-spacing: $ls-4;
+    letter-spacing: $ls4;
   }
 }
 
-.sm-ls-5 {
+.sm-ls5 {
   @include media($only-sm)
   {
-    letter-spacing: $ls-5;
+    letter-spacing: $ls5;
   }
 }
 
-.sm-ls-6 {
+.sm-ls6 {
   @include media($only-sm)
   {
-    letter-spacing: $ls-6;
+    letter-spacing: $ls6;
   }
 }
 
-.sm-ls-7 {
+.sm-ls7 {
   @include media($only-sm)
   {
-    letter-spacing: $ls-7;
+    letter-spacing: $ls7;
   }
 }
 
-.sm-ls-8 {
+.sm-ls8 {
   @include media($only-sm)
   {
-    letter-spacing: $ls-8;
+    letter-spacing: $ls8;
   }
 }
 
-.sm-ls-9 {
+.sm-ls9 {
   @include media($only-sm)
   {
-    letter-spacing: $ls-9;
+    letter-spacing: $ls9;
   }
 }
 
-.sm-ls-10 {
+.sm-ls10 {
   @include media($only-sm)
   {
-    letter-spacing: $ls-10;
+    letter-spacing: $ls10;
   }
 }
 
-.md-ls-1 {
+.md-ls1 {
   @include media($md)
   {
-    letter-spacing: $ls-1;
+    letter-spacing: $ls1;
   }
 }
 
-.md-ls-2 {
+.md-ls2 {
   @include media($md)
   {
-    letter-spacing: $ls-2;
+    letter-spacing: $ls2;
   }
 }
 
-.md-ls-3 {
+.md-ls3 {
   @include media($md)
   {
-    letter-spacing: $ls-3;
+    letter-spacing: $ls3;
   }
 }
 
-.md-ls-4 {
+.md-ls4 {
   @include media($md)
   {
-    letter-spacing: $ls-4;
+    letter-spacing: $ls4;
   }
 }
 
-.md-ls-5 {
+.md-ls5 {
   @include media($md)
   {
-    letter-spacing: $ls-5;
+    letter-spacing: $ls5;
   }
 }
 
-.md-ls-6 {
+.md-ls6 {
   @include media($md)
   {
-    letter-spacing: $ls-6;
+    letter-spacing: $ls6;
   }
 }
 
-.md-ls-7 {
+.md-ls7 {
   @include media($md)
   {
-    letter-spacing: $ls-7;
+    letter-spacing: $ls7;
   }
 }
 
-.md-ls-8 {
+.md-ls8 {
   @include media($md)
   {
-    letter-spacing: $ls-8;
+    letter-spacing: $ls8;
   }
 }
 
-.md-ls-9 {
+.md-ls9 {
   @include media($md)
   {
-    letter-spacing: $ls-9;
+    letter-spacing: $ls9;
   }
 }
 
-.md-ls-10 {
+.md-ls10 {
   @include media($md)
   {
-    letter-spacing: $ls-10;
+    letter-spacing: $ls10;
   }
 }
 
-.lg-ls-1 {
+.lg-ls1 {
   @include media($lg)
   {
-    letter-spacing: $ls-1;
+    letter-spacing: $ls1;
   }
 }
 
-.lg-ls-2 {
+.lg-ls2 {
   @include media($lg)
   {
-    letter-spacing: $ls-2;
+    letter-spacing: $ls2;
   }
 }
 
-.lg-ls-3 {
+.lg-ls3 {
   @include media($lg)
   {
-    letter-spacing: $ls-3;
+    letter-spacing: $ls3;
   }
 }
 
-.lg-ls-4 {
+.lg-ls4 {
   @include media($lg)
   {
-    letter-spacing: $ls-4;
+    letter-spacing: $ls4;
   }
 }
 
-.lg-ls-5 {
+.lg-ls5 {
   @include media($lg)
   {
-    letter-spacing: $ls-5;
+    letter-spacing: $ls5;
   }
 }
 
-.lg-ls-6 {
+.lg-ls6 {
   @include media($lg)
   {
-    letter-spacing: $ls-6;
+    letter-spacing: $ls6;
   }
 }
 
-.lg-ls-7 {
+.lg-ls7 {
   @include media($lg)
   {
-    letter-spacing: $ls-7;
+    letter-spacing: $ls7;
   }
 }
 
-.lg-ls-8 {
+.lg-ls8 {
   @include media($lg)
   {
-    letter-spacing: $ls-8;
+    letter-spacing: $ls8;
   }
 }
 
-.lg-ls-9 {
+.lg-ls9 {
   @include media($lg)
   {
-    letter-spacing: $ls-9;
+    letter-spacing: $ls9;
   }
 }
 
-.lg-ls-10 {
+.lg-ls10 {
   @include media($lg)
   {
-    letter-spacing: $ls-10;
+    letter-spacing: $ls10;
   }
 }

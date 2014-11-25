@@ -1,0 +1,340 @@
+// Padding Helpers
+// ------------------------------------------------------------------------------------
+%xp,
+.xp {
+  padding: 0;
+}
+
+%xpv,
+.xpv {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.pa {
+  @extend .ph;
+  @extend .pv;
+}
+
+.pv {
+  padding-top: $spacing-vert-sm;
+  padding-bottom: $spacing-vert-sm;
+  @include media($md) {
+    padding-top: $spacing-vert-md;
+    padding-bottom: $spacing-vert-md;
+  }
+
+  @include media($lg) {
+    padding-top: $spacing-vert-lg;
+    padding-bottom: $spacing-vert-lg;
+  }
+}
+
+.pvt {
+  @extend .pt;
+}
+
+.pt {
+  padding-top: $spacing-vert-sm;
+  @include media($md) {
+    padding-top: $spacing-vert-md;
+  }
+
+  @include media($lg) {
+    padding-top: $spacing-vert-lg;
+  }
+}
+
+.pb {
+  padding-bottom: $spacing-vert-sm;
+  @include media($md) {
+    padding-bottom: $spacing-vert-md;
+  }
+
+  @include media($lg) {
+    padding-bottom: $spacing-vert-lg;
+  }
+}
+.pvb {
+  @extend .pb;
+}
+
+.pvs {
+  padding-top: $spacing-vert-sm / 2;
+  padding-bottom: $spacing-vert-sm / 2;
+  @include media($md) {
+    padding-top: $spacing-vert-md / 2;
+    padding-bottom: $spacing-vert-md / 2;
+  }
+
+  @include media($lg) {
+    padding-top: $spacing-vert-lg / 2;
+    padding-bottom: $spacing-vert-lg / 2;
+  }
+}
+
+.pvxs {
+  padding-top: $spacing-vert-sm / 4;
+  padding-bottom: $spacing-vert-sm / 4;
+  @include media($md) {
+    padding-top: $spacing-vert-md / 4;
+    padding-bottom: $spacing-vert-md / 4;
+  }
+
+  @include media($lg) {
+    padding-top: $spacing-vert-lg / 4;
+    padding-bottom: $spacing-vert-lg / 4;
+  }
+}
+
+.pvbs {
+  padding-bottom: $spacing-vert-sm / 2;
+  @include media($md) {
+    padding-bottom: $spacing-vert-md / 2;
+  }
+
+  @include media($lg) {
+    padding-bottom: $spacing-vert-lg / 2;
+  }
+}
+
+.ph {
+  padding-left: $spacing-horz-sm;
+  padding-right: $spacing-horz-sm;
+  @include media($md) {
+    padding-left: $spacing-horz-md;
+    padding-right: $spacing-horz-md;
+  }
+
+  @include media($lg) {
+    padding-left: $spacing-horz-lg;
+    padding-right: $spacing-horz-lg;
+  }
+}
+
+.phs {
+  padding-left: $spacing-horz-sm / 2;
+  padding-right: $spacing-horz-sm / 2;
+  @include media($md) {
+    padding-left: $spacing-horz-md / 2;
+    padding-right: $spacing-horz-md / 2;
+  }
+
+  @include media($lg) {
+    padding-left: $spacing-horz-lg / 2;
+    padding-right: $spacing-horz-lg / 2;
+  }
+}
+
+.phl {
+  padding-left: $spacing-horz-sm / 2;
+  @include media($md) {
+    padding-left: $spacing-horz-md / 2;
+  }
+
+  @include media($lg) {
+    padding-left: $spacing-horz-lg / 2;
+  }
+}
+
+// Margin Helpers
+// ------------------------------------------------------------------------------------
+.xm {
+  margin: 0;
+}
+
+.xmv {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.mv {
+  margin-top: $spacing-vert-sm;
+  margin-bottom: $spacing-vert-sm;
+  @include media($md) {
+    margin-top: $spacing-vert-md;
+    margin-bottom: $spacing-vert-md;
+  }
+
+  @include media($lg) {
+    margin-top: $spacing-vert-lg;
+    margin-bottom: $spacing-vert-lg;
+  }
+}
+
+.mvs {
+  margin-top: $spacing-vert-sm / 2;
+  margin-bottom: $spacing-vert-sm / 2;
+  @include media($md) {
+    margin-top: $spacing-vert-md / 2;
+    margin-bottom: $spacing-vert-md / 2;
+  }
+
+  @include media($lg) {
+    margin-top: $spacing-vert-lg / 2;
+    margin-bottom: $spacing-vert-lg / 2;
+  }
+}
+
+.mb {
+  margin-bottom: $spacing-vert-sm;
+  @include media($md) {
+    margin-bottom: $spacing-vert-md;
+  }
+
+  @include media($lg) {
+    margin-bottom: $spacing-vert-lg;
+  }
+}
+
+.mbs {
+  margin-bottom: $spacing-vert-sm / 2;
+  @include media($md) {
+    margin-bottom: $spacing-vert-md / 2;
+  }
+
+  @include media($lg) {
+    margin-bottom: $spacing-vert-lg / 2;
+  }
+}
+
+.mbxs {
+  margin-bottom: $spacing-vert-sm / 6;
+  @include media($md) {
+    margin-bottom: $spacing-vert-md / 6;
+  }
+
+  @include media($lg) {
+    margin-bottom: $spacing-vert-lg / 6;
+  }
+}
+
+.mbxxs {
+  margin-bottom: $spacing-vert-sm / 8;
+  @include media($md) {
+    margin-bottom: $spacing-vert-md / 8;
+  }
+
+  @include media($lg) {
+    margin-bottom: $spacing-vert-lg / 8;
+  }
+}
+
+.mrs {
+  margin-right: $spacing-horz-sm / 2;
+  @include media($md) {
+    margin-right: $spacing-horz-md / 2;
+  }
+
+  @include media($lg) {
+    margin-right: $spacing-horz-lg / 2;
+  }
+}
+
+.mrxs {
+  margin-right: $spacing-horz-sm / 6;
+  @include media($md) {
+    margin-right: $spacing-horz-md / 6;
+  }
+
+  @include media($lg) {
+    margin-right: $spacing-horz-lg / 6;
+  }
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// New Margin Helpers
+//-------------------------------------------------------------------------- */
+$position-units: (
+  padding: 'p',
+  margin: 'm'
+);
+
+@each $id, $position in $position-units {
+  @for $i from 1 through 10 {
+    .#{$position}t#{$i} {
+      #{$id}-top: #{$i}rem;
+    }
+
+    @each $key, $breakpoint in $breakpoints {
+      .#{$key}-#{$position}t#{$i} {
+        @include media($breakpoint) {
+            #{$id}-top: #{$i}rem;
+        }
+      }
+    }
+
+    .#{$position}r#{$i} {
+      #{$id}-right: #{$i}rem;
+    }
+
+    @each $key, $breakpoint in $breakpoints {
+      .#{$key}-#{$position}r#{$i} {
+        @include media($breakpoint) {
+            #{$id}-right: #{$i}rem;
+        }
+      }
+    }
+
+    .#{$position}b#{$i} {
+      #{$id}-bottom: #{$i}rem;
+    }
+
+    @each $key, $breakpoint in $breakpoints {
+      .#{$key}-#{$position}b#{$i} {
+        @include media($breakpoint) {
+            #{$id}-bottom: #{$i}rem;
+        }
+      }
+    }
+
+    .#{$position}l#{$i} {
+      #{$id}-left: #{$i}rem;
+    }
+
+    @each $key, $breakpoint in $breakpoints {
+      .#{$key}-#{$position}l#{$i} {
+        @include media($breakpoint) {
+            #{$id}-left: #{$i}rem;
+        }
+      }
+    }
+
+    .#{$position}v#{$i} {
+      #{$id}-top: #{$i}rem;
+      #{$id}-bottom: #{$i}rem;
+    }
+
+    @each $key, $breakpoint in $breakpoints {
+      .#{$key}-#{$position}v#{$i} {
+        @include media($breakpoint) {
+            #{$id}-top: #{$i}rem;
+            #{$id}-bottom: #{$i}rem;
+        }
+      }
+    }
+
+    .#{$position}h#{$i} {
+     #{$id}-left: #{$i}rem;
+     #{$id}-right: #{$i}rem;
+    }
+
+    @each $key, $breakpoint in $breakpoints {
+      .#{$key}-#{$position}h#{$i} {
+        @include media($breakpoint) {
+            #{$id}-left: #{$i}rem;
+            #{$id}-right: #{$i}rem;
+        }
+      }
+    }
+  }
+}
+
+.mv {
+  margin-top: $spacing-vert;
+  margin-bottom: $spacing-vert;
+}

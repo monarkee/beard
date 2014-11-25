@@ -1,214 +1,214 @@
 // Font Sizes
 // ------------------------------------------------------------------------------------ */
-$ft-1: 1.2rem !default;
-$ft-2: 1.4rem !default;
-$ft-3: 1.6rem !default;
-$ft-4: 1.8rem !default;
-$ft-5: 2.1rem !default;
-$ft-6: 2.4rem !default;
-$ft-7: 3.6rem !default;
-$ft-8: 4.8rem !default;
-$ft-9: 6.0rem !default;
-$ft-10: 7.2rem !default;
+$ft1: 1.2rem !default;
+$ft2: 1.4rem !default;
+$ft3: 1.6rem !default;
+$ft4: 1.8rem !default;
+$ft5: 2.1rem !default;
+$ft6: 2.4rem !default;
+$ft7: 3.6rem !default;
+$ft8: 4.8rem !default;
+$ft9: 6.0rem !default;
+$ft10: 7.2rem !default;
 
-.ft-1 { font-size: $ft-1; }
-.ft-2 { font-size: $ft-2; }
-.ft-3 { font-size: $ft-3; }
-.ft-4 { font-size: $ft-4; }
-.ft-5 { font-size: $ft-5; }
-.ft-6 { font-size: $ft-6; }
-.ft-7 { font-size: $ft-7; }
-.ft-8 { font-size: $ft-8; }
-.ft-9 { font-size: $ft-9; }
-.ft-10 { font-size: $ft-10; }
+.ft1 { font-size: $ft1; }
+.ft2 { font-size: $ft2; }
+.ft3 { font-size: $ft3; }
+.ft4 { font-size: $ft4; }
+.ft5 { font-size: $ft5; }
+.ft6 { font-size: $ft6; }
+.ft7 { font-size: $ft7; }
+.ft8 { font-size: $ft8; }
+.ft9 { font-size: $ft9; }
+.ft10 { font-size: $ft10; }
 
 // Responsive Font Sizes
 // ------------------------------------------------------------------------------------ */
-.sm-ft-1 {
+.sm-ft1 {
   @include media($only-sm)
   {
-      font-size: $ft-1 !important;
+      font-size: $ft1 !important;
   }
 }
 
-.sm-ft-2 {
+.sm-ft2 {
   @include media($only-sm)
   {
-    font-size: $ft-2 !important;
+    font-size: $ft2 !important;
   }
 }
 
-.sm-ft-3 {
+.sm-ft3 {
   @include media($only-sm)
   {
-    font-size: $ft-3 !important;
+    font-size: $ft3 !important;
   }
 }
 
-.sm-ft-4 {
+.sm-ft4 {
   @include media($only-sm)
   {
-    font-size: $ft-4 !important;
+    font-size: $ft4 !important;
   }
 }
 
-.sm-ft-5 {
+.sm-ft5 {
   @include media($only-sm)
   {
-    font-size: $ft-5 !important;
+    font-size: $ft5 !important;
   }
 }
 
-.sm-ft-6 {
+.sm-ft6 {
   @include media($only-sm)
   {
-    font-size: $ft-6 !important;
+    font-size: $ft6 !important;
   }
 }
 
-.sm-ft-7 {
+.sm-ft7 {
   @include media($only-sm)
   {
-    font-size: $ft-7 !important;
+    font-size: $ft7 !important;
   }
 }
 
-.sm-ft-8 {
+.sm-ft8 {
   @include media($only-sm)
   {
-    font-size: $ft-8 !important;
+    font-size: $ft8 !important;
   }
 }
 
-.sm-ft-9 {
+.sm-ft9 {
   @include media($only-sm)
   {
-    font-size: $ft-9 !important;
+    font-size: $ft9 !important;
   }
 }
 
-.md-ft-1 {
+.md-ft1 {
   @include media($md)
   {
-    font-size: $ft-1 !important;
+    font-size: $ft1 !important;
   }
 }
 
-.md-ft-2 {
+.md-ft2 {
   @include media($md)
   {
-    font-size: $ft-2 !important;
+    font-size: $ft2 !important;
   }
 }
 
-.md-ft-3 {
+.md-ft3 {
   @include media($md)
   {
-    font-size: $ft-3 !important;
+    font-size: $ft3 !important;
   }
 }
 
-.md-ft-4 {
+.md-ft4 {
   @include media($md)
   {
-    font-size: $ft-4 !important;
+    font-size: $ft4 !important;
   }
 }
 
-.md-ft-5 {
+.md-ft5 {
   @include media($md)
   {
-    font-size: $ft-5 !important;
+    font-size: $ft5 !important;
   }
 }
 
-.md-ft-6 {
+.md-ft6 {
   @include media($md)
   {
-    font-size: $ft-6 !important;
+    font-size: $ft6 !important;
   }
 }
 
-.md-ft-7 {
+.md-ft7 {
   @include media($md)
   {
-    font-size: $ft-7 !important;
+    font-size: $ft7 !important;
   }
 }
 
-.md-ft-8 {
+.md-ft8 {
   @include media($md)
   {
-    font-size: $ft-8 !important;
+    font-size: $ft8 !important;
   }
 }
 
-.md-ft-9 {
+.md-ft9 {
   @include media($md)
   {
-    font-size: $ft-9 !important;
+    font-size: $ft9 !important;
   }
 }
 
-.lg-ft-1 {
+.lg-ft1 {
   @include media($lg)
   {
-    font-size: $ft-1 !important;
+    font-size: $ft1 !important;
   }
 }
 
-.lg-ft-2 {
+.lg-ft2 {
   @include media($lg)
   {
-    font-size: $ft-2 !important;
+    font-size: $ft2 !important;
   }
 }
 
-.lg-ft-3 {
+.lg-ft3 {
   @include media($lg)
   {
-    font-size: $ft-3 !important;
+    font-size: $ft3 !important;
   }
 }
 
-.lg-ft-4 {
+.lg-ft4 {
   @include media($lg)
   {
-    font-size: $ft-4 !important;
+    font-size: $ft4 !important;
   }
 }
 
-.lg-ft-5 {
+.lg-ft5 {
   @include media($lg)
   {
-    font-size: $ft-5 !important;
+    font-size: $ft5 !important;
   }
 }
 
-.lg-ft-6 {
+.lg-ft6 {
   @include media($lg)
   {
-    font-size: $ft-6 !important;
+    font-size: $ft6 !important;
   }
 }
 
-.lg-ft-7 {
+.lg-ft7 {
   @include media($lg)
   {
-    font-size: $ft-7 !important;
+    font-size: $ft7 !important;
   }
 }
 
-.lg-ft-8 {
+.lg-ft8 {
   @include media($lg)
   {
-    font-size: $ft-8 !important;
+    font-size: $ft8 !important;
   }
 }
 
-.lg-ft-9 {
+.lg-ft9 {
   @include media($lg)
   {
-    font-size: $ft-9 !important;
+    font-size: $ft9 !important;
   }
 }

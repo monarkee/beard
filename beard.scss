@@ -5,6 +5,10 @@
 // Import Mixins
 // ------------------------------------------------------------------------------------ */
 @import 'stylesheets/mixins/appearance',
+        'stylesheets/mixins/media',
+        'stylesheets/mixins/clearfix',
+        'stylesheets/mixins/demarginize',
+        'stylesheets/mixins/font-size',
         'stylesheets/mixins/user-drag';
 
 // Import Global
@@ -16,13 +20,10 @@
         'stylesheets/base',
         'stylesheets/borders',
         'stylesheets/grid',
-        'stylesheets/headings',
-        'stylesheets/paragraphs',
-        'stylesheets/padding',
+        'stylesheets/spacing',
         'stylesheets/inline-nav',
         'stylesheets/letter-spacing',
         'stylesheets/line-heights',
-        'stylesheets/margins',
         'stylesheets/forms',
         'stylesheets/helpers',
         'stylesheets/text-align',
