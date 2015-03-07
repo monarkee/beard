@@ -3,18 +3,38 @@
 .flex { display: flex; }
 .inline-flex { display: inline-flex; }
 
+// Flex Direction Helpers
+//-------------------------------------------------------------------------- */
+// row (default): same as text direction
+// row-reverse: opposite to text direction
+// column: same as row but top to bottom
+// column-reverse: same as row-reverse top to bottom
+
+// Flex Wrap Helpers
+//-------------------------------------------------------------------------- */
+// .flex-wrap
+// nowrap (default): single-line which may cause the container to overflow
+// wrap: multi-lines, direction is defined by flex-direction
+// wrap-reverse: multi-lines, opposite to direction defined by flex-direction
+
+// Justification Helpers
+//-------------------------------------------------------------------------- */
 .jcc { justify-content: center; }
 .jcsb { justify-content: space-between; }
 .jcsa { justify-content: space-around; }
 .jcfs { justify-content: flex-start; }
 .jcfe { justify-content: flex-end; }
 
+// Align Items Helpers
+//-------------------------------------------------------------------------- */
 .aic { align-items: center; }
 .aifs { align-items: flex-start; }
 .aife { align-items: flex-end; }
 .ais { align-items: stretch; }
 .aib { align-items: baseline; }
 
+// Align Content Helpers
+//-------------------------------------------------------------------------- */
 .acc { align-content: center; }
 .acfs { align-content: flex-start; }
 .acfe { align-content: flex-end; }

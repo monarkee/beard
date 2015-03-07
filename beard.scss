@@ -21,25 +21,18 @@ $beard-reset: false !default;
 
 // Import Global
 //-------------------------------------------------------------------------- */
-@import 'stylesheets/animations',
-        'stylesheets/breakpoints',
+@import 'stylesheets/breakpoints',
         'stylesheets/font-sizes', // Has to be before some things
         'stylesheets/font-weights', // Has to be before some things
         'stylesheets/base',
-        'stylesheets/borders',
         'stylesheets/grid',
         'stylesheets/spacing',
-        'stylesheets/inline-nav',
         'stylesheets/letter-spacing',
         'stylesheets/line-heights',
-        'stylesheets/forms',
         'stylesheets/helpers',
         'stylesheets/text-align',
         'stylesheets/position',
         'stylesheets/responsive',
         'stylesheets/display',
         'stylesheets/flex',
-        'stylesheets/tables',
-        'stylesheets/border-radius',
-        'stylesheets/wrap',
-        'stylesheets/icon-sizes';
+        'stylesheets/border-radius';

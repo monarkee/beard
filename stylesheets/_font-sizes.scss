@@ -1,4 +1,4 @@
-// Font Sizes
+// Font Sizes & Responsive Font Size Helpers
 // ------------------------------------------------------------------------------------ */
 $ft1: 1.2rem !default;
 $ft2: 1.4rem !default;
@@ -11,204 +11,27 @@ $ft8: 4.8rem !default;
 $ft9: 6.0rem !default;
 $ft10: 7.2rem !default;
 
-.ft1 { font-size: $ft1; }
-.ft2 { font-size: $ft2; }
-.ft3 { font-size: $ft3; }
-.ft4 { font-size: $ft4; }
-.ft5 { font-size: $ft5; }
-.ft6 { font-size: $ft6; }
-.ft7 { font-size: $ft7; }
-.ft8 { font-size: $ft8; }
-.ft9 { font-size: $ft9; }
-.ft10 { font-size: $ft10; }
+$font-size-values: (
+  ft1: $ft1,
+  ft2: $ft2,
+  ft3: $ft3,
+  ft4: $ft4,
+  ft5: $ft5,
+  ft6: $ft6,
+  ft7: $ft7,
+  ft8: $ft8,
+  ft9: $ft9,
+  ft10: $ft10
+);
 
-// Responsive Font Sizes
-// ------------------------------------------------------------------------------------ */
-.sm-ft1 {
-  @include media($only-sm)
-  {
-      font-size: $ft1 !important;
-  }
-}
+@each $name, $amount in $font-size-values {
+  .#{$name} { font-size: $amount }
 
-.sm-ft2 {
-  @include media($only-sm)
-  {
-    font-size: $ft2 !important;
-  }
-}
-
-.sm-ft3 {
-  @include media($only-sm)
-  {
-    font-size: $ft3 !important;
-  }
-}
-
-.sm-ft4 {
-  @include media($only-sm)
-  {
-    font-size: $ft4 !important;
-  }
-}
-
-.sm-ft5 {
-  @include media($only-sm)
-  {
-    font-size: $ft5 !important;
-  }
-}
-
-.sm-ft6 {
-  @include media($only-sm)
-  {
-    font-size: $ft6 !important;
-  }
-}
-
-.sm-ft7 {
-  @include media($only-sm)
-  {
-    font-size: $ft7 !important;
-  }
-}
-
-.sm-ft8 {
-  @include media($only-sm)
-  {
-    font-size: $ft8 !important;
-  }
-}
-
-.sm-ft9 {
-  @include media($only-sm)
-  {
-    font-size: $ft9 !important;
-  }
-}
-
-.md-ft1 {
-  @include media($md)
-  {
-    font-size: $ft1 !important;
-  }
-}
-
-.md-ft2 {
-  @include media($md)
-  {
-    font-size: $ft2 !important;
-  }
-}
-
-.md-ft3 {
-  @include media($md)
-  {
-    font-size: $ft3 !important;
-  }
-}
-
-.md-ft4 {
-  @include media($md)
-  {
-    font-size: $ft4 !important;
-  }
-}
-
-.md-ft5 {
-  @include media($md)
-  {
-    font-size: $ft5 !important;
-  }
-}
-
-.md-ft6 {
-  @include media($md)
-  {
-    font-size: $ft6 !important;
-  }
-}
-
-.md-ft7 {
-  @include media($md)
-  {
-    font-size: $ft7 !important;
-  }
-}
-
-.md-ft8 {
-  @include media($md)
-  {
-    font-size: $ft8 !important;
-  }
-}
-
-.md-ft9 {
-  @include media($md)
-  {
-    font-size: $ft9 !important;
-  }
-}
-
-.lg-ft1 {
-  @include media($lg)
-  {
-    font-size: $ft1 !important;
-  }
-}
-
-.lg-ft2 {
-  @include media($lg)
-  {
-    font-size: $ft2 !important;
-  }
-}
-
-.lg-ft3 {
-  @include media($lg)
-  {
-    font-size: $ft3 !important;
-  }
-}
-
-.lg-ft4 {
-  @include media($lg)
-  {
-    font-size: $ft4 !important;
-  }
-}
-
-.lg-ft5 {
-  @include media($lg)
-  {
-    font-size: $ft5 !important;
-  }
-}
-
-.lg-ft6 {
-  @include media($lg)
-  {
-    font-size: $ft6 !important;
-  }
-}
-
-.lg-ft7 {
-  @include media($lg)
-  {
-    font-size: $ft7 !important;
-  }
-}
-
-.lg-ft8 {
-  @include media($lg)
-  {
-    font-size: $ft8 !important;
-  }
-}
-
-.lg-ft9 {
-  @include media($lg)
-  {
-    font-size: $ft9 !important;
+  @each $key, $breakpoint in $breakpoints {
+    .#{$key}-#{$name} {
+      @include media($breakpoint) {
+          font-size: $amount;
+      }
+    }
   }
 }

@@ -1,49 +1,25 @@
 // Site-wide Spacing
 // ------------------------------------------------------------------------------------ */
-$site-width-lg: 126.5rem !default;
-$site-width-md: 115rem !default;
-$site-width-sm: 90rem !default;
-
+$site-width: 126.5rem !default;
 $gutter-width: 6rem !default;
-
 $spacing-vert: 6rem !default;
 $spacing-horz: 6rem !default;
 
-$spacing-vert-lg: 6rem !default;
-$spacing-vert-md: 4rem !default;
-$spacing-vert-sm: 2rem !default;
-
-$spacing-horz-lg: 6rem !default;
-$spacing-horz-md: 4rem !default;
-$spacing-horz-sm: 2rem !default;
-
 // Base Typeface Definitions
 //-------------------------------------------------------------------------- */
-$proxima: proxima-nova, 'Proxima Nova', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-.proxima {
-  font-family: $proxima;
+$sans-serif: 'Helvetica Neue', Helvetica, Arial, sans-serif !default;
+.sans-serif {
+  font-family: $sans-serif;
 }
 
-$merriweather: Merriweather, Georgia, serif;
-.merriweather {
-  font-family: $merriweather;
-}
-
-$code: Menlo, Consolas, Monaco, 'Andale Mono', monospace;
-.menlo {
-  font-family: $code;
-}
-
-$sans: $proxima !default;
-
-.sans {
-  @extend .proxima;
-}
-
-$serif: $merriweather !default;
-
+$serif: Merriweather, Georgia, serif !default;
 .serif {
-  @extend .merriweather;
+  font-family: $serif;
+}
+
+$code: Menlo, Consolas, Monaco, 'Andale Mono', monospace !default;
+.code {
+  font-family: $code;
 }
 
 // Base Elements
@@ -59,9 +35,8 @@ html {
 }
 
 body {
-  font-family: $proxima;
+  font-family: $sans-serif;
   margin: 0;
-  user-select: none;
   min-height: 100%;
 }
 

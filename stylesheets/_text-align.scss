@@ -1,67 +1,19 @@
 // Text Aligment Helpers
 // ------------------------------------------------------------------------------------
-.tal {
-  text-align: left;
-}
+$alignment-units: (
+  left: 'l',
+  center: 'c',
+  right: 'r'
+);
 
-.sm-tal {
-  @include media($sm) {
-    text-align: left !important;
-  }
-}
+@each $id, $position in $alignment-units {
+  .ta#{$position} { text-align: $id }
 
-.md-tal {
-  @include media($md) {
-    text-align: left !important;
-  }
-}
-
-.lg-tal {
-  @include media($md) {
-    text-align: left !important;
-  }
-}
-
-.tac {
-  text-align: center;
-}
-
-.sm-tac {
-  @include media($sm) {
-    text-align: left !important;
-  }
-}
-
-.md-tac {
-  @include media($md) {
-    text-align: left !important;
-  }
-}
-
-.lg-tac {
-  @include media($lg) {
-    text-align: left !important;
-  }
-}
-
-.tar {
-  text-align: right;
-}
-
-.sm-tar {
-  @include media($sm) {
-    text-align: right !important;
-  }
-}
-
-.md-tar {
-  @include media($md) {
-    text-align: right !important;
-  }
-}
-
-.lg-tar {
-  @include media($lg) {
-    text-align: right !important;
+  @each $key, $breakpoint in $breakpoints {
+    .#{$key}-ta#{$position} {
+      @include media($breakpoint) {
+          text-align: $id;
+      }
+    }
   }
 }

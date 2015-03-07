@@ -20,12 +20,12 @@ $fwbold: $bold;
 $fwxbold: $xbold;
 $fwxxbold: $xxbold;
 
-%fwthin, .fwthin { font-weight: $fwthin !important; }
-%fwxlight, .fwxlight { font-weight: $fwxlight !important; }
-%fwlight, .fwlight { font-weight: $fwlight !important; }
-%fwnormal, .fwnormal { font-weight: $fwnormal !important; }
-%fwmedium, .fwmedium { font-weight: $fwmedium !important; }
-%fwsemibold, .fwsemibold { font-weight: $fwsemibold !important; }
-%fwbold , .fwbold { font-weight: $fwbold !important; }
-%fwxbold, .fwxbold { font-weight: $fwxbold !important; }
-%fwxxbold, .fwxxbold { font-weight: $fwxxbold !important; }
+.fwthin { font-weight: $fwthin; }
+.fwxlight { font-weight: $fwxlight; }
+.fwlight { font-weight: $fwlight; }
+.fwnormal { font-weight: $fwnormal; }
+.fwmedium { font-weight: $fwmedium; }
+.fwsemibold { font-weight: $fwsemibold; }
+.fwbold { font-weight: $fwbold; }
+.fwxbold { font-weight: $fwxbold; }
+.fwxxbold { font-weight: $fwxxbold; }

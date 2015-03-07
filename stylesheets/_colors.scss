@@ -1,47 +1,80 @@
 // Global Colors
 // ------------------------------------------------------------------------------------ */
-$brand-color-1: #13a89e !default;
-$bg1: $brand-color-1;
-$tc1: $brand-color-1;
-$bc1: $brand-color-1;
 $white: #fff !default;
 $black: #000 !default;
 $success-color: #4AB471 !default;
 $warning-color: #F3AE4E !default;
 $danger-color: #CF5C60 !default;
 
+// Set Brand colors
+//-------------------------------------------------------------------------- */
+$brand-color-1: #2795b6 !default;
+$brand-color-2: darken(#2795b6, 5%) !default;
+$brand-color-3: darken(#2795b6, 10%) !default;
+$brand-color-4: darken(#2795b6, 15%) !default;
+$brand-color-5: darken(#2795b6, 20%) !default;
+
+// Set Background Colors
+//-------------------------------------------------------------------------- */
+$bg1: $brand-color-1 !default;
+$bg2: $brand-color-2 !default;
+$bg3: $brand-color-3 !default;
+$bg4: $brand-color-4 !default;
+$bg5: $brand-color-5 !default;
+
+// Set Text Colors
+//-------------------------------------------------------------------------- */
+$tc1: $brand-color-1 !default;
+$tc2: $brand-color-2 !default;
+$tc3: $brand-color-3 !default;
+$tc4: $brand-color-4 !default;
+$tc5: $brand-color-5 !default;
+
+// Set Border Colors
+//-------------------------------------------------------------------------- */
+$bc1: $brand-color-1 !default;
+$bc2: $brand-color-2 !default;
+$bc3: $brand-color-3 !default;
+$bc4: $brand-color-4 !default;
+$bc5: $brand-color-5 !default;
+
+$brand-colors: (
+  '1': $brand-color-1,
+  '2': $brand-color-2,
+  '3': $brand-color-3,
+  '4': $brand-color-4,
+  '5': $brand-color-5
+);
+
+// Loop through Brand Colors and output placeholders/classes for each type
+//-------------------------------------------------------------------------- */
+@each $id, $color in $brand-colors {
+    %bg#{$id},
+    .bg#{$id} { background-color: $color }
+
+    %tc#{$id},
+    .tc#{$id} { color: $color }
+
+    %bc#{$id},
+    .bc#{$id} { border-color: $color }
+}
+
 // Miscellaneous Color Helpers
 // ------------------------------------------------------------------------------------ */
-$bgw: $white;
-.bgw {
-  background-color: $bgw;
-}
+$bgw: $white !default;
+%bgw,
+.bgw { background-color: $bgw; }
 
-.xbg {
-  background: none;
-}
+%xbg,
+.xbg { background: none; }
 
-.bg1 {
-  background: $bg1;
-}
+$tcw: $white !default;
+%tcw,
+.tcw { color: $tcw; }
 
-$tcw: $white;
-.tcw {
-  color: $tcw;
-}
-
-.tc1 {
-  color: $tc1
-}
-
-$bcw: $white;
-.bcw {
-  color: $bcw;
-}
-
-.bc1 {
-  color: $bc1
-}
+$bcw: $white !default;
+%bcw,
+.bcw { color: $bcw;}
 
 // Grayscale Colors
 // ------------------------------------------------------------------------------------ */
@@ -141,7 +174,6 @@ $bcg70: $g70;
 $bcg80: $g80;
 $bcg90: $g90;
 
-.bc1 { border-color: $bc1 }
 .bcg05 { border-color: $bcg05 }
 .bcg10 { border-color: $bcg10 }
 .bcg20 { border-color: $bcg20 }
@@ -152,36 +184,3 @@ $bcg90: $g90;
 .bcg70 { border-color: $bcg70 }
 .bcg80 { border-color: $bcg80 }
 .bcg90 { border-color: $bcg90 }
-
-// Icon Colors
-// ------------------------------------------------------------------------------------ */
-$icw: $white;
-$ic1: $brand-color-1;
-$ic-error: $danger-color;
-
-$icg05: $g05;
-$icg10: $g10;
-$icg20: $g20;
-$icg30: $g30;
-$icg40: $g40;
-$icg50: $g50;
-$icg60: $g60;
-$icg70: $g70;
-$icg80: $g80;
-$icg90: $g90;
-
-.ic-error { fill: $ic-error }
-.icw   { fill: $icw }
-.ic1   { fill: $ic1 }
-.icg05 { fill: $icg05 }
-.icg10 { fill: $icg10 }
-.icg20 { fill: $icg20 }
-.icg30 { fill: $icg30 }
-.icg40 { fill: $icg40 }
-.icg50 { fill: $icg50 }
-.icg60 { fill: $icg60 }
-.icg70 { fill: $icg70 }
-.icg80 { fill: $icg80 }
-.icg90 { fill: $icg90 }
-
-.icy   { fill: yellow }

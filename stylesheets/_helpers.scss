@@ -1,69 +1,13 @@
 // Font Transform Helpers
-.uppercase {
-  text-transform: uppercase;
-}
+//-------------------------------------------------------------------------- */
+.lowercase { text-transform: lowercase; }
+.uppercase { text-transform: uppercase; }
 
 // Circle Images
 // ------------------------------------------------------------------------------------
-$circle-img: 100rem;
+$circle-img-radius: 100rem !default;
+.circle { border-radius: $circle-img-radius; }
 
-.circle-img {
-  border-radius: $circle-img;
-}
-
-// Size Helpers
+// Ellipses Text
 // ------------------------------------------------------------------------------------
-.ht-22 {
-  height: 2.2rem;
-}
-
-.ht-36 {
-  height: 3.6rem;
-}
-
-.ht-40 {
-  height: 4rem;
-}
-
-.ht-49 {
-  height: 4.4rem;
-}
-
-.width-5 {
-  width: 5rem;
-}
-
-@for $i from 1 through 10 {
-    .width-#{$i} {
-        width: $i + rem;
-    }
-}
-
-// Ellipse Text
-// ------------------------------------------------------------------------------------
-.ell {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-// Blur
-// ------------------------------------------------------------------------------------
-$blur-amount-base: 0.5rem;
-
-@for $i from 1 through 10 {
-    .blur-#{$i} {
-        -webkit-filter: blur($blur-amount-base * $i);
-        -moz-filter: blur($blur-amount-base * $i);
-        -o-filter: blur($blur-amount-base * $i);
-        -ms-filter: blur($blur-amount-base * $i);
-        filter: url(/img/blur.svg#blur-#{$i});
-        transform: translate3d(0, 0, 0);
-    }
-}
-
-// Scrollable
-// ------------------------------------------------------------------------------------
-.scrollable {
-  overflow-x: scroll;
-}
+.ell { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
