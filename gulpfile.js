@@ -1,7 +1,6 @@
 // Gulp Requires
 var gulp = require('gulp'),
     gutil = require('gulp-util'),
-    plumber = require('gulp-plumber'),
     autoprefixer = require('gulp-autoprefixer'),
     sass = require('gulp-sass'),
     minifycss = require('gulp-minify-css');
@@ -9,17 +8,9 @@ var gulp = require('gulp'),
 // Directories
 var DIST = 'dist/';
 
-// Error handler for Plumber
-var onError = function (err) {
-    gutil.beep();
-};
-
 // SCSS Compiling and Minification
 gulp.task('sass', function() {
     return gulp.src('beard.scss')
-        .pipe(plumber({
-            errorHandler: onError
-        }))
         .pipe(sass({
             debugInfo: false,
             lineNumbers: false
