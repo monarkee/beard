@@ -46,34 +46,28 @@ $brand-colors: (
   '5': $brand-color-5
 );
 
-// Loop through Brand Colors and output placeholders/classes for each type
+// Loop through Brand Colors and output classes for each type
 //-------------------------------------------------------------------------- */
 @each $id, $color in $brand-colors {
-    %bg#{$id},
     .bg#{$id} { background-color: $color }
-
-    %tc#{$id},
     .tc#{$id} { color: $color }
-
-    %bc#{$id},
     .bc#{$id} { border-color: $color }
 }
 
 // Miscellaneous Color Helpers
 // ------------------------------------------------------------------------------------ */
 $bgw: $white !default;
-%bgw,
+
 .bgw { background-color: $bgw; }
 
-%xbg,
 .xbg { background: none; }
 
 $tcw: $white !default;
-%tcw,
+
 .tcw { color: $tcw; }
 
 $bcw: $white !default;
-%bcw,
+
 .bcw { color: $bcw;}
 
 // Grayscale Colors
