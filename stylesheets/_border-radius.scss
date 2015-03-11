@@ -11,3 +11,8 @@ $border-radius-amount: 6 !default;
   .bbrr#{$i} { border-bottom-right-radius: #{$i}px; }
   .bblr#{$i} { border-bottom-left-radius: #{$i}px; }
 }
+
+// Circle Images
+// ------------------------------------------------------------------------------------
+$circle-img-radius: 100rem !default;
+.circle { border-radius: $circle-img-radius; }

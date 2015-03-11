@@ -3,11 +3,6 @@
 .lowercase { text-transform: lowercase; }
 .uppercase { text-transform: uppercase; }
 
-// Circle Images
-// ------------------------------------------------------------------------------------
-$circle-img-radius: 100rem !default;
-.circle { border-radius: $circle-img-radius; }
-
 // Ellipses Text
 // ------------------------------------------------------------------------------------
 .ell { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
