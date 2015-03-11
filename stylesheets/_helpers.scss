@@ -11,3 +11,7 @@ $circle-img-radius: 100rem !default;
 // Ellipses Text
 // ------------------------------------------------------------------------------------
 .ell { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+// Remove borders
+//-------------------------------------------------------------------------- */
+.xbrdr { border: none; }
