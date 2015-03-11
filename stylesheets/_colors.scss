@@ -2,9 +2,18 @@
 // ------------------------------------------------------------------------------------ */
 $white: #fff !default;
 $black: #000 !default;
+
 $success-color: #4AB471 !default;
+.success { color: $success-color; }
+.bgsuccess { background-color: $success-color; }
+
 $warning-color: #F3AE4E !default;
+.warning { color: $warning-color; }
+.bgwarning { background-color: $warning-color; }
+
 $danger-color: #CF5C60 !default;
+.danger { color: $danger-color; }
+.bgdanger { background-color: $danger-color; }
 
 // Set Brand colors
 //-------------------------------------------------------------------------- */
