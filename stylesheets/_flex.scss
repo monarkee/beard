@@ -3,19 +3,22 @@
 .flex { display: flex; }
 .inline-flex { display: inline-flex; }
 
+// Flex Basis Helpers
+//-------------------------------------------------------------------------- */
+.fb100 { flex-basis: 100%; }
+
 // Flex Direction Helpers
 //-------------------------------------------------------------------------- */
-// row (default): same as text direction
-// row-reverse: opposite to text direction
-// column: same as row but top to bottom
-// column-reverse: same as row-reverse top to bottom
+.fdr { flex-direction: row; }
+.fdrr { flex-direction: row-reverse; }
+.fdc { flex-direction: column; }
+.fdcr { flex-direction: column-reverse; }
 
 // Flex Wrap Helpers
 //-------------------------------------------------------------------------- */
-// .flex-wrap
-// nowrap (default): single-line which may cause the container to overflow
-// wrap: multi-lines, direction is defined by flex-direction
-// wrap-reverse: multi-lines, opposite to direction defined by flex-direction
+.fwn { flex-wrap: nowrap; }
+.fww { flex-wrap: wrap; }
+.fwr { flex-wrap: wrap-reverse; }
 
 // Justification Helpers
 //-------------------------------------------------------------------------- */
