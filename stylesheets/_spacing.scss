@@ -19,7 +19,7 @@ $position-units: (
 );
 
 @each $id, $position in $position-units {
-  @for $i from 1 through 10 {
+  @for $i from 0 through 10 {
     .#{$position}t#{$i} {
       #{$id}-top: #{$i}rem;
     }
