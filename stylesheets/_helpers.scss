@@ -10,3 +10,11 @@
 // Remove borders
 //-------------------------------------------------------------------------- */
 .xbrdr { border: none; }
+
+// Hidetext
+//-------------------------------------------------------------------------- */
+%hidetext, .hidetext {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
