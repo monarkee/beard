@@ -45,12 +45,6 @@ img {
   @include user-drag(none);
   width: 100%;
   height: auto;
-
-}
-
-a {
-  text-decoration: none;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 hr {
@@ -59,6 +53,32 @@ hr {
     margin: 0;
 }
 
+a {
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.default-active {
+    &:active {
+        opacity: 0.5;
+    }
+}
+
+.default-hover {
+    &:hover {
+        opacity: 0.5;
+    }
+}
+
 button {
   cursor: pointer;
+  border: none;
+}
+
+a, button {
+    @extend .default-active;
+}
+
+input, textarea, button {
+    outline: none;
 }
