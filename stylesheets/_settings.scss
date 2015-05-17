@@ -1,0 +1,105 @@
+// Settings
+//-------------------------------------------------------------------------- */
+// This file contains all of the configurable settings for Beard. You
+// can essentially make your own copy of this file for you project and
+// override every value to the one you want, minus the `!default` option.
+
+// Configuration Switches
+//-------------------------------------------------------------------------- */
+$beard-reset: true !default;
+$beard-enable-responsive: true !default;
+
+// Responsive Breakpoints
+//-------------------------------------------------------------------------- */
+@if $beard-enable-responsive == true {
+    $sm: 'only screen and (min-width: 300px)' !default;
+    $md: 'only screen and (min-width: 600px)' !default;
+    $lg: 'only screen and (min-width: 900px)' !default;
+    $xlg: 'only screen and (min-width: 1440px)' !default;
+
+    $only-sm: 'only screen and (max-width: 599px)' !default;
+    $only-md: 'only screen and (min-width: 600px) and (max-width: 899px)' !default;
+    $only-lg: 'only screen and (min-width: 900px) and (max-width: 1439px)' !default;
+    $only-xlg: 'only screen and (min-width: 1440px)' !default;
+
+    $breakpoints: (
+        sm $sm,
+        only-sm $only-sm,
+        md $md,
+        only-md $only-md,
+        lg $lg,
+        only-lg $only-lg,
+        xlg $xlg,
+        only-xlg $only-xlg
+    ) !default;
+}
+
+// Grid
+//-------------------------------------------------------------------------- */
+$flexbox-grid-column-count: 12 !default;
+
+// Site Width
+// ------------------------------------------------------------------------------------ */
+$site-width: 126.5rem !default;
+
+// Typefaces
+//-------------------------------------------------------------------------- */
+$sans-serif: 'Helvetica Neue', Helvetica, Arial, sans-serif !default;
+$serif: Merriweather, Georgia, serif !default;
+$code: Menlo, Consolas, Monaco, 'Andale Mono', monospace !default;
+
+// Font Sizes
+//-------------------------------------------------------------------------- */
+$ft1: 1.2 !default;
+$ft2: 1.4 !default;
+$ft3: 1.6 !default;
+$ft4: 1.8 !default;
+$ft5: 2.1 !default;
+$ft6: 2.4 !default;
+$ft7: 3.6 !default;
+$ft8: 4.8 !default;
+$ft9: 6.0 !default;
+$ft10: 7.2 !default;
+
+$font-size-values: (
+    ft1: $ft1,
+    ft2: $ft2,
+    ft3: $ft3,
+    ft4: $ft4,
+    ft5: $ft5,
+    ft6: $ft6,
+    ft7: $ft7,
+    ft8: $ft8,
+    ft9: $ft9,
+    ft10: $ft10
+) !default;
+
+// Font Weights
+// ------------------------------------------------------------------------------------ */
+$thin: 100 !default;
+$xlight: 200 !default;
+$light: 300 !default;
+$normal: 400 !default;
+$medium: 500 !default;
+$semibold: 600 !default;
+$bold: 700 !default;
+$xbold: 800 !default;
+$xxbold: 900 !default;
+
+// Letter Spacing
+//-------------------------------------------------------------------------- */
+$ls1:  0.1rem !default;
+$ls2:  0.2rem !default;
+$ls3:  0.3rem !default;
+$ls4:  0.4rem !default;
+$ls5:  0.5rem !default;
+$ls6:  0.6rem !default;
+$ls7:  0.7rem !default;
+$ls8:  0.8rem !default;
+$ls9:  0.9rem !default;
+$ls10: 1.0rem !default;
+
+// Border Radius Amoutns
+//-------------------------------------------------------------------------- */
+$border-radius-amount: 6 !default;
+$circle-img-radius: 100rem !default;

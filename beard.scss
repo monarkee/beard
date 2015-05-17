@@ -1,38 +1,40 @@
-// Configuration
+// Settings
 //-------------------------------------------------------------------------- */
-$beard-reset: false !default;
+@import 'stylesheets/settings',
+        'stylesheets/settings.colors',
 
-// Reset
+// Tools & Mixins
 //-------------------------------------------------------------------------- */
-@import 'stylesheets/reset';
+    'stylesheets/tools.appearance',
+    'stylesheets/tools.demarginize',
+    'stylesheets/tools.media',
+    'stylesheets/tools.user-drag',
+    'stylesheets/tools.font-size',
 
-// Import Colors
-// ------------------------------------------------------------------------------------ */
-@import 'stylesheets/colors';
-
-// Import Mixins
-// ------------------------------------------------------------------------------------ */
-@import 'stylesheets/mixins/appearance',
-        'stylesheets/mixins/media',
-        'stylesheets/mixins/clearfix',
-        'stylesheets/mixins/demarginize',
-        'stylesheets/mixins/font-size',
-        'stylesheets/mixins/user-drag';
-
-// Import Global
+// Generic
 //-------------------------------------------------------------------------- */
-@import 'stylesheets/breakpoints',
-        'stylesheets/font-sizes', // Has to be before some things
-        'stylesheets/font-weights', // Has to be before some things
-        'stylesheets/base',
-        'stylesheets/grid',
-        'stylesheets/spacing',
-        'stylesheets/letter-spacing',
-        'stylesheets/line-heights',
-        'stylesheets/helpers',
-        'stylesheets/text-align',
-        'stylesheets/floats',
-        'stylesheets/responsive',
-        'stylesheets/display',
-        'stylesheets/flex',
-        'stylesheets/border-radius';
+    'stylesheets/generic.reset',
+
+// Base
+//-------------------------------------------------------------------------- */
+    'stylesheets/base',
+
+// Objects
+//-------------------------------------------------------------------------- */
+    'stylesheets/objects.media',
+    // 'stylesheets/objects.magnet-elements',
+
+// Helpers
+//-------------------------------------------------------------------------- */
+    'stylesheets/helpers.text-align',
+    'stylesheets/helpers.spacing',
+    'stylesheets/helpers.line-heights',
+    'stylesheets/helpers.letter-spacing',
+    'stylesheets/helpers.font-sizes',
+    'stylesheets/helpers.misc',
+    'stylesheets/helpers.grid',
+    'stylesheets/helpers.floats',
+    'stylesheets/helpers.display',
+    'stylesheets/helpers.flex',
+    'stylesheets/helpers.colors',
+    'stylesheets/helpers.border-radius';

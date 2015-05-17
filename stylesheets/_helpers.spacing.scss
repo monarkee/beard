@@ -1,3 +1,12 @@
+.center { margin-left: auto; margin-right: auto; }
+
+// Spacing Helpers
+//-------------------------------------------------------------------------- */
+$position-units: (
+  padding: 'p',
+  margin: 'm'
+);
+
 // Padding Helpers
 // ------------------------------------------------------------------------------------
 .xp { padding: 0; }
@@ -9,15 +18,48 @@
 .xm { margin: 0; }
 .xmv { margin-top: 0; margin-bottom: 0; }
 .xmh { margin-left: 0; margin-right: 0; }
-.center { margin-left: auto; margin-right: auto; }
 
-// New Margin Helpers
+
+@if $beard-enable-responsive == true {
+    @each $id, $position in $position-units {
+        @each $key, $breakpoint in $breakpoints {
+
+            // Generates classes like this: `sm-xm` and `md-xmh`
+            .#{$key}-x#{$position} {
+                @include media($breakpoint) {
+                    #{$id}: 0;
+                }
+            }
+
+            // Vertical Spacing Removal
+            .#{$key}-x#{$position}v {
+                @include media($breakpoint) {
+                    #{$id}-top: 0;
+                    #{$id}-bottom: 0;
+                }
+            }
+
+            // Horizontal Spacing Removal
+            .#{$key}-x#{$position}h {
+                @include media($breakpoint) {
+                    #{$id}-left: 0;
+                    #{$id}-right: 0;
+                }
+            }
+
+            // Horizontal Centering
+            .#{$key}-center {
+                @include media($breakpoint) {
+                    #{$id}-left: auto;
+                    #{$id}-right: auto;
+                }
+            }
+        }
+    }
+}
+
+// Multiples of 10 Spacing Helpers
 //-------------------------------------------------------------------------- */
-$position-units: (
-  padding: 'p',
-  margin: 'm'
-);
-
 @each $id, $position in $position-units {
   @for $i from 0 through 10 {
     .#{$position}t#{$i} {

@@ -6,7 +6,10 @@ var gulp = require('gulp'),
     minifycss = require('gulp-minify-css');
 
 // Directories
-var DIST = 'dist/';
+var dist = 'dist';
+var paths = {
+    css: ['./beard.scss', 'stylesheets/**/*.scss']
+}
 
 // SCSS Compiling and Minification
 gulp.task('sass', function() {
@@ -17,8 +20,13 @@ gulp.task('sass', function() {
         }))
         .pipe(autoprefixer('last 2 version'))
         .pipe(minifycss())
-        .pipe(gulp.dest(DIST));
+        .pipe(gulp.dest(dist));
+});
+
+gulp.task('watch-assets', function() {
+    gulp.watch(paths.css, ['sass']);
 });
 
 // Gulp Default Task
 gulp.task('default', ['sass']);
+gulp.task('watch', ['watch-assets', 'sass']);

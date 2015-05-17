@@ -1,6 +1,0 @@
-// REM Font Sizing
-// ------------------------------------------------------------------------------------ */
-@mixin font-size($sizeValue: 12) {
-  font-size: $sizeValue * 10px;  // Fallback for old browsers
-  font-size: $sizeValue * 1rem;
-}

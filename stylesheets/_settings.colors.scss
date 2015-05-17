@@ -2,18 +2,9 @@
 // ------------------------------------------------------------------------------------ */
 $white: #fff !default;
 $black: #000 !default;
-
 $success-color: #4AB471 !default;
-.success { color: $success-color; }
-.bgsuccess { background-color: $success-color; }
-
 $warning-color: #F3AE4E !default;
-.warning { color: $warning-color; }
-.bgwarning { background-color: $warning-color; }
-
 $danger-color: #CF5C60 !default;
-.danger { color: $danger-color; }
-.bgdanger { background-color: $danger-color; }
 
 // Set Brand colors
 //-------------------------------------------------------------------------- */
@@ -53,28 +44,13 @@ $brand-colors: (
   '3': $brand-color-3,
   '4': $brand-color-4,
   '5': $brand-color-5
-);
-
-// Loop through Brand Colors and output classes for each type
-//-------------------------------------------------------------------------- */
-@each $id, $color in $brand-colors {
-    .bg#{$id} { background-color: $color }
-    .tc#{$id} { color: $color }
-    .bc#{$id} { border-color: $color }
-}
+) !default;
 
 // Miscellaneous Color Helpers
 // ------------------------------------------------------------------------------------ */
 $bgw: $white !default;
-.bgw { background-color: $bgw; }
-
-.xbg { background: none; }
-
 $tcw: $white !default;
-.tcw { color: $tcw; }
-
 $bcw: $white !default;
-.bcw { color: $bcw;}
 
 // Grayscale Colors
 // ------------------------------------------------------------------------------------ */
@@ -102,17 +78,6 @@ $bgg70: $g70;
 $bgg80: $g80;
 $bgg90: $g90;
 
-.bgg05 { background-color: $bgg05 }
-.bgg10 { background-color: $bgg10 }
-.bgg20 { background-color: $bgg20 }
-.bgg30 { background-color: $bgg30 }
-.bgg40 { background-color: $bgg40 }
-.bgg50 { background-color: $bgg50 }
-.bgg60 { background-color: $bgg60 }
-.bgg70 { background-color: $bgg70 }
-.bgg80 { background-color: $bgg80 }
-.bgg90 { background-color: $bgg90 }
-
 // Text Colors
 // ------------------------------------------------------------------------------------ */
 $tcg05: $g05;
@@ -126,17 +91,6 @@ $tcg70: $g70;
 $tcg80: $g80;
 $tcg90: $g90;
 
-.tcg05 { color: $tcg05 }
-.tcg10 { color: $tcg10 }
-.tcg20 { color: $tcg20 }
-.tcg30 { color: $tcg30 }
-.tcg40 { color: $tcg40 }
-.tcg50 { color: $tcg50 }
-.tcg60 { color: $tcg60 }
-.tcg70 { color: $tcg70 }
-.tcg80 { color: $tcg80 }
-.tcg90 { color: $tcg90 }
-
 // Border Colors
 // ------------------------------------------------------------------------------------ */
 $bcg05: $g05;
@@ -149,14 +103,3 @@ $bcg60: $g60;
 $bcg70: $g70;
 $bcg80: $g80;
 $bcg90: $g90;
-
-.bcg05 { border-color: $bcg05 }
-.bcg10 { border-color: $bcg10 }
-.bcg20 { border-color: $bcg20 }
-.bcg30 { border-color: $bcg30 }
-.bcg40 { border-color: $bcg40 }
-.bcg50 { border-color: $bcg50 }
-.bcg60 { border-color: $bcg60 }
-.bcg70 { border-color: $bcg70 }
-.bcg80 { border-color: $bcg80 }
-.bcg90 { border-color: $bcg90 }
