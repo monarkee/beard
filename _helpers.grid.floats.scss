@@ -1,0 +1,39 @@
+// Grid Layout
+//-------------------------------------------------------------------------- */
+
+// Default Wrap Padding
+//-------------------------------------------------------------------------- */
+$beard-spacing-sm: 2rem !default;
+$beard-spacing-md: 4rem !default;
+$beard-spacing-lg: 6rem !default;
+$beard-spacing-xlg: 6rem !default;
+
+// Row
+//-------------------------------------------------------------------------- */
+.row {
+    @extend %clearfix;
+}
+
+.row [class^="md-col"],
+.row [class^="lg-col"],
+.row [class^="col"],
+
+// Columns
+//-------------------------------------------------------------------------- */
+// This sets the column width
+$column-width: 100% / $beard-grid-column-count;
+
+@for $i from 1 through $beard-grid-column-count {
+    // Generate basic column widths
+    .col#{$i} {
+        @include media($md) {
+            width: $column-width * $i;
+        }
+    }
+
+    // Add padding to horizontal
+    .row--pad .col#{$i} {
+        padding-left: $beard-spacing-sm;
+        padding-right: $beard-spacing-sm;
+    }
+}
