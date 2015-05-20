@@ -12,14 +12,13 @@
 }
 
 .frame {
-    display: flex;
     margin-left: -$beard-grid-gutter;
     margin-right: -$beard-grid-gutter;
-    flex-direction: row;
-    flex-wrap: wrap;
 
-    @include media($only-sm) {
-        flex-direction: column;
+    @include media($md) {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
     }
 }
 
