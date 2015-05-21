@@ -4,20 +4,9 @@
 // Center
 //-------------------------------------------------------------------------- */
 %center,
-.center { margin-left: auto; margin-right: auto; }
-
-// Wrap
-//-------------------------------------------------------------------------- */
-%wrap,
-.wrap {
-    @extend %site-width;
-    @extend %center;
-}
-
-%wrap--pad,
-.wrap--pad {
-    padding-left: $beard-spacing-sm;
-    padding-right: $beard-spacing-sm;
+.center {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 // Typeface Helper
@@ -94,3 +83,8 @@
 // ------------------------------------------------------------------------------------
 .imax { max-width: 100%; width: auto; height: auto; }
 .i100 { width: 100%; }
+
+// Background Helpers
+//-------------------------------------------------------------------------- */
+.bgcover { background-size: cover; }
+.bgcenter { background-position: center; }
