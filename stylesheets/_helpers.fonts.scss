@@ -16,12 +16,12 @@
 
 // Font Weight Helpers
 //-------------------------------------------------------------------------- */
-.fwthin { font-weight: $thin; }
-.fwxlight { font-weight: $xlight; }
-.fwlight { font-weight: $light; }
-.fwnormal { font-weight: $normal; }
-.fwmedium { font-weight: $medium; }
-.fwsemibold { font-weight: $semibold; }
-.fwbold { font-weight: $bold; }
-.fwxbold { font-weight: $xbold; }
-.fwxxbold { font-weight: $xxbold; }
+.fw1, .fwthin { font-weight: $thin !important; }
+.fw2, .fwxlight { font-weight: $xlight !important; }
+.fw3, .fwlight { font-weight: $light !important; }
+.fw4, .fwnormal { font-weight: $normal !important; }
+.fw5, .fwmedium { font-weight: $medium !important; }
+.fw6, .fwsemibold { font-weight: $semibold !important; }
+.fw7, .fwbold { font-weight: $bold !important; }
+.fw8, .fwxbold { font-weight: $xbold !important; }
+.fw9, .fwxxbold { font-weight: $xxbold !important; }
