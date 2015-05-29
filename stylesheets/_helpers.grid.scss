@@ -1,7 +1,7 @@
 // Response Flexbox Grid
 //-------------------------------------------------------------------------- */
 .wrap {
-    max-width: 1140px;
+    max-width: $site-width;
     margin-left: auto;
     margin-right: auto;
 }
@@ -24,7 +24,7 @@
 
 .frame--stay {
     @include media($only-sm) {
-        flex-direction: row;
+        display: flex;
     }
 }
 
