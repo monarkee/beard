@@ -12,7 +12,7 @@
 .lh1-9 { line-height: 1.9 !important; }
 .lh2 { line-height: 2 !important; }
 
-if $beard-enable-responsive == true {
+@if $beard-enable-responsive == true {
     @each $key, $breakpoint in $breakpoints {
         .#{$key}-lh1 { @include media($breakpoint) { line-height: 1 !important; } }
         .#{$key}-lh1-1 { @include media($breakpoint) { line-height: 1.1 !important; } }

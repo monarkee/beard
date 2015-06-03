@@ -5,57 +5,6 @@ $position-units: (
     margin: 'm'
     );
 
-// Padding Helpers
-// ------------------------------------------------------------------------------------
-.xp { padding: 0; }
-.xpv { padding-top: 0; padding-bottom: 0; }
-.xph { padding-left: 0; padding-right: 0 }
-
-// Margin Helpers
-// ------------------------------------------------------------------------------------
-.xm { margin: 0; }
-.xmv { margin-top: 0; margin-bottom: 0; }
-.xmh { margin-left: 0; margin-right: 0; }
-
-
-@if $beard-enable-responsive == true and $beard-enable-spacing-helpers == true {
-    @each $id, $position in $position-units {
-        @each $key, $breakpoint in $breakpoints {
-
-            // Generates classes like this: `sm-xm` and `md-xmh`
-            .#{$key}-x#{$position} {
-                @include media($breakpoint) {
-                    #{$id}: 0;
-                }
-            }
-
-            // Vertical Spacing Removal
-            .#{$key}-x#{$position}v {
-                @include media($breakpoint) {
-                    #{$id}-top: 0;
-                    #{$id}-bottom: 0;
-                }
-            }
-
-            // Horizontal Spacing Removal
-            .#{$key}-x#{$position}h {
-                @include media($breakpoint) {
-                    #{$id}-left: 0;
-                    #{$id}-right: 0;
-                }
-            }
-
-            // Horizontal Centering
-            .#{$key}-center {
-                @include media($breakpoint) {
-                    #{$id}-left: auto;
-                    #{$id}-right: auto;
-                }
-            }
-        }
-    }
-}
-
 // Generate Responsive Spacing Helpers
 //-------------------------------------------------------------------------- */
 // @if $beard-enable-spacing-helpers == true {
@@ -139,3 +88,54 @@ $position-units: (
         }
     }
 // }
+
+// Padding Removal Helpers
+// ------------------------------------------------------------------------------------
+.xp { padding: 0 !important; }
+.xpv { padding-top: 0 !important; padding-bottom: 0 !important; }
+.xph { padding-left: 0 !important; padding-right: 0 !important; }
+
+// Margin Removal Helpers
+// ------------------------------------------------------------------------------------
+.xm { margin: 0 !important; }
+.xmv { margin-top: 0 !important; margin-bottom: 0 !important; }
+.xmh { margin-left: 0 !important; margin-right: 0 !important; }
+
+
+@if $beard-enable-responsive == true and $beard-enable-spacing-helpers == true {
+    @each $id, $position in $position-units {
+        @each $key, $breakpoint in $breakpoints {
+
+            // Generates classes like this: `sm-xm` and `md-xmh`
+            .#{$key}-x#{$position} {
+                @include media($breakpoint) {
+                    #{$id}: 0 !important;
+                }
+            }
+
+            // Vertical Spacing Removal
+            .#{$key}-x#{$position}v {
+                @include media($breakpoint) {
+                    #{$id}-top: 0 !important;
+                    #{$id}-bottom: 0 !important;
+                }
+            }
+
+            // Horizontal Spacing Removal
+            .#{$key}-x#{$position}h {
+                @include media($breakpoint) {
+                    #{$id}-left: 0 !important;
+                    #{$id}-right: 0 !important;
+                }
+            }
+
+            // Horizontal Centering
+            .#{$key}-center {
+                @include media($breakpoint) {
+                    #{$id}-left: auto;
+                    #{$id}-right: auto;
+                }
+            }
+        }
+    }
+}
