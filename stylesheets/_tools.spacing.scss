@@ -10,6 +10,9 @@
 }
 
 // Build the initial list of spacing amounts
-@for $i from 0 through $beard-spacing-helper-amount {
+@for $i from 1 through $beard-spacing-helper-amount {
     $spacing-amounts: new-spacing-helper($i);
 }
+
+// Add the zero spacing helper manually so it's last in the source order
+@include new-spacing-helper('0');
