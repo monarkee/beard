@@ -1,0 +1,9 @@
+// Border Helpers
+// -------------------------------------------------------------------------- */
+@for $i from 0 through 2 {
+    .brdr#{$i} { border-style: solid !important; border-width: #{$i}px !important; }
+    .brdr#{$i}--top { border-top-style: solid !important; border-top-width: #{$i}px !important; }
+    .brdr#{$i}--right { border-top-style: solid !important; border-right-width: #{$i}px !important; }
+    .brdr#{$i}--bottom { border-top-style: solid !important; border-bottom-width: #{$i}px !important; }
+    .brdr#{$i}--left { border-top-style: solid !important; border-left-width: #{$i}px !important; }
+}
