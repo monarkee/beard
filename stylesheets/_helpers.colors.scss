@@ -1,63 +1,11 @@
-// Global Colors
-// ------------------------------------------------------------------------------------ */
-.success { color: $success-color; }
-.bgsuccess { background-color: $success-color; }
-.warning { color: $warning-color; }
-.bgwarning { background-color: $warning-color; }
-.danger { color: $danger-color; }
-.bgdanger { background-color: $danger-color; }
-
 // Loop through Brand Colors and output classes for each type
 //-------------------------------------------------------------------------- */
-@if $beard-enable-responsive == true {
-    @each $id, $color in $brand-colors {
-        .bg#{$id} { background-color: $color }
-        .tc#{$id} { color: $color }
-        .bc#{$id} { border-color: $color }
-    }
+@each $id, $color in $beard-colors {
+    .bg#{$id} { background-color: $color !important; }
+    .tc#{$id} { color: $color !important; }
+    .bc#{$id} { border-color: $color !important; }
 }
 
-// Miscellaneous Color Helpers
-// ------------------------------------------------------------------------------------ */
-.bgw { background-color: $bgw }
-.xbg { background: none }
-.tcw { color: $tcw }
-.bcw { color: $bcw}
-
-// Grayscale Colors
-.bgg05 { background-color: $bgg05 }
-.bgg10 { background-color: $bgg10 }
-.bgg20 { background-color: $bgg20 }
-.bgg30 { background-color: $bgg30 }
-.bgg40 { background-color: $bgg40 }
-.bgg50 { background-color: $bgg50 }
-.bgg60 { background-color: $bgg60 }
-.bgg70 { background-color: $bgg70 }
-.bgg80 { background-color: $bgg80 }
-.bgg90 { background-color: $bgg90 }
-
-// Text Colors
-// ------------------------------------------------------------------------------------ */
-.tcg05 { color: $tcg05 }
-.tcg10 { color: $tcg10 }
-.tcg20 { color: $tcg20 }
-.tcg30 { color: $tcg30 }
-.tcg40 { color: $tcg40 }
-.tcg50 { color: $tcg50 }
-.tcg60 { color: $tcg60 }
-.tcg70 { color: $tcg70 }
-.tcg80 { color: $tcg80 }
-.tcg90 { color: $tcg90 }
-
-// Border Colors
-// ------------------------------------------------------------------------------------ */
-.bcg05 { border-color: $bcg05 }
-.bcg10 { border-color: $bcg10 }
-.bcg20 { border-color: $bcg20 }
-.bcg30 { border-color: $bcg30 }
-.bcg40 { border-color: $bcg40 }
-.bcg50 { border-color: $bcg50 }
-.bcg60 { border-color: $bcg60 }
-.bcg70 { border-color: $bcg70 }
-.bcg80 { border-color: $bcg80 }
-.bcg90 { border-color: $bcg90 }
+// Color Removal Helpers
+// ------------------------------------------------------------------------- */
+.xbg { background-color: transparent !important; }

@@ -1,15 +1,15 @@
 // Border Radius Helpers
 // ------------------------------------------------------------------------------------
 @for $i from 1 through $border-radius-amount {
-  .br#{$i} { border-radius: #{$i}px; }
-  .blr#{$i} { border-top-left-radius: #{$i}px; border-bottom-left-radius: #{$i}px; }
-  .brr#{$i} { border-top-right-radius: #{$i}px; border-bottom-right-radius: #{$i}px; }
-  .btlr#{$i} { border-top-left-radius: #{$i}px;  }
-  .btrr#{$i} { border-top-right-radius: #{$i}px; }
-  .bbrr#{$i} { border-bottom-right-radius: #{$i}px; }
-  .bblr#{$i} { border-bottom-left-radius: #{$i}px; }
+  .br#{$i} { border-radius: #{$i}px !important; }
+  .blr#{$i} { border-top-left-radius: #{$i}px !important; border-bottom-left-radius: #{$i}px !important; }
+  .brr#{$i} { border-top-right-radius: #{$i}px !important; border-bottom-right-radius: #{$i}px !important; }
+  .btlr#{$i} { border-top-left-radius: #{$i}px !important;  }
+  .btrr#{$i} { border-top-right-radius: #{$i}px !important; }
+  .bbrr#{$i} { border-bottom-right-radius: #{$i}px !important; }
+  .bblr#{$i} { border-bottom-left-radius: #{$i}px !important; }
 }
 
 // Circle Images
 // ------------------------------------------------------------------------------------
-.circle { border-radius: $circle-img-radius; }
+.circle { border-radius: $circle-img-radius !important; }
