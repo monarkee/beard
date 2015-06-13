@@ -1,0 +1,12 @@
+@mixin media($breakpoint) {
+  @if map_has_key($breakpoints, $breakpoint) != false {
+    @media #{map-get($breakpoints, $breakpoint)} {
+      @content;
+    }
+  }
+}
+
+@mixin new-breakpoint($label, $def) {
+  $map2: ($label: $def);
+  $breakpoints: map-merge($breakpoints, $map2) !global;
+}

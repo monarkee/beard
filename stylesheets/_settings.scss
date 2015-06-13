@@ -17,25 +17,25 @@ $beard-enable-spacing-helpers: true !default;
 // Responsive Breakpoints
 //-------------------------------------------------------------------------- */
 @if $beard-enable-responsive == true {
-    $sm: 'only screen and (min-width: 300px)' !default;
-    $md: 'only screen and (min-width: 600px)' !default;
-    $lg: 'only screen and (min-width: 900px)' !default;
-    $xlg: 'only screen and (min-width: 1440px)' !default;
+    $beard-breakpoint-sm: 'only screen and (min-width: 300px)' !default;
+    $beard-breakpoint-md: 'only screen and (min-width: 600px)' !default;
+    $beard-breakpoint-lg: 'only screen and (min-width: 900px)' !default;
+    $beard-breakpoint-xlg: 'only screen and (min-width: 1440px)' !default;
 
-    $only-sm: 'only screen and (max-width: 599px)' !default;
-    $only-md: 'only screen and (min-width: 600px) and (max-width: 899px)' !default;
-    $only-lg: 'only screen and (min-width: 900px) and (max-width: 1439px)' !default;
-    $only-xlg: 'only screen and (min-width: 1440px)' !default;
+    $beard-breakpoint-only-sm: 'only screen and (max-width: 599px)' !default;
+    $beard-breakpoint-only-md: 'only screen and (min-width: 600px) and (max-width: 899px)' !default;
+    $beard-breakpoint-only-lg: 'only screen and (min-width: 900px) and (max-width: 1439px)' !default;
+    $beard-breakpoint-only-xlg: 'only screen and (min-width: 1440px)' !default;
 
     $breakpoints: (
-        sm $sm,
-        only-sm $only-sm,
-        md $md,
-        only-md $only-md,
-        lg $lg,
-        only-lg $only-lg,
-        xlg $xlg,
-        only-xlg $only-xlg
+        sm: $beard-breakpoint-sm,
+        only-sm: $beard-breakpoint-only-sm,
+        md: $beard-breakpoint-md,
+        only-md: $beard-breakpoint-only-md,
+        lg: $beard-breakpoint-lg,
+        only-lg: $beard-breakpoint-only-lg,
+        xlg: $beard-breakpoint-xlg,
+        only-xlg: $beard-breakpoint-only-xlg
     ) !default;
 }
 
