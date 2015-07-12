@@ -15,7 +15,7 @@
     margin-left: -$beard-grid-gutter;
     margin-right: -$beard-grid-gutter;
 
-    @include media($beard-breakpoint-md) {
+    @include media(md) {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
@@ -23,7 +23,7 @@
 }
 
 .frame--stay {
-    @include media($beard-breakpoint-only-sm) {
+    @include media(only-sm) {
         display: flex;
     }
 }
