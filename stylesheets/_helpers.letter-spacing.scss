@@ -23,7 +23,7 @@ $letter-spacing-values: (
     @if $beard-enable-responsive == true {
         @each $key, $breakpoint in $breakpoints {
             .#{$key}-#{$name} {
-                @include media($breakpoint) {
+                @include media($key) {
                     letter-spacing: $amount;
                 }
             }

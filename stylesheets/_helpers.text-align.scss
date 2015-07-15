@@ -6,8 +6,8 @@
 
 @if $beard-enable-responsive == true {
     @each $key, $breakpoint in $breakpoints {
-        .#{$key}-tal { @include media($breakpoint) { text-align: left !important; } }
-        .#{$key}-tac { @include media($breakpoint) { text-align: center !important; } }
-        .#{$key}-tar { @include media($breakpoint) { text-align: right !important; } }
+        .#{$key}-tal { @include media($key) { text-align: left !important; } }
+        .#{$key}-tac { @include media($key) { text-align: center !important; } }
+        .#{$key}-tar { @include media($key) { text-align: right !important; } }
     }
 }

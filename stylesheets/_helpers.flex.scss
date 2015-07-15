@@ -50,19 +50,19 @@
 @if $beard-enable-responsive == true {
     @each $key, $breakpoint in $breakpoints {
         .#{$key}-flex {
-            @include media($breakpoint) {
+            @include media($key) {
                 display: flex;
             }
         }
 
         .#{$key}-iflex {
-            @include media($breakpoint) {
+            @include media($key) {
                 display: inline-flex;
             }
         }
 
         .#{$key}-fb100 {
-            @include media($breakpoint) {
+            @include media($key) {
                 flex-basis: 100%;
             }
         }
@@ -70,43 +70,43 @@
         // Flex Direction
         //-------------------------------------------------------------------------- */
         .#{$key}-fdr {
-            @include media($breakpoint) {
+            @include media($key) {
                 flex-direction: row;
             }
         }
 
         .#{$key}-fdrr {
-            @include media($breakpoint) {
+            @include media($key) {
                 flex-direction: row-reverse;
             }
         }
 
         .#{$key}-fdc {
-            @include media($breakpoint) {
+            @include media($key) {
                 flex-direction: column;
             }
         }
 
         .#{$key}-fdcr {
-            @include media($breakpoint) {
+            @include media($key) {
                 flex-direction: column-reverse;
             }
         }
 
         .#{$key}-fwn {
-            @include media($breakpoint) {
+            @include media($key) {
                 flex-wrap: nowrap;
             }
         }
 
         .#{$key}-fww {
-            @include media($breakpoint) {
+            @include media($key) {
                 flex-wrap: wrap;
             }
         }
 
         .#{$key}-fwr {
-            @include media($breakpoint) {
+            @include media($key) {
                 flex-wrap: wrap-reverse;
             }
         }
@@ -114,31 +114,31 @@
         // Justify Content
         //-------------------------------------------------------------------------- */
         .#{$key}-jcc {
-            @include media($breakpoint) {
+            @include media($key) {
                 justify-content: center;
             }
         }
 
         .#{$key}-jcsb {
-            @include media($breakpoint) {
+            @include media($key) {
                 justify-content: space-between;
             }
         }
 
         .#{$key}-jcsa {
-            @include media($breakpoint) {
+            @include media($key) {
                 justify-content: space-around;
             }
         }
 
         .#{$key}-jcfs {
-            @include media($breakpoint) {
+            @include media($key) {
                 justify-content: flex-start;
             }
         }
 
         .#{$key}-jcfe {
-            @include media($breakpoint) {
+            @include media($key) {
                 justify-content: flex-end;
             }
         }
@@ -146,31 +146,31 @@
         // Align Items
         //-------------------------------------------------------------------------- */
         .#{$key}-aic {
-            @include media($breakpoint) {
+            @include media($key) {
                 align-items: center;
             }
         }
 
         .#{$key}-aifs {
-            @include media($breakpoint) {
+            @include media($key) {
                 align-items: flex-start;
             }
         }
 
         .#{$key}-aife {
-            @include media($breakpoint) {
+            @include media($key) {
                 align-items: flex-end;
             }
         }
 
         .#{$key}-ais {
-            @include media($breakpoint) {
+            @include media($key) {
                 align-items: stretch;
             }
         }
 
         .#{$key}-aib {
-            @include media($breakpoint) {
+            @include media($key) {
                 align-items: baseline;
             }
         }
@@ -178,31 +178,31 @@
         // Align Content
         //-------------------------------------------------------------------------- */
         .#{$key}-acc {
-            @include media($breakpoint) {
+            @include media($key) {
                 align-content: center;
             }
         }
 
         .#{$key}-acfs {
-            @include media($breakpoint) {
+            @include media($key) {
                 align-content: flex-start;
             }
         }
 
         .#{$key}-acfe {
-            @include media($breakpoint) {
+            @include media($key) {
                 align-content: flex-end;
             }
         }
 
         .#{$key}-acs {
-            @include media($breakpoint) {
+            @include media($key) {
                 align-content: stretch;
             }
         }
 
         .#{$key}-acb {
-            @include media($breakpoint) {
+            @include media($key) {
                 align-content: baseline;
             }
         }

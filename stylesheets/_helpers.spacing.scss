@@ -16,7 +16,7 @@ $position-units: (
 
             @each $key, $breakpoint in $breakpoints {
                 .#{$key}-#{$position}t#{$i} {
-                    @include media($breakpoint) {
+                    @include media($key) {
                         #{$id}-top: #{$i}rem !important;
                     }
                 }
@@ -28,7 +28,7 @@ $position-units: (
 
             @each $key, $breakpoint in $breakpoints {
                 .#{$key}-#{$position}r#{$i} {
-                    @include media($breakpoint) {
+                    @include media($key) {
                         #{$id}-right: #{$i}rem !important;
                     }
                 }
@@ -40,7 +40,7 @@ $position-units: (
 
             @each $key, $breakpoint in $breakpoints {
                 .#{$key}-#{$position}b#{$i} {
-                    @include media($breakpoint) {
+                    @include media($key) {
                         #{$id}-bottom: #{$i}rem !important;
                     }
                 }
@@ -52,7 +52,7 @@ $position-units: (
 
             @each $key, $breakpoint in $breakpoints {
                 .#{$key}-#{$position}l#{$i} {
-                    @include media($breakpoint) {
+                    @include media($key) {
                         #{$id}-left: #{$i}rem !important;
                     }
                 }
@@ -65,7 +65,7 @@ $position-units: (
 
             @each $key, $breakpoint in $breakpoints {
                 .#{$key}-#{$position}v#{$i} {
-                    @include media($breakpoint) {
+                    @include media($key) {
                         #{$id}-top: #{$i}rem !important;
                         #{$id}-bottom: #{$i}rem !important;
                     }
@@ -79,7 +79,7 @@ $position-units: (
 
             @each $key, $breakpoint in $breakpoints {
                 .#{$key}-#{$position}h#{$i} {
-                    @include media($breakpoint) {
+                    @include media($key) {
                         #{$id}-left: #{$i}rem !important;
                         #{$id}-right: #{$i}rem !important;
                     }
@@ -108,14 +108,14 @@ $position-units: (
 
             // Generates classes like this: `sm-xm` and `md-xmh`
             .#{$key}-x#{$position} {
-                @include media($breakpoint) {
+                @include media($key) {
                     #{$id}: 0 !important;
                 }
             }
 
             // Vertical Spacing Removal
             .#{$key}-x#{$position}v {
-                @include media($breakpoint) {
+                @include media($key) {
                     #{$id}-top: 0 !important;
                     #{$id}-bottom: 0 !important;
                 }
@@ -123,7 +123,7 @@ $position-units: (
 
             // Horizontal Spacing Removal
             .#{$key}-x#{$position}h {
-                @include media($breakpoint) {
+                @include media($key) {
                     #{$id}-left: 0 !important;
                     #{$id}-right: 0 !important;
                 }
@@ -131,7 +131,7 @@ $position-units: (
 
             // Horizontal Centering
             .#{$key}-center {
-                @include media($breakpoint) {
+                @include media($key) {
                     #{$id}-left: auto !important;
                     #{$id}-right: auto !important;
                 }

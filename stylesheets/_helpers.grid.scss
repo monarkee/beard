@@ -70,7 +70,7 @@ $block-width: 100% / $beard-grid-block-count;
             .#{$key}-blk#{$i} {
                 @extend %blk-relative;
                 @extend %blk-padding;
-                @include media($breakpoint) {
+                @include media($key) {
                     flex-basis: $i * $block-width;
                 }
             }
@@ -92,7 +92,7 @@ $block-width: 100% / $beard-grid-block-count;
     @each $key, $breakpoint in $breakpoints {
         @for $i from 1 through $beard-grid-block-count {
             .#{$key}-blk--offset#{$i} {
-                @include media($breakpoint) {
+                @include media($key) {
                     margin-left: $i * $block-width;
                 }
             }
@@ -112,7 +112,7 @@ $block-width: 100% / $beard-grid-block-count;
     @each $key, $breakpoint in $breakpoints {
         @for $i from 1 through $beard-grid-block-count {
             .#{$key}-blk--push#{$i} {
-                @include media($breakpoint) {
+                @include media($key) {
                     left: $i * $block-width;
                 }
             }
@@ -132,7 +132,7 @@ $block-width: 100% / $beard-grid-block-count;
     @each $key, $breakpoint in $breakpoints {
         @for $i from 1 through $beard-grid-block-count {
             .#{$key}-blk--pull#{$i} {
-                @include media($breakpoint) {
+                @include media($key) {
                     right: $i * $block-width;
                 }
             }
@@ -150,7 +150,7 @@ $block-width: 100% / $beard-grid-block-count;
 // Responsive first and last helpers
 @if $beard-enable-responsive == true {
     @each $key, $breakpoint in $breakpoints {
-        .#{$key}-blk--first { @include media($breakpoint) { order: 0; } }
-        .#{$key}-blk--last { @include media($breakpoint) { order: 1; } }
+        .#{$key}-blk--first { @include media($key) { order: 0; } }
+        .#{$key}-blk--last { @include media($key) { order: 1; } }
     }
 }
