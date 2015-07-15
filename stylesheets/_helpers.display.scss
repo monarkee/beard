@@ -14,31 +14,31 @@
     @each $key, $breakpoint in $breakpoints {
           .#{$key}-db {
             @include media($breakpoint) {
-                display: block;
+                display: block !important;
             }
         }
 
         .#{$key}-di {
             @include media($breakpoint) {
-                display: inline;
+                display: inline !important;
             }
         }
 
         .#{$key}-dib {
             @include media($breakpoint) {
-                display: inline-block;
+                display: inline-block !important;
             }
         }
 
         .#{$key}-dn {
             @include media($breakpoint) {
-                display: none;
+                display: none !important;
             }
         }
 
         .#{$key}-df {
             @include media($breakpoint) {
-                display: flex;
+                display: flex !important;
             }
         }
     }
