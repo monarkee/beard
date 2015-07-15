@@ -1,9 +1,7 @@
-@mixin media($breakpoint) {
-  @if map_has_key($breakpoints, $breakpoint) != false {
-    @media #{map-get($breakpoints, $breakpoint)} {
-      @content;
-    }
-  }
+@mixin media($thepoint) {
+    $feature: 'only screen and ';
+    $media-query: $feature + $thepoint;
+    @media #{$media-query} { @content; }
 }
 
 @mixin new-breakpoint($label, $def) {
