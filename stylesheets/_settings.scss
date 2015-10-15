@@ -59,15 +59,15 @@ $code: Menlo, Consolas, Monaco, 'Andale Mono', monospace !default;
 // Value are based on a modular scale configured from here:
 // http://www.modularscale.com/?1,1.1,1.2&rem&1.5&web&text
 $ft1: 1 !default;
-$ft2: 1.1 !default;
-$ft3: 1.2 !default;
-$ft4: 1.5 !default;
-$ft5: 1.65 !default;
-$ft6: 1.8 !default;
-$ft7: 2.25 !default;
-$ft8: 2.475 !default;
-$ft9: 2.7 !default;
-$ft10: 3.375 !default;
+$ft2: 11 !default;
+$ft3: 12 !default;
+$ft4: 15 !default;
+$ft5: 16.5 !default;
+$ft6: 18 !default;
+$ft7: 22.5 !default;
+$ft8: 24.75 !default;
+$ft9: 27 !default;
+$ft10: 33.75 !default;
 
 $font-size-values: (
     ft1: $ft1,
