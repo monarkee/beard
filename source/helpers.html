@@ -11,8 +11,10 @@ layout: subpage
 <p class="tcg50 ft5 fw3 mb4 lh2">For example, say you are building a button component for your project. You want buttons to be able to have two background colors and two font colors. You may be tempted to write these classes:</p>
 
 <pre class="mb4"><code class="language-html">
-&lt;a class="button button--dark"&gt;Submit Me!&lt;/a&gt;
+&lt;a class="button dark"&gt;Submit Me!&lt;/a&gt;
 </code></pre>
+
+<p class="tcg50 ft5 fw3 mb4 lh2">There are a number of problems with this approach. It's hard to know what color "dark" is. Does it have more styles in it? Is it connected to the <code>button</code> class?</p>
 
 <p class="tcg50 ft5 fw3 mb4 lh2">In Beard, we would encourage you to use the built-in background and text color helper classes:</p>
 
@@ -20,7 +22,9 @@ layout: subpage
 &lt;a class="button bgb tcw"&gt;Submit Me!&lt;/a&gt;
 </code></pre>
 
-<p class="tcg50 ft5 fw3 mb4 lh2">This would apply a black background (<code>.bgb</code>) with white text (<code>.tcw</code>). Then, you choose to set up some default padding and border styles. Again, using Beard, we can optimize this process by using global helper classes.</p>
+<p class="tcg50 ft5 fw3 mb4 lh2">This would apply a black background (<code>.bgb</code>) with white text (<code>.tcw</code>). At first, the naming scheme seems odd, until you realize that Beard tries to follow a mnemonic approach.
+
+<p class="tcg50 ft5 fw3 mb4 lh2">Next, let's say you choose to set up some default padding and border styles. Again, using Beard, we can optimize this process by using global helper classes.</p>
 
 <pre class="mb4"><code class="language-scss">
 &lt;a class="button bgb tcw brdr1 bc1 pv1 ph2 br3"&gt;Submit Me!&lt;/a&gt;
@@ -36,7 +40,7 @@ layout: subpage
 &lt;/div&gt;
 </code></pre>
 
-<p class="tcg50 ft5 fw3 mb4 lh2">The clas <code>.card__button</code> could contain rules with absolute positioning, margins, or anything else specific to that "instance" of the component or something that Beard doesn't provide a handy helper for.</p>
+<p class="tcg50 ft5 fw3 mb4 lh2">The class <code>.card__button</code> could contain rules with absolute positioning, margins, or anything else specific to that "instance" of the component or something that Beard doesn't provide a handy helper for.</p>
 
 <hr class="mb4">
 
