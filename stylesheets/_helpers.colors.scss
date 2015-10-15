@@ -1,9 +1,18 @@
 // Loop through Brand Colors and output classes for each type
 //-------------------------------------------------------------------------- */
+
+// Generate Helpers for each color
 @each $id, $color in $beard-colors {
     .bg#{$id} { background-color: $color !important; }
     .tc#{$id} { color: $color !important; }
     .bc#{$id} { border-color: $color !important; }
+}
+
+// Generate helpers with hovers for each color
+@each $id, $color in $beard-colors {
+    .\:bg#{$id}:hover { background-color: $color !important; }
+    .\:tc#{$id}:hover { color: $color !important; }
+    .\:bc#{$id}:hover { border-color: $color !important; }
 }
 
 // Color Removal Helpers
