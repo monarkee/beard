@@ -25,6 +25,7 @@
     "tests",
     "output_dev",
     "output_prod",
-    "app"
+    "app",
+    "source",
   ]
 }
