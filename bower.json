@@ -26,6 +26,6 @@
     "output_dev",
     "output_prod",
     "app",
-    "source",
+    "source"
   ]
 }
