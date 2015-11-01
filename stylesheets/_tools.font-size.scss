@@ -1,6 +1,10 @@
 // Font Size Mixin
 //-------------------------------------------------------------------------- */
+@function font-size($size) {
+    @return #{$size / 10}rem;
+}
+
 @mixin font-size($size: 12) {
   font-size: #{$size}px;
-  font-size: #{$size / 10}rem;
+  font-size: font-size($size);
 }
