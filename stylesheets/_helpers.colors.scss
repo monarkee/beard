@@ -15,6 +15,20 @@
     .\:bc#{$id}:hover { border-color: $color !important; }
 }
 
+// Generate focus helpers for each color
+@each $id, $color in $beard-colors {
+    .\:\:bg#{$id}:focus { background-color: $color !important; }
+    .\:\:tc#{$id}:focus { color: $color !important; }
+    .\:\:bc#{$id}:focus { border-color: $color !important; }
+}
+
+// Generate active helpers for each color
+@each $id, $color in $beard-colors {
+    .\@bg#{$id}:active { background-color: $color !important; }
+    .\@tc#{$id}:active { color: $color !important; }
+    .\@bc#{$id}:active { border-color: $color !important; }
+}
+
 // Color Removal Helpers
 // ------------------------------------------------------------------------- */
 .xbg { background-color: transparent !important; }

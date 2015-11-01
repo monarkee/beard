@@ -2,7 +2,6 @@
 var gulp = require('gulp'),
     gutil = require('gulp-util'),
     autoprefixer = require('gulp-autoprefixer'),
-    plumber = require('gulp-plumber');
     sass = require('gulp-sass'),
     minifycss = require('gulp-minify-css');
 
@@ -16,7 +15,6 @@ var paths = {
 // SCSS Compiling and Minification
 gulp.task('sass', function() {
     return gulp.src('beard.scss')
-        .pipe(plumber())
         .pipe(sass({
             debugInfo: false,
             lineNumbers: false
