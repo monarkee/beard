@@ -1,5 +1,5 @@
 @mixin media($thepoint) {
-    $feature: 'only screen and ';
+    $feature: 'screen and ';
     $value: map-get($breakpoints, $thepoint);
     $media-query: $feature + $value;
     @media #{$media-query} { @content; }

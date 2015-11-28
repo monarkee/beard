@@ -9,12 +9,12 @@
     <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1' /><![endif]-->
     <title>Beard</title>
     <meta name="viewport" content="width=device-width">
-    <link href="http://fonts.googleapis.com/css?family=Roboto:400,900,700,500,300,100" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="/css/beard.css">
     <link rel="stylesheet" href="/css/prism-ghcolors.css">
     <style type="text/css">
         body {
-            font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
         }
 
         :not(pre) > code {
@@ -72,40 +72,9 @@
 
         .pv05 { padding-top: 0.5rem; padding-bottom: 0.5rem; }
 
-        .pre {
-            /*background: rgb(250, 250, 250);*/
-            /*padding: 0.5rem 1rem;*/
-            /*color: #666;*/
-            /*border-radius: 3px;*/
-            /*text-shadow: 0 1px 0 #fff;*/
-            /*border: 1px solid rgb(220, 220, 220);*/
-
-            /*overflow: auto;*/
-            /*text-shadow: 0 1px white;*/
-            /*font-family: Consolas, Monaco, 'Andale Mono', monospace;*/
-            /*direction: ltr;*/
-            /*text-align: left;*/
-            /*white-space: pre;*/
-            /*word-spacing: normal;*/
-            /*word-break: normal;*/
-            /*line-height: 1.7;*/
-            /*font-size: 11.5px;*/
+        .badge {
+            padding: 4px 6px;
         }
-
-        /*.pre > .code {
-            color: #666;
-            text-shadow: 0 1px white;
-            font-family: Consolas, Monaco, 'Andale Mono', monospace;
-            direction: ltr;
-            text-align: left;
-            white-space: pre;
-            word-spacing: normal;
-            word-break: normal;
-            line-height: 1.7;
-            font-size: 11.5px;
-            tab-size: 4;
-            hyphens: none;
-        }*/
 
     </style>
 <style type="text/css"></style></head>
@@ -113,7 +82,9 @@
     <header class="main-header">
         <div class="flex jcsb aic pv3 ph3">
             <div class="flex aic">
-                <h1 class="logo ft7 md-ft9 tc1 uppercase ls1 fwxxbold">Beard</h1>
+                <h1 class="logo ft7 md-ft9 uppercase ls1 fwxxbold">
+                    <a href="/" class="tc1">Beard</a>
+                </h1>
                 <p class="dn lg-db ml2 tcg40 ft4">The CSS Framework for people who ain't fuckin around</p>
             </div>
             <div class="flex aic">
@@ -132,27 +103,11 @@
     <main class="flex">
     <aside class="main-sidebar brdr1--right bcg10">
     <div class="wrap wrap--pad">
-        <ul class="mt4 mb3">
-            <li class="ft4 pv1">
-                <a href="/" class="tc1">Home</a>
-            </li>
-        </ul>
-
-        <!-- <h2 class="ft6 pv1 tcg60 mt2 fw3">Philosophy</h2>
+        <h2 class="ft6 pv1 tcg60 mt4 fw3">Getting Started</h2>
         <ul class="mb3">
             <li class="ft4 pv1">
-                <a href="" class="tc1">Why Beard?</a>
+                <a href="/philosophy" class="tc1">Philosophy</a>
             </li>
-            <li class="ft4 pv1">
-                <a href="" class="tc1">Inspiration</a>
-            </li>
-            <li class="ft4 pv1">
-                <a href="" class="tc1">Credits</a>
-            </li>
-        </ul> -->
-
-        <h2 class="ft6 pv1 tcg60 mt2 fw3">Getting Started</h2>
-        <ul class="mb3">
             <li class="ft4 pv1">
                 <a href="/installation" class="tc1">Installation</a>
             </li>
@@ -166,11 +121,11 @@
             <li class="ft4 pv1">
                 <a href="/tools" class="tc1">Tools</a>
                 <ul class="mt1">
-                    <li class="ft3 pv1 ml1"><a href="/tools#appearance" class="tcg40">appearance()</a></li>
-                    <li class="ft3 pv1 ml1"><a href="/tools#media" class="tcg40">media()</a></li>
-                    <li class="ft3 pv1 ml1"><a href="/tools#new-breakpoint" class="tcg40">new-breakpoint()</a></li>
-                    <li class="ft3 pv1 ml1"><a href="/tools#font-size" class="tcg40">font-size()</a></li>
-                    <li class="ft3 pv1 ml1"><a href="/tools#new-spacing-helper" class="tcg40">new-spacing-helper()</a></li>
+                    <li class="ft4 ml1 mb1"><a href="/tools#appearance" class="tcg40">appearance()</a></li>
+                    <li class="ft4 ml1 mb1"><a href="/tools#media" class="tcg40">media()</a></li>
+                    <li class="ft4 ml1 mb1"><a href="/tools#new-breakpoint" class="tcg40">new-breakpoint()</a></li>
+                    <li class="ft4 ml1 mb1"><a href="/tools#font-size" class="tcg40">font-size()</a></li>
+                    <li class="ft4 ml1 mb1"><a href="/tools#new-spacing-helper" class="tcg40">new-spacing-helper()</a></li>
                 </ul>
             </li>
             <li class="ft4 pv1">
@@ -179,21 +134,21 @@
             <li class="ft4 pv1">
                 <a href="/helpers" class="tc1">Helpers</a>
                 <ul class="mt1">
-                    <li class="ft3 pv1 ml1"><a href="/helpers#text-align" class="tcg40">Text align</a></li>
-                    <li class="ft3 pv1 ml1"><a href="/helpers#spacing" class="tcg40">Spacing</a></li>
-                    <li class="ft3 pv1 ml1"><a href="/helpers#line-heights" class="tcg40">Line heights</a></li>
-                    <li class="ft3 pv1 ml1"><a href="/helpers#letterspacing" class="tcg40">Letterspacing</a></li>
-                    <li class="ft3 pv1 ml1"><a href="/helpers#fonts" class="tcg40">Fonts</a></li>
-                    <li class="ft3 pv1 ml1"><a href="/helpers#grid" class="tcg40">Grid</a></li>
-                    <li class="ft3 pv1 ml1"><a href="/helpers#floats" class="tcg40">Floats</a></li>
-                    <li class="ft3 pv1 ml1"><a href="/helpers#display" class="tcg40">Display</a></li>
-                    <li class="ft3 pv1 ml1"><a href="/helpers#flex" class="tcg40">Flex</a></li>
-                    <li class="ft3 pv1 ml1"><a href="/helpers#overflow" class="tcg40">Overflow</a></li>
-                    <li class="ft3 pv1 ml1"><a href="/helpers#colors" class="tcg40">Colors</a></li>
-                    <li class="ft3 pv1 ml1"><a href="/helpers#position" class="tcg40">Position</a></li>
-                    <li class="ft3 pv1 ml1"><a href="/helpers#borders" class="tcg40">Borders</a></li>
-                    <li class="ft3 pv1 ml1"><a href="/helpers#border-radius" class="tcg40">Border Radius</a></li>
-                    <li class="ft3 pv1 ml1"><a href="/helpers#misc" class="tcg40">Misc</a></li>
+                    <li class="ft4 ml1 mb1"><a href="/text-alignment" class="tcg40">Text alignment</a></li>
+                    <li class="ft4 ml1 mb1"><a href="/spacing" class="tcg40">Spacing</a></li>
+                    <li class="ft4 ml1 mb1"><a href="/line-heights" class="tcg40">Line heights</a></li>
+                    <li class="ft4 ml1 mb1"><a href="/letterspacing" class="tcg40">Letterspacing</a></li>
+                    <li class="ft4 ml1 mb1"><a href="/fonts" class="tcg40">Fonts</a></li>
+                    <li class="ft4 ml1 mb1"><a href="/grid" class="tcg40">Grid</a></li>
+                    <li class="ft4 ml1 mb1"><a href="/floats" class="tcg40">Floats</a></li>
+                    <li class="ft4 ml1 mb1"><a href="/display" class="tcg40">Display</a></li>
+                    <li class="ft4 ml1 mb1"><a href="/flex" class="tcg40">Flex</a></li>
+                    <li class="ft4 ml1 mb1"><a href="/overflow" class="tcg40">Overflow</a></li>
+                    <li class="ft4 ml1 mb1"><a href="/colors" class="tcg40">Colors</a></li>
+                    <li class="ft4 ml1 mb1"><a href="/position" class="tcg40">Position</a></li>
+                    <li class="ft4 ml1 mb1"><a href="/borders" class="tcg40">Borders</a></li>
+                    <li class="ft4 ml1 mb1"><a href="/border-radius" class="tcg40">Border Radius</a></li>
+                    <li class="ft4 ml1 mb1"><a href="/misc" class="tcg40">Misc</a></li>
                 </ul>
             </li>
         </ul>
@@ -205,7 +160,8 @@
             </li>
         </ul>
     </div>
-</aside>    <section class="w100">
+</aside>
+    <section class="w100">
         <div class="wrap wrap--pad">
     <div class="main-content md-ph6 pv3 md-pv6">
     <h2 class="tcg50 ft10 fw3 mb2 md-mb3">Configuration</h2>
@@ -221,52 +177,52 @@
     </thead>
     <tbody>
         <tr class="brdr1--bottom bcg10">
-            <td class="tcg50 ft5 fw5 pv2 pr2">beard-reset</td>
-            <td class="tcg50 ft5 fw3 pv2 pr2">true</td>
+            <td class="tcg50 ft5 fw5 pv2 pr2"><code>beard-reset</code></td>
+            <td class="tcg50 ft5 fw3 pv2 pr2"><code>true</code></td>
             <td class="tcg50 ft5 fw3 pv2 pr2">Adds a classic CSS reset</td>
         </tr>
         <tr class="brdr1--bottom bcg10">
-            <td class="tcg50 ft5 fw5 pv2 pr2">beard-enable-responsive</td>
-            <td class="tcg50 ft5 fw3 pv2 pr2">true</td>
+            <td class="tcg50 ft5 fw5 pv2 pr2"><code>beard-enable-responsive</code></td>
+            <td class="tcg50 ft5 fw3 pv2 pr2"><code>true</code></td>
             <td class="tcg50 ft5 fw3 pv2 pr2">Enable responsive features</td>
         </tr>
         <tr class="brdr1--bottom bcg10">
-            <td class="tcg50 ft5 fw5 pv2 pr2">beard-spacing-helper-amount</td>
-            <td class="tcg50 ft5 fw3 pv2 pr2">10</td>
-            <td class="tcg50 ft5 fw3 pv2 pr2">Specify how many spacer levels to generate</td>
-        </tr>
-        <tr class="brdr1--bottom bcg10">
-            <td class="tcg50 ft5 fw5 pv2 pr2">beard-enable-spacing-helpers</td>
-            <td class="tcg50 ft5 fw3 pv2 pr2">true</td>
+            <td class="tcg50 ft5 fw5 pv2 pr2"><code>beard-enable-spacing-helpers</code></td>
+            <td class="tcg50 ft5 fw3 pv2 pr2"><code>true</code></td>
             <td class="tcg50 ft5 fw3 pv2 pr2">Enable the spacing helpers</td>
         </tr>
         <tr class="brdr1--bottom bcg10">
-            <td class="tcg50 ft5 fw5 pv2 pr2">beard-grid-block-count</td>
-            <td class="tcg50 ft5 fw3 pv2 pr2">12</td>
+            <td class="tcg50 ft5 fw5 pv2 pr2"><code>beard-spacing-helper-amount</code></td>
+            <td class="tcg50 ft5 fw3 pv2 pr2"><code>10</code></td>
+            <td class="tcg50 ft5 fw3 pv2 pr2">Specify how many spacer levels to generate</td>
+        </tr>
+        <tr class="brdr1--bottom bcg10">
+            <td class="tcg50 ft5 fw5 pv2 pr2"><code>beard-grid-block-count</code></td>
+            <td class="tcg50 ft5 fw3 pv2 pr2"><code>12</code></td>
             <td class="tcg50 ft5 fw3 pv2 pr2">The amount of column classes to create</td>
         </tr>
         <tr class="brdr1--bottom bcg10">
-            <td class="tcg50 ft5 fw5 pv2 pr2">beard-grid-gutter</td>
-            <td class="tcg50 ft5 fw3 pv2 pr2">30px</td>
-            <td class="tcg50 ft5 fw3 pv2 pr2">The size of the column gutters</td>
+            <td class="tcg50 ft5 fw5 pv2 pr2"><code>beard-grid-gutter</code></td>
+            <td class="tcg50 ft5 fw3 pv2 pr2"><code>30px</code></td>
+            <td class="tcg50 ft5 fw3 pv2 pr2">The default size of the column gutters</td>
         </tr>
         <tr class="brdr1--bottom bcg10">
-            <td class="tcg50 ft5 fw5 pv2 pr2">site-width</td>
-            <td class="tcg50 ft5 fw3 pv2 pr2">114rem</td>
+            <td class="tcg50 ft5 fw5 pv2 pr2"><code>site-width</code></td>
+            <td class="tcg50 ft5 fw3 pv2 pr2"><code>114rem</code></td>
             <td class="tcg50 ft5 fw3 pv2 pr2">The maximum size of the site wrappers</td>
         </tr>
 
         <tr class="brdr1--bottom bcg10">
-            <td class="tcg50 ft5 fw5 pv2 pr2">sans-serif</td>
-            <td colspan="2" class="tcg50 ft5 fw3 pv2 pr2">'Helvetica Neue', Helvetica, Arial, sans-serif</td>
+            <td class="tcg50 ft5 fw5 pv2 pr2"><code>sans-serif</code></td>
+            <td colspan="2" class="tcg50 ft5 fw3 pv2 pr2"><code>'Helvetica Neue', Helvetica, Arial, sans-serif</code></td>
         </tr>
         <tr class="brdr1--bottom bcg10">
-            <td class="tcg50 ft5 fw5 pv2 pr2">serif</td>
-            <td colspan="2" class="tcg50 ft5 fw3 pv2 pr2">Merriweather, Georgia, serif</td>
+            <td class="tcg50 ft5 fw5 pv2 pr2"><code>serif</code></td>
+            <td colspan="2" class="tcg50 ft5 fw3 pv2 pr2"><code>Merriweather, Georgia, serif</code></td>
         </tr>
         <tr class="brdr1--bottom bcg10">
-            <td class="tcg50 ft5 fw5 pv2 pr2">code</td>
-            <td colspan="2" class="tcg50 ft5 fw3 pv2 pr2">Menlo, Consolas, Monaco, 'Andale Mono', monospace</td>
+            <td class="tcg50 ft5 fw5 pv2 pr2"><code>code</code></td>
+            <td colspan="2" class="tcg50 ft5 fw3 pv2 pr2"><code>Menlo, Consolas, Monaco, 'Andale Mono', monospace</code></td>
         </tr>
     </tbody>
 </table>    </div>
@@ -274,12 +230,12 @@
     </section>
     </main>
     <footer class="brdr1--top bcg10">
-        <div class="frame pv4 md-pv4 ph3">
+        <div class="frame pv4 md-pv4">
             <div class="blk">
-                <p class="ft4 tcg30">© 2015 David Hemphill. All rights reserved.</p>
+                <p class="ft4 tcg30 ph3">© 2015 David Hemphill. All rights reserved.</p>
             </div>
             <div class="blk">
-                <p class="tar">
+                <p class="tar ph3">
                     <a href="http://github.com/davidhemphill/beard" class="ft4 md-ft2 tc1">View on Github</a>
                 </p>
             </div>
