@@ -1,14 +1,15 @@
 // Response Flexbox Grid
 //-------------------------------------------------------------------------- */
 .wrap {
-    max-width: $site-width;
     margin-left: auto;
     margin-right: auto;
-}
-
-.wrap--pad {
     padding-left: $beard-grid-gutter;
     padding-right: $beard-grid-gutter;
+}
+
+.wrap--xpad {
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .frame {
@@ -28,9 +29,10 @@
     }
 }
 
-.frame--pad {
-    padding-left: $beard-grid-gutter;
-    padding-right: $beard-grid-gutter;
+// Adds the ability to add grids without padding in their blocks
+.frame--xpad [class^='blk'] {
+    padding-left: 0;
+    padding-right: 0;
 }
 
 // Blocks

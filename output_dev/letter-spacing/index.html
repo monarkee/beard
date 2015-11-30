@@ -164,111 +164,65 @@
     <section class="w100">
         <div class="wrap wrap--pad">
     <div class="main-content md-ph6 pv3 md-pv6">
-    <h2 class="tcg50 ft10 fw3 mb2 md-mb3">Tools</h2>
-<p class="tcg50 ft5 fw3 mb4 lh2">Beard isn't packed full of every feature you might need, but it does come with a small set of mixins to make life easier.</p>
+    <h3 class="tcg50 ft10 fw3 mb2 md-mb3 flex aic acc">Letter Spacing <a class="badge br3 bg1 tcw ft3 uppercase ls1 fw6 ml1" title="These helpers accept responsive prefixes">Responsive</a></h3>
+<p class="tcg50 ft5 fw3 mb4 lh2">Yes, even letter-spacing gets responsive love in Beard. Why would you need responsive letter-spacing? Whenever spaced out text changes in size, it's helpful to have the letter-spacing change with it. These helpers make it easy to do so in a similar way to the font-sizing helpers.</p>
 
-<hr class="mb4">
+<table class="w100 mb6 ft6 tcg60 lh2">
+    <thead>
+        <tr class="brdr1--bottom bcg10">
+            <td class="pv2">Name</td>
+            <td class="pv2">Class</td>
+        </tr>
+    </thead>
+    <tr class="brdr1--bottom bcg10">
+        <td class="pv2">Level 1</td>
+        <td class="pv2"><code>.ls1</code></td>
+    </tr>
+    <tr class="brdr1--bottom bcg10">
+        <td class="pv2">Level 2</td>
+        <td class="pv2"><code>.ls2</code></td>
+    </tr>
+    <tr class="brdr1--bottom bcg10">
+        <td class="pv2">Level 3</td>
+        <td class="pv2"><code>.ls3</code></td>
+    </tr>
+    <tr class="brdr1--bottom bcg10">
+        <td class="pv2">Level 4</td>
+        <td class="pv2"><code>.ls4</code></td>
+    </tr>
+    <tr class="brdr1--bottom bcg10">
+        <td class="pv2">Level 5</td>
+        <td class="pv2"><code>.ls5</code></td>
+    </tr>
+    <tr class="brdr1--bottom bcg10">
+        <td class="pv2">Level 6</td>
+        <td class="pv2"><code>.ls6</code></td>
+    </tr>
+    <tr class="brdr1--bottom bcg10">
+        <td class="pv2">Level 7</td>
+        <td class="pv2"><code>.ls7</code></td>
+    </tr>
+    <tr class="brdr1--bottom bcg10">
+        <td class="pv2">Level 8</td>
+        <td class="pv2"><code>.ls8</code></td>
+    </tr>
+    <tr class="brdr1--bottom bcg10">
+        <td class="pv2">Level 9</td>
+        <td class="pv2"><code>.ls9</code></td>
+    </tr>
+    <tr class="brdr1--bottom bcg10">
+        <td class="pv2">Level 10</td>
+        <td class="pv2"><code>.ls10</code></td>
+    </tr>
+</table>
 
-<h3 class="tcg50 ft8 fw3 mb2 md-mb3">appearance()</h3>
-<p class="tcg50 ft5 fw3 mb4 lh2">The appearance mixin provides an easy way to assign or remove platform-native styling on form elements.</p>
+<h3 class="tcg50 ft6 fw3 mb2 md-mb3 flex aic acc">Example:</h3>
 
-<pre class="mb4"><code class="language-scss">
-.terry {
-    @include appearance(none);
-}
+<pre class="mb4"><code class="language-html">
+&lt;h1 class="ls2 md-ls4 xlg-ls7"&gt;Eye-Catching Heading!!!&lt;/h1&gt;
 </code></pre>
 
-<hr class="mb4">
-
-<h3 class="tcg50 ft8 fw3 mb2 md-mb3">media()</h3>
-<p class="tcg50 ft5 fw3 mb4 lh2">Used inside a CSS declaration, this mixin will generate the appropriate media query based on the name registered in Beard's configuration. The media queries are configurable by overriding the default media queries or adding new ones with the <code>new-breakpoint</code> mixin.</p>
-<pre class="mb4"><code class="language-scss">
-// This Scss
-.narcos {
-    @include media(sm) {
-        display: none;
-    }
-}
-</code></pre>
-
-<pre class="mb4"><code class="language-scss">
-// Generates this CSS
-@media screen and (min-width: 300px) {
-    .narcos {
-        display: none;
-    }
-}
-</code></pre>
-
-<hr class="mb4">
-
-<h3 class="tcg50 ft8 fw3 mb2 md-mb3">new-breakpoint()</h3>
-<p class="tcg50 ft5 fw3 mb4 lh2">This mixin allows the user to generate their own breakpoint in Beard, which is in turn used to generate many types of responsive helpers, like spacing, breakpoints, text-alignment, and more.</p>
-<pre class="mb4"><code class="language-scss">
-// Somewhere in your configuration before importing Beard
-@include new-breakpoint('watch', '(min-width: 100px) and (max-width: 250px)');
-</code></pre>
-
-<hr class="mb4">
-
-<h3 class="tcg50 ft8 fw3 mb2 md-mb3">font-size()</h3>
-<p class="tcg50 ft5 fw3 mb4 lh2">This mixin allows you to generate <code>font-size</code> declarations with rem units and uses pixels as a fallback value.</p>
-
-<pre class="mb4"><code class="language-scss">
-.heading {
-    @include font-size(16);
-}
-
-.heading {
-  font-size: 16px;
-  font-size: 1.6rem;
-}
-</code></pre>
-
-<blockquote class="mb4 bg1 br3 pv2 ph2">
-    <p class="tcw ft5 fw3 lh2"><strong>Note:</strong> If you've modified the font-size on the html element, the generated values will not match. It's best to either leave the value at its default or create a mixin of your own which accomplishes the same result.</p>
-</blockquote>
-
-<hr class="mb4">
-
-
-<h3 class="tcg50 ft8 fw3 mb2 md-mb3">new-spacing-helper()</h3>
-<p class="tcg50 ft5 fw3 mb4 lh2">This mixin allows you to add a value to be generated along with Beard's default spacing helpers, including responsive versions of each.</p>
-
-<pre class="mb4"><code class="language-scss">
-// Somewhere before you import Beard
-@include new-spacing-helper('16');
-</code></pre>
-
-<!-- <blockquote class="bg1 br3 pv2 ph2">
-    <p class="tcw ft5 fw3 lh2"><strong>Note:</strong> If you've modified the font-size on the html element, the generated values will not match. It's best to either leave the value at its default or create a mixin of your own which accomplishes the same result.</p>
-</blockquote> -->
-
-<!-- <hr class="mb4"> -->
-
-<!-- <p class="ft6 tc2">Test</p>
-<p class="ft6 tc3">Test</p>
-<p class="ft6 tc4">Test</p>
-<p class="ft6 tc5">Test</p>
-<p class="ft6 tc6">Test</p> -->
-
-<!-- <pre class="pre mb4">
-<code class="code">
-    // Objects
-    ...
-
-    // Your styles go here
-
-    // Helpers
-    ...
-</code>
-</pre> -->
-
-<!-- <p class="tcg50 ft5 fw3 mb4 lh2">Doing things this way allows for the best source ordering.</p> -->
-
-<!-- <blockquote class="bg1 br3 pv2 ph2">
-    <p class="tcw ft5 fw3 lh2"><strong>Note:</strong> You will have to change the import paths to the actual location as when they're copied into your main Sass file, they will have changed.</p>
-</blockquote> -->    </div>
+<p class="tcg50 ft5 fw3 mb4 lh2">The text above would be aligned left by default, center on the medium breakpoint, right on the large breakpoint, and back to left on the extra large breakpoint.</p>    </div>
 </div>
     </section>
     </main>

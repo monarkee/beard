@@ -47,18 +47,24 @@
 
 // Active and Hover State Helpers
 //-------------------------------------------------------------------------- */
-%default-active,
-.default-active {
-    &:active {
+%default-hover,
+.default-hover {
+    &:hover,
+    &:focus {
         opacity: 0.5;
     }
 }
 
-%default-hover,
-.default-hover {
-    &:hover {
-        opacity: 0.5;
+%default-active,
+.default-active {
+    &:active {
+        opacity: 0.8;
     }
+}
+
+%dim, .dim {
+    @extend %default-active;
+    @extend %default-hover;
 }
 
 // Site Width Helper
@@ -88,3 +94,7 @@
 //-------------------------------------------------------------------------- */
 .bgcover { background-size: cover; }
 .bgcenter { background-position: center; }
+
+// Vertical Align Tables
+//-------------------------------------------------------------------------- */
+.vam { vertical-align: middle; }
