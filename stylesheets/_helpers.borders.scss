@@ -1,6 +1,6 @@
 // Border Helpers
 // -------------------------------------------------------------------------- */
-@for $i from 0 through 2 {
+@for $i from 0 through $beard-border-size-amount {
     .brdr#{$i} { border-style: solid !important; border-width: #{$i}px !important; }
     .brdr#{$i}--top { border-top-style: solid !important; border-top-width: #{$i}px !important; }
     .brdr#{$i}--right { border-right-style: solid !important; border-right-width: #{$i}px !important; }
