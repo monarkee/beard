@@ -1,3 +1,4 @@
 sculpin_content_types:
     posts:
+        enabled: false
         permalink: blog/:year/:month/:day/:filename/
