@@ -30,7 +30,7 @@
 }
 
 // Adds the ability to add grids without padding in their blocks
-.frame--xpad [class^='blk'] {
+.frame--xpad [class*='blk'] {
     padding-left: 0;
     padding-right: 0;
 }
