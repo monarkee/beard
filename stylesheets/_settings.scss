@@ -2,30 +2,30 @@
 //-------------------------------------------------------------------------- */
 // This file contains all of the configurable settings for Beard. You
 // can essentially make your own copy of this file for you project and
-// override every value to the one you want, minus the `!default` option.
+// override every value to the one you want, minus the `!global` option.
 
 // Configuration Switches
 //-------------------------------------------------------------------------- */
-$beard-reset: true !default;
-$beard-enable-responsive: true !default;
+$beard-reset: true !global;
+$beard-enable-responsive: true !global;
 
 // Allow the user to specify how many spacing helper amounts to generate
-$beard-spacing-helper-amount: 10 !default;
+$beard-spacing-helper-amount: 10 !global;
 // Allow the user to turn off the spacing helpers completely
-$beard-enable-spacing-helpers: true !default;
+$beard-enable-spacing-helpers: true !global;
 
 // Responsive Breakpoints
 //-------------------------------------------------------------------------- */
 @if $beard-enable-responsive == true {
-    $beard-breakpoint-sm: '(min-width: 300px)' !default;
-    $beard-breakpoint-md: '(min-width: 600px)' !default;
-    $beard-breakpoint-lg: '(min-width: 900px)' !default;
-    $beard-breakpoint-xlg: '(min-width: 1440px)' !default;
+    $beard-breakpoint-sm: '(min-width: 300px)' !global;
+    $beard-breakpoint-md: '(min-width: 600px)' !global;
+    $beard-breakpoint-lg: '(min-width: 900px)' !global;
+    $beard-breakpoint-xlg: '(min-width: 1440px)' !global;
 
-    $beard-breakpoint-only-sm: '(max-width: 599px)' !default;
-    $beard-breakpoint-only-md: '(min-width: 600px) and (max-width: 899px)' !default;
-    $beard-breakpoint-only-lg: '(min-width: 900px) and (max-width: 1439px)' !default;
-    $beard-breakpoint-only-xlg: '(min-width: 1440px)' !default;
+    $beard-breakpoint-only-sm: '(max-width: 599px)' !global;
+    $beard-breakpoint-only-md: '(min-width: 600px) and (max-width: 899px)' !global;
+    $beard-breakpoint-only-lg: '(min-width: 900px) and (max-width: 1439px)' !global;
+    $beard-breakpoint-only-xlg: '(min-width: 1440px)' !global;
 
     $breakpoints: (
         sm: $beard-breakpoint-sm,
@@ -36,45 +36,45 @@ $beard-enable-spacing-helpers: true !default;
         only-lg: $beard-breakpoint-only-lg,
         xlg: $beard-breakpoint-xlg,
         only-xlg: $beard-breakpoint-only-xlg
-    ) !default;
+    ) !global;
 }
 
 // Block Grid
 //-------------------------------------------------------------------------- */
-$beard-grid-block-count: 12 !default;
-$beard-grid-gutter: 30px !default;
+$beard-grid-block-count: 12 !global;
+$beard-grid-gutter: 30px !global;
 
 // Site Width
 // ------------------------------------------------------------------------------------ */
-$site-width: 114rem !default;
+$site-width: 114rem !global;
 
 // Typefaces
 //-------------------------------------------------------------------------- */
-$sans-serif: 'Helvetica Neue', Helvetica, Arial, sans-serif !default;
-$serif: Merriweather, Georgia, serif !default;
-$code: Menlo, Consolas, Monaco, 'Andale Mono', monospace !default;
+$sans-serif: 'Helvetica Neue', Helvetica, Arial, sans-serif !global;
+$serif: Merriweather, Georgia, serif !global;
+$code: Menlo, Consolas, Monaco, 'Andale Mono', monospace !global;
 
 // Font Sizes
 //-------------------------------------------------------------------------- */
 // Value are based on a modular scale configured from here:
 // http://www.modularscale.com/?1,1.1,1.2&rem&1.5&web&text
-$ft1: 10 !default;
-$ft2: 11 !default;
-$ft3: 12 !default;
-$ft4: 15 !default;
-$ft5: 16.5 !default;
-$ft6: 18 !default;
-$ft7: 22.5 !default;
-$ft8: 24.75 !default;
-$ft9: 27 !default;
-$ft10: 33.75 !default;
-$ft11: 37.13 !default;
-$ft12: 40.5 !default;
-$ft13: 50.63 !default;
-$ft14: 55.69 !default;
-$ft15: 60.75 !default;
-$ft16: 75.94 !default;
-$ft17: 83.53 !default;
+$ft1: 10 !global;
+$ft2: 11 !global;
+$ft3: 12 !global;
+$ft4: 15 !global;
+$ft5: 16.5 !global;
+$ft6: 18 !global;
+$ft7: 22.5 !global;
+$ft8: 24.75 !global;
+$ft9: 27 !global;
+$ft10: 33.75 !global;
+$ft11: 37.13 !global;
+$ft12: 40.5 !global;
+$ft13: 50.63 !global;
+$ft14: 55.69 !global;
+$ft15: 60.75 !global;
+$ft16: 75.94 !global;
+$ft17: 83.53 !global;
 
 $font-size-values: (
     ft1: $ft1,
@@ -94,41 +94,41 @@ $font-size-values: (
     ft15: $ft15,
     ft16: $ft16,
     ft17: $ft17,
-) !default;
+) !global;
 
 // Font Weights
 // ------------------------------------------------------------------------------------ */
-$thin: 100 !default;
-$xlight: 200 !default;
-$light: 300 !default;
-$normal: 400 !default;
-$medium: 500 !default;
-$semibold: 600 !default;
-$bold: 700 !default;
-$xbold: 800 !default;
-$xxbold: 900 !default;
+$thin: 100 !global;
+$xlight: 200 !global;
+$light: 300 !global;
+$normal: 400 !global;
+$medium: 500 !global;
+$semibold: 600 !global;
+$bold: 700 !global;
+$xbold: 800 !global;
+$xxbold: 900 !global;
 
 // Letter Spacing
 //-------------------------------------------------------------------------- */
-$ls1:  0.1rem !default;
-$ls2:  0.2rem !default;
-$ls3:  0.3rem !default;
-$ls4:  0.4rem !default;
-$ls5:  0.5rem !default;
-$ls6:  0.6rem !default;
-$ls7:  0.7rem !default;
-$ls8:  0.8rem !default;
-$ls9:  0.9rem !default;
-$ls10: 1.0rem !default;
+$ls1:  0.1rem !global;
+$ls2:  0.2rem !global;
+$ls3:  0.3rem !global;
+$ls4:  0.4rem !global;
+$ls5:  0.5rem !global;
+$ls6:  0.6rem !global;
+$ls7:  0.7rem !global;
+$ls8:  0.8rem !global;
+$ls9:  0.9rem !global;
+$ls10: 1.0rem !global;
 
 // Border Radius Amounts
 //-------------------------------------------------------------------------- */
-$border-radius-amount: 6 !default;
-$circle-img-radius: 100rem !default;
+$border-radius-amount: 6 !global;
+$circle-img-radius: 100rem !global;
 
 // Max Border Size Helper Amount
 //-------------------------------------------------------------------------- */
-$beard-border-size-amount: 2 !default;
+$beard-border-size-amount: 2 !global;
 
 // Create an empty spacing-amount list
 //-------------------------------------------------------------------------- */
