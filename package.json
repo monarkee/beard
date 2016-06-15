@@ -1,4 +1,26 @@
 {
+  "name": "beardcss",
+  "version": "2.0.3",
+  "description": "A CSS framework for people with better things to do",
+  "main": "beard.scss",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/monarkee/beard.git"
+  },
+  "keywords": [
+    "sass",
+    "scss",
+    "atomic",
+    "css",
+    "framework",
+    "frontend"
+  ],
+  "author": "David Hemphill",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/monarkee/beard/issues"
+  },
+  "homepage": "http://buildwithbeard.com",
   "private": true,
   "scripts": {
     "scss": "node-sass --output-style compressed -o dist beard.scss",
