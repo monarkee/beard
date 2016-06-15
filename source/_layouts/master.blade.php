@@ -6,6 +6,7 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <link rel="stylesheet" href="/css/main.css">
         <link rel="stylesheet" href="/css/prism.css">
+        <title>Beard - Atomic CSS framework</title>
     </head>
     <body>
         @include('_partials/_header')

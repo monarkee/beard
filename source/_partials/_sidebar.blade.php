@@ -46,7 +46,6 @@
                 <ul class="mt1">
                     <li class="ft4 mb1"><a href="/tools#appearance" class="tcg40 dim">appearance()</a></li>
                     <li class="ft4 mb1"><a href="/tools#font-size" class="tcg40 dim">font-size()</a></li>
-                    <li class="ft4 mb1"><a href="/tools#media" class="tcg40 dim">media()</a></li>
                 </ul>
             </li>
         </ul>
