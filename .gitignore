@@ -1,6 +1,4 @@
-/build_local/
-/node_modules/
-/vendor/
-
+build_local
+node_modules
+vendor
 npm-debug.log
-build_production
