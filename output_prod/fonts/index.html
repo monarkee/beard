@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js ie6 oldie" lang="en"><![endif]-->
+<!--[if IE 7]><html class="no-js ie7 oldie" lang="en"><![endif]-->
+<!--[if IE 8]><html class="no-js ie8 oldie" lang="en"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en"><!--<![endif]-->
+<head>
+    <meta charset="UTF-8">
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1' /><![endif]-->
+    <title>Beard</title>
+    <meta name="viewport" content="width=device-width">
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700' rel='stylesheet' type='text/css'>
+    <!-- <link rel="stylesheet" href="/css/beard.css"> -->
+    <link rel="stylesheet" href="/css/site.css">
+    <!-- <link rel="stylesheet" href="/css/prism-ghcolors.css"> -->
+<!--     <style type="text/css">
+        body {
+            font-family: system, -apple-system, BlinkMacSystemFont, ubuntu, sans-serif;
+        }
+
+        :not(pre) > code {
+            background: rgb(250, 250, 250);
+            padding: 0.5rem 1rem;
+            color: #666;
+            border-radius: 3px;
+            text-shadow: 0 1px 0 #fff;
+            border: 1px solid rgb(220, 220, 220);
+        }
+
+        .ht3 {
+            height: 7px;
+        }
+
+        .main-content {
+            max-width: 96rem;
+        }
+
+        .main-sidebar {
+            flex: 0 0 200px;
+        }
+
+        @media screen and (max-width: 960px) {
+            .main-sidebar {
+                display: none;
+            }
+        }
+
+        .sticky {
+          background-color: rgba(67,70,74, 0.1);
+          position: relative;
+          padding: 2rem 1rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 13px;
+          color: rgba(67,70,74, 0.4);
+        }
+
+        .sticky--nopad {
+          left: 0;
+          right: 0;
+        }
+
+        .outline {
+          outline: 1px solid rgba(67,70,74, 0.4);
+      }
+
+        .example-nested-frame {
+            background: rgba(67,70,74, 0.1);
+        }
+
+        .pv05 { padding-top: 0.5rem; padding-bottom: 0.5rem; }
+
+        .badge {
+            padding: 4px 6px;
+        }
+
+    </style> -->
+</head>
+<body>
+    <header class="main-header">
+        <div class="flex jcsb aic pv1 ph3">
+            <div class="flex aic">
+                <h1 class="logo ft5 md-ft7 uppercase ls1 fwxxbold">
+                    <a href="/" class="tc1 dim">Beard</a>
+                </h1>
+                <p class="lg-db ml2 tcg40 ft4">A CSS framework for people with better things to do</p>
+            </div>
+            <div class="flex aic">
+                <a href="https://github.com/davidhemphill/beard" class="bgw tcg40 pv1 ph2 br3 ft3 md-ft4">View on GitHub</a>
+                <a href="https://github.com/davidhemphill/beard/archive/v1.3.0.zip" class="bg1 tcw pv1 ph2 br3 ft3 md-ft4">Download</a>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="bg5 ht3"></div>
+        <div class="bg4 ht3"></div>
+        <div class="bg3 ht3"></div>
+        <div class="bg2 ht3"></div>
+        <div class="bg1 ht3"></div>
+    </section>
+    <main class="flex">
+    <aside class="main-sidebar brdr1--right bcg10">
+    <div class="wrap wrap--pad">
+        <h2 class="ft6 pv1 tcg60 mt4 fw3">Getting Started</h2>
+        <ul class="mb3">
+            <li class="ft4 pv1">
+                <a href="/philosophy" class="tc1">Philosophy</a>
+            </li>
+            <li class="ft4 pv1">
+                <a href="/installation" class="tc1">Installation</a>
+            </li>
+            <li class="ft4 pv1">
+                <a href="/configuration" class="tc1">Configuration</a>
+            </li>
+        </ul>
+
+        <h2 class="ft6 pv1 tcg60 fw3">Elements</h2>
+        <ul class="mb3">
+            <li class="ft4 pv1">
+                <a href="/tools" class="tc1">Tools</a>
+                <ul class="mt1">
+                    <li class="ft4 mb1"><a href="/tools#appearance" class="tcg40">appearance()</a></li>
+                    <li class="ft4 mb1"><a href="/tools#media" class="tcg40">media()</a></li>
+                    <li class="ft4 mb1"><a href="/tools#new-breakpoint" class="tcg40">new-breakpoint()</a></li>
+                    <li class="ft4 mb1"><a href="/tools#font-size" class="tcg40">font-size()</a></li>
+                    <li class="ft4 mb1"><a href="/tools#new-spacing-helper" class="tcg40">new-spacing-helper()</a></li>
+                </ul>
+            </li>
+            <li class="ft4 pv1">
+                <a href="/reset-and-base" class="tc1">Reset &amp; Base</a>
+            </li>
+            <li class="ft4 pv1">
+                <a href="/helpers" class="tc1">Helpers</a>
+                <ul class="mt1">
+                    <li class="ft4 mb1"><a href="/text-alignment" class="tcg40">Text alignment</a></li>
+                    <li class="ft4 mb1"><a href="/spacing" class="tcg40">Spacing</a></li>
+                    <li class="ft4 mb1"><a href="/line-heights" class="tcg40">Line heights</a></li>
+                    <li class="ft4 mb1"><a href="/letter-spacing" class="tcg40">Letter Spacing</a></li>
+                    <li class="ft4 mb1"><a href="/fonts" class="tcg40">Fonts</a></li>
+                    <li class="ft4 mb1"><a href="/grid" class="tcg40">Grid</a></li>
+                    <li class="ft4 mb1"><a href="/floats" class="tcg40">Floats</a></li>
+                    <li class="ft4 mb1"><a href="/display" class="tcg40">Display</a></li>
+                    <li class="ft4 mb1"><a href="/flex" class="tcg40">Flex</a></li>
+                    <li class="ft4 mb1"><a href="/overflow" class="tcg40">Overflow</a></li>
+                    <li class="ft4 mb1"><a href="/colors" class="tcg40">Colors</a></li>
+                    <li class="ft4 mb1"><a href="/position" class="tcg40">Position</a></li>
+                    <li class="ft4 mb1"><a href="/borders" class="tcg40">Borders</a></li>
+                    <li class="ft4 mb1"><a href="/border-radius" class="tcg40">Border Radius</a></li>
+                    <li class="ft4 mb1"><a href="/misc" class="tcg40">Misc</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2 class="ft6 pv1 tcg60 fw3">Resources</h2>
+        <ul class="mb3">
+            <li class="ft4 pv1">
+                <a href="" class="tc1">Templates</a>
+            </li>
+        </ul>
+    </div>
+</aside>
+    <section class="w100">
+        <div class="wrap wrap--pad">
+    <div class="main-content md-ph6 pv3 md-pv6">
+    <h3 class="tcg50 ft10 fw3 mb2 md-mb3 flex aic acc">Fonts <a class="badge br3 bg1 tcw ft3 uppercase ls1 fw6 ml1" title="These helpers accept responsive prefixes">Partially Responsive</a></h3>
+<p class="tcg50 ft5 fw3 mb4 lh2">Yes, even letter-spacing gets responsive love in Beard. Why would you need responsive letter-spacing? Whenever spaced out text changes in size, it's helpful to have the letter-spacing change with it. These helpers make it easy to do so in a similar way to the font-sizing helpers.</p>
+
+<h3 class="tcg50 ft7 fw3 mb2 md-mb3 flex aic acc">Font Family Helpers <strong class="tc1 ft3 uppercase ls1 fw6 ml1" title="These helpers accept responsive prefixes">Not Responsive</strong></h3>
+<table class="w100 mb6 ft6 tcg60 lh2">
+    <thead>
+        <tr class="brdr1--bottom bcg10">
+            <td class="pv2">Style</td>
+            <td class="pv2">Class</td>
+            <td class="pv2">Default Stack</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="brdr1--bottom bcg10">
+            <td class="pv2">Sans Serif</td>
+            <td class="pv2"><code>.sans</code></td>
+            <td class="pv2"><code>'Helvetica Neue', Helvetica, Arial, sans-serif</code></td>
+        </tr>
+        <tr class="brdr1--bottom bcg10">
+            <td class="pv2">Serif</td>
+            <td class="pv2"><code>.serif</code></td>
+            <td class="pv2"><code>Merriweather, Georgia, serif</code></td>
+        </tr>
+        <tr class="brdr1--bottom bcg10">
+            <td class="pv2">Code</td>
+            <td class="pv2"><code>.code</code></td>
+            <td class="pv2"><code>Consolas, Monaco, 'Andale Mono', monospace</code></td>
+        </tr>
+    </tbody>
+</table>
+
+<h3 class="tcg50 ft6 fw3 mb2 md-mb3 flex aic acc">Example:</h3>
+
+<pre class="mb4"><code class="language-html">
+&lt;code class="code"&gt;Help&lt;/code&gt;
+</code></pre>
+
+<blockquote class="bg1 br3 pv2 ph2 mb6">
+    <p class="tcw ft5 fw3 lh2"><strong>Note:</strong> The font family helpers are not responsive. That would just be silly.</p>
+</blockquote>
+
+<hr class="mb6">
+
+<h3 class="tcg50 ft7 fw3 mb2 md-mb3 flex aic acc">Font Weight Helpers <strong class="tc1 ft3 uppercase ls1 fw6 ml1" title="These helpers accept responsive prefixes">Not Responsive</strong></h3>
+<table class="w100 mb6 ft6 tcg60 lh2">
+    <thead>
+        <tr class="brdr1--bottom bcg10">
+            <td class="pv2">Weight</td>
+            <td class="pv2">Value</td>
+            <td class="pv2">Classes</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="brdr1--bottom bcg10">
+            <td class="pv2">Thin</td>
+            <td class="pv2"><code>100</code></td>
+            <td class="pv2"><code>.fw1</code> or <code>.fwthin</code></td>
+        </tr>
+        <tr class="brdr1--bottom bcg10">
+            <td class="pv2">Extra Light</td>
+            <td class="pv2"><code>200</code></td>
+            <td class="pv2"><code>.fw2</code> or <code>.fwxlight</code></td>
+        </tr>
+        <tr class="brdr1--bottom bcg10">
+            <td class="pv2">Light</td>
+            <td class="pv2"><code>300</code></td>
+            <td class="pv2"><code>.fw3</code> or <code>.fwlight</code></td>
+        </tr>
+        <tr class="brdr1--bottom bcg10">
+            <td class="pv2">Normal</td>
+            <td class="pv2"><code>400</code></td>
+            <td class="pv2"><code>.fw4</code> or <code>.fwnormal</code></td>
+        </tr>
+        <tr class="brdr1--bottom bcg10">
+            <td class="pv2">Medium</td>
+            <td class="pv2"><code>500</code></td>
+            <td class="pv2"><code>.fw5</code> or <code>.fwmedium</code></td>
+        </tr>
+        <tr class="brdr1--bottom bcg10">
+            <td class="pv2">Semibold</td>
+            <td class="pv2"><code>600</code></td>
+            <td class="pv2"><code>.fw6</code> or <code>.fwsemibold</code></td>
+        </tr>
+        <tr class="brdr1--bottom bcg10">
+            <td class="pv2">Bold</td>
+            <td class="pv2"><code>700</code></td>
+            <td class="pv2"><code>.fw7</code> or <code>.fwbold</code></td>
+        </tr>
+        <tr class="brdr1--bottom bcg10">
+            <td class="pv2">Extra Bold</td>
+            <td class="pv2"><code>800</code></td>
+            <td class="pv2"><code>.fw8</code> or <code>.fwxbold</code></td>
+        </tr>
+        <tr class="brdr1--bottom bcg10">
+            <td class="pv2">Black</td>
+            <td class="pv2"><code>900</code></td>
+            <td class="pv2"><code>.fw9</code> or <code>.fwblack</code></td>
+        </tr>
+    </tbody>
+</table>
+
+<h3 class="tcg50 ft6 fw3 mb2 md-mb3 flex aic acc">Example:</h3>
+
+<pre class="mb6"><code class="language-html">
+&lt;p class="fw8"&gt;This text would be really bold&lt;/code&gt;
+</code></pre>
+
+<hr class="mb6">
+
+<h3 class="tcg50 ft7 fw3 mb2 md-mb3 flex aic acc">Font Sizing Helpers <strong class="tc1 ft3 uppercase ls1 fw6 ml1" title="These helpers accept responsive prefixes">Responsive</strong></h3>
+<p class="tcg50 ft5 fw3 mb4 lh2">Beard offers 17 levels of font-sizing. These helpers are responsive to make sizing easy across breakpoints.</p>
+
+<table class="w100 mb6 ft6 tcg60 lh2">
+    <thead>
+        <tr class="brdr1--bottom bcg10">
+            <td class="pv2">Name</td>
+            <td class="pv2">Class</td>
+            <td class="pv2">Example</td>
+        </tr>
+    </thead>
+    <tr class="brdr1--bottom bcg10">
+        <td class="vam pv2">Font Level 1</td>
+        <td class="vam pv2"><code>.ft1</code></td>
+        <td class="vam pv2 ft1">Hi</td>
+    </tr>
+    <tr class="brdr1--bottom bcg10">
+        <td class="vam pv2">Font Level 2</td>
+        <td class="vam pv2"><code>.ft2</code></td>
+        <td class="vam pv2 ft2">Hi</td>
+    </tr>
+    <tr class="brdr1--bottom bcg10">
+        <td class="vam pv2">Font Level 3</td>
+        <td class="vam pv2"><code>.ft3</code></td>
+        <td class="vam pv2 ft3">Hi</td>
+    </tr>
+    <tr class="brdr1--bottom bcg10">
+        <td class="vam pv2">Font Level 4</td>
+        <td class="vam pv2"><code>.ft4</code></td>
+        <td class="vam pv2 ft4">Hi</td>
+    </tr>
+    <tr class="brdr1--bottom bcg10">
+        <td class="vam pv2">Font Level 5</td>
+        <td class="vam pv2"><code>.ft5</code></td>
+        <td class="vam pv2 ft5">Hi</td>
+    </tr>
+    <tr class="brdr1--bottom bcg10">
+        <td class="vam pv2">Font Level 6</td>
+        <td class="vam pv2"><code>.ft6</code></td>
+        <td class="vam pv2 ft6">Hi</td>
+    </tr>
+    <tr class="brdr1--bottom bcg10">
+        <td class="vam pv2">Font Level 7</td>
+        <td class="vam pv2"><code>.ft7</code></td>
+        <td class="vam pv2 ft7">Hi</td>
+    </tr>
+    <tr class="brdr1--bottom bcg10">
+        <td class="vam pv2">Font Level 8</td>
+        <td class="vam pv2"><code>.ft8</code></td>
+        <td class="vam pv2 ft8">Hi</td>
+    </tr>
+    <tr class="brdr1--bottom bcg10">
+        <td class="vam pv2">Font Level 9</td>
+        <td class="vam pv2"><code>.ft9</code></td>
+        <td class="vam pv2 ft9">Hi</td>
+    </tr>
+    <tr class="brdr1--bottom bcg10">
+        <td class="vam pv2">Font Level 10</td>
+        <td class="vam pv2"><code>.ft10</code></td>
+        <td class="vam pv2 ft10">Hi</td>
+    </tr>
+    <tr class="brdr1--bottom bcg10">
+        <td class="vam pv2">Font Level 11</td>
+        <td class="vam pv2"><code>.ft11</code></td>
+        <td class="vam pv2 ft10">Hi</td>
+    </tr>
+    <tr class="brdr1--bottom bcg10">
+        <td class="vam pv2">Font Level 12</td>
+        <td class="vam pv2"><code>.ft12</code></td>
+        <td class="vam pv2 ft12">Hi</td>
+    </tr>
+    <tr class="brdr1--bottom bcg10">
+        <td class="vam pv2">Font Level 13</td>
+        <td class="vam pv2"><code>.ft13</code></td>
+        <td class="vam pv2 ft13">Hi</td>
+    </tr>
+    <tr class="brdr1--bottom bcg10">
+        <td class="vam pv2">Font Level 14</td>
+        <td class="vam pv2"><code>.ft14</code></td>
+        <td class="vam pv2 ft14">Hi</td>
+    </tr>
+    <tr class="brdr1--bottom bcg10">
+        <td class="vam pv2">Font Level 15</td>
+        <td class="vam pv2"><code>.ft15</code></td>
+        <td class="vam pv2 ft15">Hi</td>
+    </tr>
+    <tr class="brdr1--bottom bcg10">
+        <td class="vam pv2">Font Level 16</td>
+        <td class="vam pv2"><code>.ft16</code></td>
+        <td class="vam pv2 ft16">Hi</td>
+    </tr>
+    <tr class="brdr1--bottom bcg10">
+        <td class="vam pv2">Font Level 17</td>
+        <td class="vam pv2"><code>.ft17</code></td>
+        <td class="vam pv2 ft17">Hi</td>
+    </tr>
+</table>
+
+<h3 class="tcg50 ft6 fw3 mb2 md-mb3 flex aic acc">Example:</h3>
+
+<pre class="mb4"><code class="language-html">
+&lt;h1 class="ft2 md-ft4 xlg-ft12"&gt;This Headline Gets Bigger With Space!&lt;/h1&gt;
+</code></pre>    </div>
+</div>
+    </section>
+    </main>
+    <footer class="wrap wrap--pad brdr1--top bcg10 pv4">
+        <div class="frame">
+            <div class="blk mb2 md-xmb">
+                <p class="ft4 tcg30 tac md-tal">&copy; 2015 Monarkee, LLC. Design by <a href="http://davidhemphill.com" class="tc1">David Hemphill</a>.</p>
+            </div>
+            <div class="blk">
+                <p class="tac md-tar">
+                    <a href="http://github.com/davidhemphill/beard" class="ft4 md-ft2 tc1">View on Github</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="/js/prism.js"></script>
+</body>
+</html>

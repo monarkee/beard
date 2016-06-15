@@ -7,7 +7,7 @@ layout: subpage
 <p class="tcg50 ft5 fw3 mb4 md-mb6 lh2">Beard ships with a standard 12-column grid and provides responsive helper classes to change the layout when the viewport reaches a certain breakpoint. It also supports nested grids and non-responsive grids for increased flexibility.</p>
 
 <blockquote class="mb4 bg1 br3 pv2 ph2">
-    <p class="tcw ft5 fw3 lh2">Hint: To get the grid to maintain its ratios on the small breakpoint, use the <code>.frame--stay</code> modifier on your <code>.frame</code> wrapper.</p>
+    <p class="tcw ft5 fw3 lh2">Hint: To get the grid to maintain its ratios on the small breakpoint, use the <code class="bg3 bc2 tcw xbrdr xtshadow">.frame--stay</code> modifier on your <code class="bg3 bc2 tcw xbrdr xtshadow">.frame</code> wrapper.</p>
 </blockquote>
 
 <h2 class="tcg50 ft5 fw5 mb2 md-mb3">Examples</h2>
@@ -72,42 +72,43 @@ layout: subpage
 
 <h3 class="tcg50 ft5 fw5 mb2 md-mb3">Grids with no padding <code class="ml1">.frame--xpad</code></h3>
 <div class="frame frame--xpad example-frame mb3">
-    <div class="blk3 example-blk">
+    <div class="blk3 outline example-blk">
         <div class="sticky sticky--nopad">Uno</div>
     </div>
-    <div class="blk3 example-blk">
+    <div class="blk3 outline example-blk">
         <div class="sticky sticky--nopad">Dos</div>
     </div>
-    <div class="blk3 example-blk">
+    <div class="blk3 outline example-blk">
         <div class="sticky sticky--nopad">Tres</div>
     </div>
-    <div class="blk3 example-blk">
+    <div class="blk3 outline example-blk">
         <div class="sticky sticky--nopad">Quatro</div>
     </div>
 </div>
 <div class="frame frame--xpad example-frame mb3">
-    <div class="blk4 example-blk">
+    <div class="blk4 outline example-blk">
         <div class="sticky sticky--nopad">1</div>
     </div>
-    <div class="blk4 example-blk">
+    <div class="blk4 outline example-blk">
         <div class="sticky sticky--nopad">2</div>
     </div>
-    <div class="blk4 example-blk">
+    <div class="blk4 outline example-blk">
         <div class="sticky sticky--nopad">3</div>
     </div>
 </div>
 <div class="frame frame--xpad example-frame mb6">
-    <div class="blk6 example-blk">
+    <div class="blk6 outline example-blk">
         <div class="sticky sticky--nopad">1</div>
     </div>
-    <div class="blk6 example-blk">
+    <div class="blk6 outline example-blk">
         <div class="sticky sticky--nopad">2</div>
     </div>
 </div>
 
 <h3 class="tcg50 ft5 fw5 mb4">Nested Grids with <code class="ml1">.frame--stay</code></h3>
+
 <div class="frame example-frame">
-    <div class="blk6 example-blk">
+    <div class="blk6 outline example-blk">
         <div class="frame frame--stay example-frame example-nested-frame">
             <div class="blk6 example-blk">
                 <div class="sticky">Nested</div>
@@ -117,19 +118,16 @@ layout: subpage
             </div>
         </div>
     </div>
-    <div class="blk6 example-blk">
+    <div class="blk6 outline example-blk">
         <div class="frame frame--stay example-frame example-nested-frame">
-            <div class="blk3 example-blk">
+            <div class="blk4 example-blk">
                 <div class="sticky">1</div>
             </div>
-            <div class="blk3 example-blk">
+            <div class="blk4 example-blk">
                 <div class="sticky">2</div>
             </div>
-            <div class="blk3 example-blk">
+            <div class="blk4 example-blk">
                 <div class="sticky">3</div>
-            </div>
-            <div class="blk3 example-blk">
-                <div class="sticky">4</div>
             </div>
         </div>
     </div>

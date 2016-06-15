@@ -1,34 +1,13 @@
 // Gulp Requires
-var gulp = require('gulp'),
-    gutil = require('gulp-util'),
-    autoprefixer = require('gulp-autoprefixer'),
-    sass = require('gulp-sass'),
-    minifycss = require('gulp-minify-css');
+var elixir = require('laravel-elixir');
 
-// Directories
-var dist = 'dist';
-var sitedist = 'source/css';
-var paths = {
-    css: ['./beard.scss', 'stylesheets/**/*.scss']
-}
+// Config
+elixir.config.assetsPath = './';
+elixir.config.css.sass.folder = '';
+elixir.config.publicPath = 'dist';
 
-// SCSS Compiling and Minification
-gulp.task('sass', function() {
-    return gulp.src('beard.scss')
-        .pipe(sass({
-            debugInfo: false,
-            lineNumbers: false
-        }))
-        .pipe(autoprefixer('last 2 version'))
-        .pipe(minifycss())
-        .pipe(gulp.dest(sitedist))
-        .pipe(gulp.dest(dist));
+elixir(function(mix) {
+    mix.sass('beard.scss');
+    mix.sass('site.scss');
+    mix.copy('dist/css/beard.css', 'source/css/beard.css');
 });
-
-gulp.task('watch-assets', function() {
-    gulp.watch(paths.css, ['sass']);
-});
-
-// Gulp Default Task
-gulp.task('default', ['sass']);
-gulp.task('watch', ['watch-assets', 'sass']);
