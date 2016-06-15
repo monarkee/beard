@@ -1,11 +1,14 @@
 {
   "name": "beard",
-  "version": "1.3.1",
+  "description": "A front-end framework for scruffy web projects",
+  "main": [
+      "beard.scss"
+  ],
+  "version": "2.0.0",
   "homepage": "https://github.com/monarkee/beard",
   "authors": [
     "David Hemphill <davidlee.hemphill@gmail.com>"
   ],
-  "description": "A front-end framework for scruffy web projects",
   "keywords": [
     "scss",
     "sass",
@@ -19,6 +22,10 @@
     "node_modules",
     "bower_components",
     "test",
-    "tests"
+    "tests",
+    "output_dev",
+    "output_prod",
+    "app",
+    "source"
   ]
 }

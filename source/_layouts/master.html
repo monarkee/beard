@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js ie6 oldie" lang="en"><![endif]-->
+<!--[if IE 7]><html class="no-js ie7 oldie" lang="en"><![endif]-->
+<!--[if IE 8]><html class="no-js ie8 oldie" lang="en"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en"><!--<![endif]-->
+<head>
+    <meta charset="UTF-8">
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1' /><![endif]-->
+    <title>Beard</title>
+    <meta name="viewport" content="width=device-width">
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700' rel='stylesheet' type='text/css'>
+    <!-- <link rel="stylesheet" href="/css/beard.css"> -->
+    <link rel="stylesheet" href="/css/site.css">
+    <!-- <link rel="stylesheet" href="/css/prism-ghcolors.css"> -->
+<!--     <style type="text/css">
+        body {
+            font-family: system, -apple-system, BlinkMacSystemFont, ubuntu, sans-serif;
+        }
+
+        :not(pre) > code {
+            background: rgb(250, 250, 250);
+            padding: 0.5rem 1rem;
+            color: #666;
+            border-radius: 3px;
+            text-shadow: 0 1px 0 #fff;
+            border: 1px solid rgb(220, 220, 220);
+        }
+
+        .ht3 {
+            height: 7px;
+        }
+
+        .main-content {
+            max-width: 96rem;
+        }
+
+        .main-sidebar {
+            flex: 0 0 200px;
+        }
+
+        @media screen and (max-width: 960px) {
+            .main-sidebar {
+                display: none;
+            }
+        }
+
+        .sticky {
+          background-color: rgba(67,70,74, 0.1);
+          position: relative;
+          padding: 2rem 1rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 13px;
+          color: rgba(67,70,74, 0.4);
+        }
+
+        .sticky--nopad {
+          left: 0;
+          right: 0;
+        }
+
+        .outline {
+          outline: 1px solid rgba(67,70,74, 0.4);
+      }
+
+        .example-nested-frame {
+            background: rgba(67,70,74, 0.1);
+        }
+
+        .pv05 { padding-top: 0.5rem; padding-bottom: 0.5rem; }
+
+        .badge {
+            padding: 4px 6px;
+        }
+
+    </style> -->
+</head>
+<body>
+    <header class="main-header">
+        <div class="flex jcsb aic pv1 ph3">
+            <div class="flex aic">
+                <h1 class="logo ft5 md-ft7 uppercase ls1 fwxxbold">
+                    <a href="/" class="tc1 dim">Beard</a>
+                </h1>
+                <p class="lg-db ml2 tcg40 ft4">A CSS framework for people with better things to do</p>
+            </div>
+            <div class="flex aic">
+                <a href="https://github.com/davidhemphill/beard" class="bgw tcg40 pv1 ph2 br3 ft3 md-ft4">View on GitHub</a>
+                <a href="https://github.com/davidhemphill/beard/archive/v1.3.0.zip" class="bg1 tcw pv1 ph2 br3 ft3 md-ft4">Download</a>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="bg5 ht3"></div>
+        <div class="bg4 ht3"></div>
+        <div class="bg3 ht3"></div>
+        <div class="bg2 ht3"></div>
+        <div class="bg1 ht3"></div>
+    </section>
+    <main class="flex">
+    {% include 'sidebar.html' %}
+    <section class="w100">
+        {% block content_wrapper %}
+        {% endblock %}
+    </section>
+    </main>
+    <footer class="wrap wrap--pad brdr1--top bcg10 pv4">
+        <div class="frame">
+            <div class="blk mb2 md-xmb">
+                <p class="ft4 tcg30 tac md-tal">&copy; 2015 Monarkee, LLC. Design by <a href="http://davidhemphill.com" class="tc1">David Hemphill</a>.</p>
+            </div>
+            <div class="blk">
+                <p class="tac md-tar">
+                    <a href="http://github.com/davidhemphill/beard" class="ft4 md-ft2 tc1">View on Github</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="/js/prism.js"></script>
+</body>
+</html>

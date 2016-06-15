@@ -1,0 +1,27 @@
+// Media Object
+//-------------------------------------------------------------------------- */
+.media {
+  display: flex;
+}
+
+.media--center {
+  align-items: center;
+}
+
+.media--reverse {
+  .media__figure {
+    order: 1;
+  }
+
+  .media__content {
+    order: 0;
+  }
+}
+
+.media__figure {
+  margin-right: 1em;
+}
+
+.media__content {
+  flex: 1;
+}

@@ -1,38 +1,47 @@
-// Configuration
+// Settings
 //-------------------------------------------------------------------------- */
-$beard-reset: false !default;
+@import 'stylesheets/settings';
+@import 'stylesheets/settings.colors';
 
-// Reset
+// Tools & Mixins
 //-------------------------------------------------------------------------- */
-@import 'stylesheets/reset';
+@import 'stylesheets/tools.appearance';
+@import 'stylesheets/tools.breakpoints';
+@import 'stylesheets/tools.user-drag';
+@import 'stylesheets/tools.font-size';
+@import 'stylesheets/tools.spacing';
 
-// Import Colors
-// ------------------------------------------------------------------------------------ */
-@import 'stylesheets/colors';
-
-// Import Mixins
-// ------------------------------------------------------------------------------------ */
-@import 'stylesheets/mixins/appearance',
-        'stylesheets/mixins/media',
-        'stylesheets/mixins/clearfix',
-        'stylesheets/mixins/demarginize',
-        'stylesheets/mixins/font-size',
-        'stylesheets/mixins/user-drag';
-
-// Import Global
+// Generic
 //-------------------------------------------------------------------------- */
-@import 'stylesheets/breakpoints',
-        'stylesheets/font-sizes', // Has to be before some things
-        'stylesheets/font-weights', // Has to be before some things
-        'stylesheets/base',
-        'stylesheets/grid',
-        'stylesheets/spacing',
-        'stylesheets/letter-spacing',
-        'stylesheets/line-heights',
-        'stylesheets/helpers',
-        'stylesheets/text-align',
-        'stylesheets/floats',
-        'stylesheets/responsive',
-        'stylesheets/display',
-        'stylesheets/flex',
-        'stylesheets/border-radius';
+@import 'stylesheets/generic.reset';
+
+// Base
+//-------------------------------------------------------------------------- */
+@import 'stylesheets/base';
+
+// Custom breakpoints and spacing helpers
+//-------------------------------------------------------------------------- */
+// @include new-breakpoint(tablet, '(min-width: 600px)');
+// @include new-spacing-helper('58');
+
+// Put your site styles here
+//-------------------------------------------------------------------------- */
+// @import 'app.scss';
+
+// Helpers
+//-------------------------------------------------------------------------- */
+@import 'stylesheets/helpers.text-align';
+@import 'stylesheets/helpers.spacing';
+@import 'stylesheets/helpers.line-heights';
+@import 'stylesheets/helpers.letter-spacing';
+@import 'stylesheets/helpers.fonts';
+@import 'stylesheets/helpers.misc';
+@import 'stylesheets/helpers.grid';
+@import 'stylesheets/helpers.floats';
+@import 'stylesheets/helpers.display';
+@import 'stylesheets/helpers.flex';
+@import 'stylesheets/helpers.overflow';
+@import 'stylesheets/helpers.colors';
+@import 'stylesheets/helpers.position';
+@import 'stylesheets/helpers.borders';
+@import 'stylesheets/helpers.border-radius';

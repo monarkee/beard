@@ -1,0 +1,210 @@
+// Flexbox Helpers
+// ------------------------------------------------------------------------------------ */
+.flex { display: flex; }
+.iflex { display: inline-flex; }
+.flex-grow { flex-grow: 1 }
+
+// Flex Basis Helpers
+//-------------------------------------------------------------------------- */
+.fb100 { flex-basis: 100%; }
+
+// Flex Direction Helpers
+//-------------------------------------------------------------------------- */
+.fdr { flex-direction: row; }
+.fdrr { flex-direction: row-reverse; }
+.fdc { flex-direction: column; }
+.fdcr { flex-direction: column-reverse; }
+
+// Flex Wrap Helpers
+//-------------------------------------------------------------------------- */
+.fwn { flex-wrap: nowrap; }
+.fww { flex-wrap: wrap; }
+.fwr { flex-wrap: wrap-reverse; }
+
+// Justification Helpers
+//-------------------------------------------------------------------------- */
+.jcc { justify-content: center; }
+.jcsb { justify-content: space-between; }
+.jcsa { justify-content: space-around; }
+.jcfs { justify-content: flex-start; }
+.jcfe { justify-content: flex-end; }
+
+// Align Items Helpers
+//-------------------------------------------------------------------------- */
+.aic { align-items: center; }
+.aifs { align-items: flex-start; }
+.aife { align-items: flex-end; }
+.ais { align-items: stretch; }
+.aib { align-items: baseline; }
+
+// Align Content Helpers
+//-------------------------------------------------------------------------- */
+.acc { align-content: center; }
+.acfs { align-content: flex-start; }
+.acfe { align-content: flex-end; }
+.acs { align-content: stretch; }
+.acb { align-content: baseline; }
+
+// Generate responsive versions of the above
+//-------------------------------------------------------------------------- */
+@if $beard-enable-responsive == true {
+    @each $key, $breakpoint in $breakpoints {
+        .#{$key}-flex {
+            @include media($key) {
+                display: flex;
+            }
+        }
+
+        .#{$key}-iflex {
+            @include media($key) {
+                display: inline-flex;
+            }
+        }
+
+        .#{$key}-fb100 {
+            @include media($key) {
+                flex-basis: 100%;
+            }
+        }
+
+        // Flex Direction
+        //-------------------------------------------------------------------------- */
+        .#{$key}-fdr {
+            @include media($key) {
+                flex-direction: row;
+            }
+        }
+
+        .#{$key}-fdrr {
+            @include media($key) {
+                flex-direction: row-reverse;
+            }
+        }
+
+        .#{$key}-fdc {
+            @include media($key) {
+                flex-direction: column;
+            }
+        }
+
+        .#{$key}-fdcr {
+            @include media($key) {
+                flex-direction: column-reverse;
+            }
+        }
+
+        .#{$key}-fwn {
+            @include media($key) {
+                flex-wrap: nowrap;
+            }
+        }
+
+        .#{$key}-fww {
+            @include media($key) {
+                flex-wrap: wrap;
+            }
+        }
+
+        .#{$key}-fwr {
+            @include media($key) {
+                flex-wrap: wrap-reverse;
+            }
+        }
+
+        // Justify Content
+        //-------------------------------------------------------------------------- */
+        .#{$key}-jcc {
+            @include media($key) {
+                justify-content: center;
+            }
+        }
+
+        .#{$key}-jcsb {
+            @include media($key) {
+                justify-content: space-between;
+            }
+        }
+
+        .#{$key}-jcsa {
+            @include media($key) {
+                justify-content: space-around;
+            }
+        }
+
+        .#{$key}-jcfs {
+            @include media($key) {
+                justify-content: flex-start;
+            }
+        }
+
+        .#{$key}-jcfe {
+            @include media($key) {
+                justify-content: flex-end;
+            }
+        }
+
+        // Align Items
+        //-------------------------------------------------------------------------- */
+        .#{$key}-aic {
+            @include media($key) {
+                align-items: center;
+            }
+        }
+
+        .#{$key}-aifs {
+            @include media($key) {
+                align-items: flex-start;
+            }
+        }
+
+        .#{$key}-aife {
+            @include media($key) {
+                align-items: flex-end;
+            }
+        }
+
+        .#{$key}-ais {
+            @include media($key) {
+                align-items: stretch;
+            }
+        }
+
+        .#{$key}-aib {
+            @include media($key) {
+                align-items: baseline;
+            }
+        }
+
+        // Align Content
+        //-------------------------------------------------------------------------- */
+        .#{$key}-acc {
+            @include media($key) {
+                align-content: center;
+            }
+        }
+
+        .#{$key}-acfs {
+            @include media($key) {
+                align-content: flex-start;
+            }
+        }
+
+        .#{$key}-acfe {
+            @include media($key) {
+                align-content: flex-end;
+            }
+        }
+
+        .#{$key}-acs {
+            @include media($key) {
+                align-content: stretch;
+            }
+        }
+
+        .#{$key}-acb {
+            @include media($key) {
+                align-content: baseline;
+            }
+        }
+    }
+}

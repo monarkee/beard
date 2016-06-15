@@ -1,0 +1,27 @@
+// Font Size Helpers
+// ------------------------------------------------------------------------------------ */
+@each $name, $amount in $font-size-values {
+    .#{$name} { @include font-size($amount) }
+
+    @if $beard-enable-responsive == true {
+        @each $key, $breakpoint in $breakpoints {
+            .#{$key}-#{$name} {
+                @include media($key) {
+                    @include font-size($amount);
+                }
+            }
+        }
+    }
+}
+
+// Font Weight Helpers
+//-------------------------------------------------------------------------- */
+.fw1, .fwthin { font-weight: $thin !important; }
+.fw2, .fwxlight { font-weight: $xlight !important; }
+.fw3, .fwlight { font-weight: $light !important; }
+.fw4, .fwnormal { font-weight: $normal !important; }
+.fw5, .fwmedium { font-weight: $medium !important; }
+.fw6, .fwsemibold { font-weight: $semibold !important; }
+.fw7, .fwbold { font-weight: $bold !important; }
+.fw8, .fwxbold { font-weight: $xbold !important; }
+.fw9, .fwblack { font-weight: $xxbold !important; }

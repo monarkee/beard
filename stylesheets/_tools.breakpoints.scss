@@ -1,0 +1,11 @@
+@mixin media($thepoint) {
+    $feature: 'screen and ';
+    $value: map-get($breakpoints, $thepoint);
+    $media-query: $feature + $value;
+    @media #{$media-query} { @content; }
+}
+
+@mixin new-breakpoint($label, $def) {
+  $map2: ($label: $def);
+  $breakpoints: map-merge($breakpoints, $map2) !global;
+}

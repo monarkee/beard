@@ -1,0 +1,137 @@
+// Settings
+//-------------------------------------------------------------------------- */
+// This file contains all of the configurable settings for Beard. You
+// can essentially make your own copy of this file for you project and
+// override every value to the one you want, minus the `!default` option.
+
+// Configuration Switches
+//-------------------------------------------------------------------------- */
+$beard-reset: true !default;
+$beard-base: true !default;
+$beard-enable-responsive: true !default;
+
+// Allow the user to specify how many spacing helper amounts to generate
+$beard-spacing-helper-amount: 10 !default;
+
+// Allow the user to turn off the spacing helpers completely
+$beard-enable-spacing-helpers: true !default;
+
+// Responsive Breakpoints
+//-------------------------------------------------------------------------- */
+@if $beard-enable-responsive == true {
+    $beard-breakpoint-sm: '(min-width: 30rem)' !default;
+    $beard-breakpoint-md: '(min-width: 60rem)' !default;
+    $beard-breakpoint-lg: '(min-width: 90rem)' !default;
+    $beard-breakpoint-xlg: '(min-width: 144rem)' !default;
+
+    $beard-breakpoint-only-sm: '(max-width: 59.99999rem)' !default;
+    $beard-breakpoint-only-md: '(min-width: 60rem) and (max-width: 89.99999rem)' !default;
+    $beard-breakpoint-only-lg: '(min-width: 90rem) and (max-width: 143.99999rem)' !default;
+    $beard-breakpoint-only-xlg: '(min-width: 144rem)' !default;
+
+    $breakpoints: (
+        sm: $beard-breakpoint-sm,
+        only-sm: $beard-breakpoint-only-sm,
+        md: $beard-breakpoint-md,
+        only-md: $beard-breakpoint-only-md,
+        lg: $beard-breakpoint-lg,
+        only-lg: $beard-breakpoint-only-lg,
+        xlg: $beard-breakpoint-xlg,
+        only-xlg: $beard-breakpoint-only-xlg
+    ) !global;
+}
+
+// Block Grid
+//-------------------------------------------------------------------------- */
+$beard-grid-block-count: 12 !default;
+$beard-grid-gutter: 30px !default;
+
+// Site Width
+// ------------------------------------------------------------------------------------ */
+$site-width: 114rem !default;
+
+// Typefaces
+//-------------------------------------------------------------------------- */
+$sans-serif: 'Helvetica Neue', Helvetica, Arial, sans-serif !default;
+$serif: Merriweather, Georgia, serif !default;
+$code: Menlo, Consolas, Monaco, 'Andale Mono', monospace !default;
+
+// Font Sizes
+//-------------------------------------------------------------------------- */
+// Value are based on a modular scale configured from here:
+// http://www.modularscale.com/?1,1.1,1.2&rem&1.5&web&text
+$ft1: 10 !default;
+$ft2: 11 !default;
+$ft3: 12 !default;
+$ft4: 15 !default;
+$ft5: 16.5 !default;
+$ft6: 18 !default;
+$ft7: 22.5 !default;
+$ft8: 24.75 !default;
+$ft9: 27 !default;
+$ft10: 33.75 !default;
+$ft11: 37.13 !default;
+$ft12: 40.5 !default;
+$ft13: 50.63 !default;
+$ft14: 55.69 !default;
+$ft15: 60.75 !default;
+$ft16: 75.94 !default;
+$ft17: 83.53 !default;
+
+$font-size-values: (
+    ft1: $ft1,
+    ft2: $ft2,
+    ft3: $ft3,
+    ft4: $ft4,
+    ft5: $ft5,
+    ft6: $ft6,
+    ft7: $ft7,
+    ft8: $ft8,
+    ft9: $ft9,
+    ft10: $ft10,
+    ft11: $ft11,
+    ft12: $ft12,
+    ft13: $ft13,
+    ft14: $ft14,
+    ft15: $ft15,
+    ft16: $ft16,
+    ft17: $ft17,
+) !default;
+
+// Font Weights
+// ------------------------------------------------------------------------------------ */
+$thin: 100 !default;
+$xlight: 200 !default;
+$light: 300 !default;
+$normal: 400 !default;
+$medium: 500 !default;
+$semibold: 600 !default;
+$bold: 700 !default;
+$xbold: 800 !default;
+$xxbold: 900 !default;
+
+// Letter Spacing
+//-------------------------------------------------------------------------- */
+$ls1:  0.1rem !default;
+$ls2:  0.2rem !default;
+$ls3:  0.3rem !default;
+$ls4:  0.4rem !default;
+$ls5:  0.5rem !default;
+$ls6:  0.6rem !default;
+$ls7:  0.7rem !default;
+$ls8:  0.8rem !default;
+$ls9:  0.9rem !default;
+$ls10: 1.0rem !default;
+
+// Border Radius Amounts
+//-------------------------------------------------------------------------- */
+$border-radius-amount: 6 !default;
+$circle-img-radius: 50% !default;
+
+// Max Border Size Helper Amount
+//-------------------------------------------------------------------------- */
+$beard-border-size-amount: 3 !default;
+
+// Create an empty spacing-amount list
+//-------------------------------------------------------------------------- */
+$spacing-amounts: ();

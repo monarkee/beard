@@ -1,24 +1,18 @@
-// Gulp Requires
-var gulp = require('gulp'),
-    gutil = require('gulp-util'),
-    autoprefixer = require('gulp-autoprefixer'),
-    sass = require('gulp-sass'),
-    minifycss = require('gulp-minify-css');
+var gulp = require('gulp');
+var elixir = require('laravel-elixir');
+var argv = require('yargs').argv;
 
-// Directories
-var DIST = 'dist/';
+elixir.config.assetsPath = 'source/_assets';
+elixir.config.publicPath = 'source';
 
-// SCSS Compiling and Minification
-gulp.task('sass', function() {
-    return gulp.src('beard.scss')
-        .pipe(sass({
-            debugInfo: false,
-            lineNumbers: false
-        }))
-        .pipe(autoprefixer('last 2 version'))
-        .pipe(minifycss())
-        .pipe(gulp.dest(DIST));
+elixir(function(mix) {
+    var env = argv.e || argv.env || 'local';
+
+    mix.sass('main.scss')
+        .exec('jigsaw build ' + env, ['./source/*', './source/**/*', '!./source/_assets/**/*'])
+        .browserSync({
+            server: { baseDir: 'build_' + env },
+            proxy: null,
+            files: [ 'build_' + env + '/**/*' ]
+        });
 });
-
-// Gulp Default Task
-gulp.task('default', ['sass']);
