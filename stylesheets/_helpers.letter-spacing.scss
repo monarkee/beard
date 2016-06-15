@@ -1,0 +1,32 @@
+// Letter-spacing Options
+// ------------------------------------------------------------------------------------ */
+// These styles are useful when you want to space a button's text out
+// or provide a heading with some space. These exist because the letter-spacing
+// option in CSS doesn't allow for a unit-less value. If it ever does, then we'd
+// be able to specify something like "letter-spacing: 4" and be done with it.
+$letter-spacing-values: (
+  ls1: $ls1,
+  ls2: $ls2,
+  ls3: $ls3,
+  ls4: $ls4,
+  ls5: $ls5,
+  ls6: $ls6,
+  ls7: $ls7,
+  ls8: $ls8,
+  ls9: $ls9,
+  ls10: $ls10
+) !default;
+
+@each $name, $amount in $letter-spacing-values {
+    .#{$name} { letter-spacing: $amount }
+
+    @if $beard-enable-responsive == true {
+        @each $key, $breakpoint in $breakpoints {
+            .#{$key}-#{$name} {
+                @include media($key) {
+                    letter-spacing: $amount;
+                }
+            }
+        }
+    }
+}

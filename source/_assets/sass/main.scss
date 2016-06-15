@@ -1,0 +1,117 @@
+// Settings
+//-------------------------------------------------------------------------- */
+@import '../../../stylesheets/settings';
+@import '../../../stylesheets/settings.colors';
+
+// Tools & Mixins
+//-------------------------------------------------------------------------- */
+@import '../../../stylesheets/tools.appearance';
+@import '../../../stylesheets/tools.breakpoints';
+@import '../../../stylesheets/tools.user-drag';
+@import '../../../stylesheets/tools.font-size';
+@import '../../../stylesheets/tools.spacing';
+
+// Generic
+//-------------------------------------------------------------------------- */
+@import '../../../stylesheets/generic.reset';
+
+// Base
+//-------------------------------------------------------------------------- */
+@import '../../../stylesheets/base';
+
+// Custom breakpoints and spacing helpers
+//-------------------------------------------------------------------------- */
+// @include new-breakpoint(tablet, '(min-width: 600px)');
+// @include new-spacing-helper('58');
+
+body {
+  font-family: system, -apple-system, BlinkMacSystemFont, ubuntu, sans-serif;
+}
+
+:not(pre) > code {
+  background: rgb(250, 250, 250);
+  padding: 0.5rem 1rem;
+  color: #666;
+  border-radius: 3px;
+  text-shadow: 0 1px 0 #fff;
+  border: 1px solid rgb(220, 220, 220);
+}
+
+.btn--sm {
+  padding: 0.85rem 1rem;
+}
+
+.ht3 {
+  height: 7px;
+}
+
+.main-content {
+  max-width: 96rem;
+}
+
+.main-sidebar {
+  flex: 0 0 200px;
+}
+
+@media screen and (max-width: 960px) {
+  .main-sidebar {
+      display: none;
+  }
+}
+
+.sticky {
+    background-color: rgba(67,70,74, 0.1);
+    position: relative;
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    color: rgba(67,70,74, 0.4);
+}
+
+.sticky--nopad {
+    left: 0;
+    right: 0;
+}
+
+.outline {
+    outline: 1px solid rgba(67,70,74, 0.4);
+}
+
+.example-nested-frame {
+  background: rgba(67,70,74, 0.1);
+}
+
+.pv05 { padding-top: 0.5rem; padding-bottom: 0.5rem; }
+
+.badge {
+  padding: 4px 6px;
+}
+
+th, td {
+  @extend .ph2;
+}
+
+th {
+  @extend .fw6;
+  background: $bgg05;
+}
+
+// Helpers
+//-------------------------------------------------------------------------- */
+@import '../../../stylesheets/helpers.text-align';
+@import '../../../stylesheets/helpers.spacing';
+@import '../../../stylesheets/helpers.line-heights';
+@import '../../../stylesheets/helpers.letter-spacing';
+@import '../../../stylesheets/helpers.fonts';
+@import '../../../stylesheets/helpers.misc';
+@import '../../../stylesheets/helpers.grid';
+@import '../../../stylesheets/helpers.floats';
+@import '../../../stylesheets/helpers.display';
+@import '../../../stylesheets/helpers.flex';
+@import '../../../stylesheets/helpers.overflow';
+@import '../../../stylesheets/helpers.colors';
+@import '../../../stylesheets/helpers.position';
+@import '../../../stylesheets/helpers.borders';
+@import '../../../stylesheets/helpers.border-radius';

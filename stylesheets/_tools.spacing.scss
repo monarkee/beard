@@ -1,0 +1,16 @@
+// Tools to Generate Responsive Spacing Helper
+//-------------------------------------------------------------------------- */
+@function new-spacing-helper($size) {
+    $spacing-amounts: append($spacing-amounts, $size) !global;
+    @return $spacing-amounts;
+}
+
+@mixin new-spacing-helper($size) {
+    $spacing-amounts: new-spacing-helper($size);
+}
+
+// Build the initial list of spacing amounts
+@for $i from 1 through $beard-spacing-helper-amount {
+    $spacing-amounts: new-spacing-helper($i);
+}
+

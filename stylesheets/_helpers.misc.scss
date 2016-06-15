@@ -1,0 +1,104 @@
+// Misceallaneous Helpers
+//-------------------------------------------------------------------------- */
+
+// Center
+//-------------------------------------------------------------------------- */
+%center,
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+// Typeface Helper
+//-------------------------------------------------------------------------- */
+%sans-serif,
+.sans-serif {
+  font-family: $sans-serif;
+}
+
+%serif,
+.serif {
+  font-family: $serif;
+}
+
+%code,
+.code {
+  font-family: $code;
+}
+
+// Clearfix Helper
+// ------------------------------------------------------------------------------------ */
+.clearfix,
+%clearfix {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+// Hidetext Helper
+//-------------------------------------------------------------------------- */
+%hidetext, .hidetext {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+// Active and Hover State Helpers
+//-------------------------------------------------------------------------- */
+%default-hover,
+.default-hover {
+    &:hover,
+    &:focus {
+        opacity: 0.5;
+    }
+}
+
+%default-active,
+.default-active {
+    &:active {
+        opacity: 0.8;
+    }
+}
+
+%dim, .dim {
+    @extend %default-active;
+    @extend %default-hover;
+}
+
+// Site Width Helper
+//-------------------------------------------------------------------------- */
+%site-width,
+.site-width { max-width: $site-width; }
+
+// Font Transform Helpers
+//-------------------------------------------------------------------------- */
+.lowercase { text-transform: lowercase; }
+.uppercase { text-transform: uppercase; }
+
+// Ellipses Text Helper
+// ------------------------------------------------------------------------------------
+.ell { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+// Border Removal Helper
+//-------------------------------------------------------------------------- */
+.xbrdr { border: none; }
+
+// Image Helpers
+// ------------------------------------------------------------------------------------
+.imax { max-width: 100%; width: auto; height: auto; }
+.i100 { width: 100%; }
+
+// Background Helpers
+//-------------------------------------------------------------------------- */
+.bgcover { background-size: cover; }
+.bgcenter { background-position: center; }
+
+// Vertical Align Tables
+//-------------------------------------------------------------------------- */
+.vam { vertical-align: middle; }
+
+.xts {
+    text-shadow: none !important;
+}

@@ -1,0 +1,6 @@
+/build_local/
+/node_modules/
+/vendor/
+/source/
+config.php
+gulpfile.js
