@@ -14,5 +14,3 @@
     $spacing-amounts: new-spacing-helper($i);
 }
 
-// Add the zero spacing helper manually so it's last in the source order
-@include new-spacing-helper('0');

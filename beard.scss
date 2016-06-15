@@ -1,43 +1,47 @@
 // Settings
 //-------------------------------------------------------------------------- */
-@import
-'stylesheets/settings',
-'stylesheets/settings.colors',
+@import 'stylesheets/settings';
+@import 'stylesheets/settings.colors';
 
 // Tools & Mixins
 //-------------------------------------------------------------------------- */
-'stylesheets/tools.appearance',
-'stylesheets/tools.breakpoints',
-'stylesheets/tools.user-drag',
-'stylesheets/tools.font-size',
-'stylesheets/tools.spacing',
+@import 'stylesheets/tools.appearance';
+@import 'stylesheets/tools.breakpoints';
+@import 'stylesheets/tools.user-drag';
+@import 'stylesheets/tools.font-size';
+@import 'stylesheets/tools.spacing';
 
 // Generic
 //-------------------------------------------------------------------------- */
-'stylesheets/generic.reset',
+@import 'stylesheets/generic.reset';
 
 // Base
 //-------------------------------------------------------------------------- */
-'stylesheets/base',
+@import 'stylesheets/base';
 
-// Objects
+// Custom breakpoints and spacing helpers
 //-------------------------------------------------------------------------- */
-'stylesheets/objects.media',
+// @include new-breakpoint(tablet, '(min-width: 600px)');
+// @include new-spacing-helper('58');
+
+// Put your site styles here
+//-------------------------------------------------------------------------- */
+// @import 'app.scss';
 
 // Helpers
 //-------------------------------------------------------------------------- */
-'stylesheets/helpers.text-align',
-'stylesheets/helpers.spacing',
-'stylesheets/helpers.line-heights',
-'stylesheets/helpers.letter-spacing',
-'stylesheets/helpers.fonts',
-'stylesheets/helpers.misc',
-'stylesheets/helpers.grid',
-'stylesheets/helpers.floats',
-'stylesheets/helpers.display',
-'stylesheets/helpers.flex',
-'stylesheets/helpers.overflow',
-'stylesheets/helpers.colors',
-'stylesheets/helpers.position',
-'stylesheets/helpers.borders',
-'stylesheets/helpers.border-radius';
+@import 'stylesheets/helpers.text-align';
+@import 'stylesheets/helpers.spacing';
+@import 'stylesheets/helpers.line-heights';
+@import 'stylesheets/helpers.letter-spacing';
+@import 'stylesheets/helpers.fonts';
+@import 'stylesheets/helpers.misc';
+@import 'stylesheets/helpers.grid';
+@import 'stylesheets/helpers.floats';
+@import 'stylesheets/helpers.display';
+@import 'stylesheets/helpers.flex';
+@import 'stylesheets/helpers.overflow';
+@import 'stylesheets/helpers.colors';
+@import 'stylesheets/helpers.position';
+@import 'stylesheets/helpers.borders';
+@import 'stylesheets/helpers.border-radius';

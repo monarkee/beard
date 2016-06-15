@@ -1,37 +1,18 @@
 {
-<<<<<<< HEAD
-  "name": "beard",
-  "version": "2.0.0",
+  "private": true,
   "scripts": {
-    "prod": "gulp --production",
-    "dev": "gulp watch"
+    "scss": "node-sass --output-style compressed -o dist beard.scss",
+    "autoprefixer": "postcss -u autoprefixer --autoprefixer.browsers '> 5%, ie 9' -r dist/*",
+    "build:beard": "npm run scss && npm run autoprefixer",
+    "watch:beard": "onchange 'stylesheets/*.scss' '*.scss' -- npm run build:beard"
   },
-=======
-  "name": "beardcss",
-  "version": "2.0.3",
-  "description": "A CSS framework for people with better things to do",
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/monarkee/beard.git"
-  },
-  "keywords": [
-    "sass",
-    "scss",
-    "atomic",
-    "css",
-    "framework",
-    "frontend"
-  ],
-  "author": "David Hemphill",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/monarkee/beard/issues"
-  },
-  "homepage": "http://buildwithbeard.com",
->>>>>>> 6ac8e67aebea31841b115216541bbd49d45a81c8
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "laravel-elixir": "^5.0.0"
+    "autoprefixer": "^6.3.6",
+    "gulp": "^3.8.8",
+    "laravel-elixir": "^4.2.0",
+    "node-sass": "^3.7.0",
+    "onchange": "^2.5.0",
+    "postcss-cli": "^2.5.2",
+    "yargs": "^4.6.0"
   }
 }

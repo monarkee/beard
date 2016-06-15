@@ -7,10 +7,12 @@
 // Configuration Switches
 //-------------------------------------------------------------------------- */
 $beard-reset: true !default;
+$beard-base: true !default;
 $beard-enable-responsive: true !default;
 
 // Allow the user to specify how many spacing helper amounts to generate
 $beard-spacing-helper-amount: 10 !default;
+
 // Allow the user to turn off the spacing helpers completely
 $beard-enable-spacing-helpers: true !default;
 
@@ -22,9 +24,9 @@ $beard-enable-spacing-helpers: true !default;
     $beard-breakpoint-lg: '(min-width: 90rem)' !default;
     $beard-breakpoint-xlg: '(min-width: 144rem)' !default;
 
-    $beard-breakpoint-only-sm: '(max-width: 59.9rem)' !default;
-    $beard-breakpoint-only-md: '(min-width: 60rem) and (max-width: 89.9rem)' !default;
-    $beard-breakpoint-only-lg: '(min-width: 90rem) and (max-width: 143.9rem)' !default;
+    $beard-breakpoint-only-sm: '(max-width: 59.99999rem)' !default;
+    $beard-breakpoint-only-md: '(min-width: 60rem) and (max-width: 89.99999rem)' !default;
+    $beard-breakpoint-only-lg: '(min-width: 90rem) and (max-width: 143.99999rem)' !default;
     $beard-breakpoint-only-xlg: '(min-width: 144rem)' !default;
 
     $breakpoints: (
@@ -124,7 +126,7 @@ $ls10: 1.0rem !default;
 // Border Radius Amounts
 //-------------------------------------------------------------------------- */
 $border-radius-amount: 6 !default;
-$circle-img-radius: 100rem !default;
+$circle-img-radius: 50% !default;
 
 // Max Border Size Helper Amount
 //-------------------------------------------------------------------------- */

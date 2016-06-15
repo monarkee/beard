@@ -1,6 +1,6 @@
-app/
-output_dev/
-output_prod/
-source/
-bower.json
+/build_local/
+/node_modules/
+/vendor/
+/source/
+config.php
 gulpfile.js

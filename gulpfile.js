@@ -1,13 +1,18 @@
-// Gulp Requires
+var gulp = require('gulp');
 var elixir = require('laravel-elixir');
+var argv = require('yargs').argv;
 
-// Config
-elixir.config.assetsPath = './';
-elixir.config.css.sass.folder = '';
-elixir.config.publicPath = 'dist';
+elixir.config.assetsPath = 'source/_assets';
+elixir.config.publicPath = 'source';
 
 elixir(function(mix) {
-    mix.sass('beard.scss');
-    mix.sass('site.scss');
-    mix.copy('dist/css/beard.css', 'source/css/beard.css');
+    var env = argv.e || argv.env || 'local';
+
+    mix.sass('main.scss')
+        .exec('jigsaw build ' + env, ['./source/*', './source/**/*', '!./source/_assets/**/*'])
+        .browserSync({
+            server: { baseDir: 'build_' + env },
+            proxy: null,
+            files: [ 'build_' + env + '/**/*' ]
+        });
 });

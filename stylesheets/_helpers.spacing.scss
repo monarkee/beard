@@ -1,13 +1,16 @@
+// Add the zero spacing helper manually so it's last in the source order
+@include new-spacing-helper('0');
+
 // Spacing Helpers
 //-------------------------------------------------------------------------- */
 $position-units: (
     padding: 'p',
     margin: 'm'
-    );
+);
 
 // Generate Responsive Spacing Helpers
 //-------------------------------------------------------------------------- */
-// @if $beard-enable-spacing-helpers == true {
+@if $beard-enable-spacing-helpers == true {
     @each $id, $position in $position-units {
         @each $i in $spacing-amounts {
             .#{$position}t#{$i} {
@@ -87,7 +90,7 @@ $position-units: (
             }
         }
     }
-// }
+}
 
 // Padding Removal Helpers
 // ------------------------------------------------------------------------------------
