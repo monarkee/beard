@@ -1,10 +1,35 @@
 {
+<<<<<<< HEAD
   "name": "beard",
   "version": "2.0.0",
   "scripts": {
     "prod": "gulp --production",
     "dev": "gulp watch"
   },
+=======
+  "name": "beardcss",
+  "version": "2.0.3",
+  "description": "A CSS framework for people with better things to do",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/monarkee/beard.git"
+  },
+  "keywords": [
+    "sass",
+    "scss",
+    "atomic",
+    "css",
+    "framework",
+    "frontend"
+  ],
+  "author": "David Hemphill",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/monarkee/beard/issues"
+  },
+  "homepage": "http://buildwithbeard.com",
+>>>>>>> 6ac8e67aebea31841b115216541bbd49d45a81c8
   "devDependencies": {
     "gulp": "^3.9.1",
     "laravel-elixir": "^5.0.0"

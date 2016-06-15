@@ -30,7 +30,7 @@
 }
 
 // Adds the ability to add grids without padding in their blocks
-.frame--xpad [class^='blk'] {
+.frame--xpad [class*='blk'] {
     padding-left: 0;
     padding-right: 0;
 }
@@ -62,6 +62,7 @@ $block-width: 100% / $beard-grid-block-count;
         @extend %blk-relative;
         @extend %blk-padding;
         flex-basis: $i * $block-width;
+        flex-grow: 0;
     }
 }
 
@@ -74,6 +75,7 @@ $block-width: 100% / $beard-grid-block-count;
                 @extend %blk-padding;
                 @include media($key) {
                     flex-basis: $i * $block-width;
+                    flex-grow: 0;
                 }
             }
         }

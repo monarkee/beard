@@ -1,5 +1,6 @@
 // Line Height Helpers
 // ------------------------------------------------------------------------------------ */
+.lh0 { line-height: 0 !important; }
 .lh1 { line-height: 1 !important; }
 .lh1-1 { line-height: 1.1 !important; }
 .lh1-2 { line-height: 1.2 !important; }
@@ -14,6 +15,7 @@
 
 @if $beard-enable-responsive == true {
     @each $key, $breakpoint in $breakpoints {
+        .#{$key}-lh0 { @include media($key) { line-height: 0 !important; } }
         .#{$key}-lh1 { @include media($key) { line-height: 1 !important; } }
         .#{$key}-lh1-1 { @include media($key) { line-height: 1.1 !important; } }
         .#{$key}-lh1-2 { @include media($key) { line-height: 1.2 !important; } }

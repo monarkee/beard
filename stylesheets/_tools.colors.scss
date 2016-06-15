@@ -1,0 +1,6 @@
+// Color Tools
+//-------------------------------------------------------------------------- */
+@mixin new-color($label, $def) {
+  $map2: ($label: $def);
+  $beard-colors: map-merge($beard-colors, $map2) !global;
+}
