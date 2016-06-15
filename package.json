@@ -21,7 +21,6 @@
     "url": "https://github.com/monarkee/beard/issues"
   },
   "homepage": "http://buildwithbeard.com",
-  "private": true,
   "scripts": {
     "scss": "node-sass --output-style compressed -o dist beard.scss",
     "autoprefixer": "postcss -u autoprefixer --autoprefixer.browsers '> 5%, ie 9' -r dist/*",
