@@ -27,7 +27,7 @@ section: subpage_content
             <td class="pv1">Lower the opacity for an element on its active state</td>
         </tr>
         <tr class="brdr1--bottom bcg10">
-            <td class="pv1"><code>.div</code> <code>%dim</code></td>
+            <td class="pv1"><code>.dim</code> <code>%dim</code></td>
             <td class="pv1">Apply a combination of .default-hover and .default-active</td>
         </tr>
         <tr class="brdr1--bottom bcg10">
@@ -45,10 +45,6 @@ section: subpage_content
         <tr class="brdr1--bottom bcg10">
             <td class="pv1"><code>.ell</code></td>
             <td class="pv1">Add an ellipsis when text gets longer than its container</td>
-        </tr>
-        <tr class="brdr1--bottom bcg10">
-            <td class="pv1"><code>.xbrdr</code></td>
-            <td class="pv1">Remove all borders from an element. This is helpful to reset <code>button</code> elements</td>
         </tr>
         <tr class="brdr1--bottom bcg10">
             <td class="pv1"><code>.imax</code></td>

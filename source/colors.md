@@ -4,7 +4,6 @@ section: subpage_content
 ---
 
 <h3 class="tcg50 ft7 fw3 mb2 md-mb3">Color Helpers</h3>
-
 <p class="tcg50 ft5 fw3 mb4 md-mb6 lh2">Beard's color helpers are generated with <code>!important</code> to provide the ability to override any color values set in your CSS. It's also encouraged to use these helpers in place of modifiers which do the same thing.</p>
 
 <hr class="mb4">
