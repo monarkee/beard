@@ -1,17 +1,17 @@
 // Float Helpers
 // ------------------------------------------------------------------------------------
-.fl { float: left; }
-.fr { float: right; }
-.fn { float: none; }
-.finit { float: initial; }
-.finhe { float: inherit; }
+.fl { float: left !important; }
+.fr { float: right !important; }
+.fn { float: none !important; }
+.finit { float: initial !important; }
+.finhe { float: inherit !important; }
 
 @if $beard-enable-responsive == true {
     @each $key, $breakpoint in $breakpoints {
-      .#{$key}-fl { float: left; }
-      .#{$key}-fr { float: right; }
-      .#{$key}-fn { float: none; }
-      .#{$key}-finit { float: initial; }
-      .#{$key}-finhe { float: inherit; }
+      .#{$key}-fl { float: left !important; }
+      .#{$key}-fr { float: right !important; }
+      .#{$key}-fn { float: none !important; }
+      .#{$key}-finit { float: initial !important; }
+      .#{$key}-finhe { float: inherit !important; }
     }
 }
