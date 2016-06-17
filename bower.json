@@ -4,7 +4,7 @@
   "main": [
       "beard.scss"
   ],
-  "version": "2.0.12",
+  "version": "2.0.13",
   "homepage": "https://github.com/monarkee/beard",
   "authors": [
     "David Hemphill <davidlee.hemphill@gmail.com>"
