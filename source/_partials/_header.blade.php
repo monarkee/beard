@@ -9,8 +9,8 @@
             <p class="dn md-db ml2 tcg40 ft3 md-ft4">A CSS framework for people with better things to do</p>
         </div>
         <div class="flex aic">
-            <a href="https://github.com/davidhemphill/beard" class="btn--sm dim bgw tcg40 br3 ft3 md-ft4">View on GitHub</a>
-            <a href="https://github.com/davidhemphill/beard/archive/v1.3.0.zip" class="btn--sm dim bg1 tcw br3 ft3 md-ft4">Download</a>
+            <a href="https://github.com/monarkee/beard" class="btn--sm dim bgw tcg40 br3 ft3 md-ft4">View on GitHub</a>
+            <a href="https://github.com/monarkee/beard/archive/v2.0.15.zip" class="btn--sm dim bg1 tcw br3 ft3 md-ft4">Download</a>
         </div>
     </div>
 </header>
