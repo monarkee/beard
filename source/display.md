@@ -2,7 +2,7 @@
 extends: _layouts.subpage
 section: subpage_content
 ---
-<h3 class="tcg50 ft10 fw3 mb2 md-mb3 flex aic acc">Display <a class="badge br3 bg1 tcw ft3 uppercase ls1 fw6 ml1" title="These helpers accept responsive prefixes">Responsive</a></h3>
+<h3 class="tcg50 ft7 md-ft10 fw3 mb2 md-mb3 flex aic acc">Display <a class="badge br3 bg1 tcw ft1 md-ft3 uppercase ls1 fw6 ml1" title="These helpers accept responsive prefixes">Responsive</a></h3>
 
 <table class="w100 mb6 ft4 tcg60 lh2">
     <thead>

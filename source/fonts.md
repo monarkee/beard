@@ -2,7 +2,7 @@
 extends: _layouts.subpage
 section: subpage_content
 ---
-<h3 class="tcg50 ft10 fw3 mb2 md-mb3 flex aic acc">Fonts <a class="badge br3 bg1 tcw ft3 uppercase ls1 fw6 ml1" title="These helpers accept responsive prefixes">Partially Responsive</a></h3>
+<h3 class="tcg50 ft7 md-ft10 fw3 mb2 md-mb3 flex aic acc">Fonts <a class="badge br3 bg1 tcw ft1 md-ft3 uppercase ls1 fw6 ml1" title="These helpers accept responsive prefixes">Partially Responsive</a></h3>
 <p class="tcg50 ft5 fw3 mb4 lh2">Yes, even letter-spacing gets responsive love in Beard. Why would you need responsive letter-spacing? Whenever spaced out text changes in size, it's helpful to have the letter-spacing change with it. These helpers make it easy to do so in a similar way to the font-sizing helpers.</p>
 
 <h3 class="tcg50 ft7 fw3 mb2 md-mb3 flex aic acc">Font Family Helpers <strong class="tc1 ft3 uppercase ls1 fw6 ml1" title="These helpers accept responsive prefixes">Not Responsive</strong></h3>

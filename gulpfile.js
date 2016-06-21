@@ -14,5 +14,7 @@ elixir(function(mix) {
             server: { baseDir: 'build_' + env },
             proxy: null,
             files: [ 'build_' + env + '/**/*' ]
-        });
+        })
+        .styles(['prism-ghcolor.css', 'prism.css'], 'source/css/vendor.css')
+        .scripts(['vue.min.js', 'prism.js', 'main.js'], 'source/js/app.js');
 });

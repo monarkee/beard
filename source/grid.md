@@ -2,7 +2,7 @@
 extends: _layouts.subpage
 section: subpage_content
 ---
-<h2 class="tcg50 ft10 fw3 mb2 md-mb3 flex aic acc">Grid <a class="badge br3 bg1 tcw ft3 uppercase ls1 fw6 ml1" title="These helpers accept responsive prefixes">Responsive</a></h2>
+<h2 class="tcg50 ft10 fw3 mb2 md-mb3 flex aic acc">Grid <a class="badge br3 bg1 tcw ft1 md-ft3 uppercase ls1 fw6 ml1" title="These helpers accept responsive prefixes">Responsive</a></h2>
 
 <h3 class="tcg50 ft7 fw3 mb2 md-mb3">12-column Grid</h3>
 <p class="tcg50 ft5 fw3 mb4 md-mb6 lh2">Beard ships with a standard 12-column grid and provides responsive helper classes to change the layout when the viewport reaches a certain breakpoint. It also supports nested grids and non-responsive grids for increased flexibility.</p>

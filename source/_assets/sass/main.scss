@@ -53,11 +53,11 @@ body {
   flex: 0 0 200px;
 }
 
-@media screen and (max-width: 960px) {
-  .main-sidebar {
-      display: none;
-  }
-}
+// @media screen and (max-width: 960px) {
+//   .main-sidebar {
+//       display: none;
+//   }
+// }
 
 .sticky {
     background-color: rgba(67,70,74, 0.1);
@@ -97,6 +97,10 @@ th {
   @extend .fw6;
   background: $bgg05;
 }
+
+.z30 { z-index: 30; }
+
+.pointer { cursor: pointer; }
 
 // Helpers
 //-------------------------------------------------------------------------- */

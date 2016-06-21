@@ -2,7 +2,7 @@
 extends: _layouts.subpage
 section: subpage_content
 ---
-<h3 class="tcg50 ft10 fw3 mb2 md-mb3 flex aic acc">Miscellaneous Helpers</h3>
+<h3 class="tcg50 ft7 md-ft10 fw3 mb2 md-mb3 flex aic acc">Miscellaneous Helpers</h3>
 
 <p class="tcg50 ft5 fw3 mb4 md-mb6 lh2">Beard comes with a small helping of odds and ends to make your life easier.</p>
 

@@ -1,5 +1,5 @@
-<aside class="main-sidebar brdr1--right bcg10">
-    <div class="wrap wrap--pad">
+<aside class="w100 brdr1--right bcg10" :class="{ 'brdr1--top bcg10': sidebarVisible }">
+    <div class="ph2">
         <h2 class="ft6 pv1 tcg60 mt4 fw3">Getting Started</h2>
         <ul class="mb3">
             <li class="ft4 pv1 brdr1--bottom bcg10">
@@ -49,14 +49,5 @@
                 </ul>
             </li>
         </ul>
-
-{{--
-        <h2 class="ft6 pv1 tcg60 fw3">Resources</h2>
-        <ul class="mb3">
-            <li class="ft4 pv1">
-                <a href="" class="tc1 dim">Templates</a>
-            </li>
-        </ul>
     </div>
---}}
 </aside>

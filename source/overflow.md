@@ -2,7 +2,7 @@
 extends: _layouts.subpage
 section: subpage_content
 ---
-<h3 class="tcg50 ft10 fw3 mb2 md-mb3 flex aic acc">Overflow</h3>
+<h3 class="tcg50 ft7 md-ft10 fw3 mb2 md-mb3 flex aic acc">Overflow</h3>
 
 <table class="w100 mb6 ft4 tcg60 lh2">
     <thead>

@@ -2,7 +2,7 @@
 extends: _layouts.subpage
 section: subpage_content
 ---
-<h3 class="tcg50 ft10 fw3 mb2 md-mb3 flex aic acc">Spacing  <a class="badge br3 bg1 tcw ft3 uppercase ls1 fw6 ml1" title="These helpers accept responsive prefixes">Responsive</a></h3>
+<h3 class="tcg50 ft7 md-ft10 fw3 mb2 md-mb3 flex aic acc">Spacing  <a class="badge br3 bg1 tcw ft1 md-ft3 uppercase ls1 fw6 ml1" title="These helpers accept responsive prefixes">Responsive</a></h3>
 <p class="tcg50 ft5 fw3 mb4 md-mb6 lh2">The spacing system is set up by default to have 10 increments, each representing 1rem in size. For example, to achieve a <code>margin-top</code> which uses the 2nd step in the spacing scale (2rems by deafult), you would use <code>.mt2</code>. If you wanted a <code>padding-left</code> with the 8th step in the scale, it's <code>.pl8</code>.</p>
 
 <table class="w100 mb6 ft4 tcg60 lh2">
