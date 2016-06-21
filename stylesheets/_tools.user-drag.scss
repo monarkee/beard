@@ -1,7 +1,0 @@
-// Prevent the user from dragging the image
-// ------------------------------------------------------------------------------------ */
-@mixin user-drag($value) {
-  -moz-user-drag: $value;
-  -webkit-user-drag: $value;
-  user-drag: $value;
-}
