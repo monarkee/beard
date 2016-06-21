@@ -1,7 +1,7 @@
 <header class="main-header">
     <div class="flex jcsb aic pv1 md-pv2 ph3">
         <div class="flex aic">
-            <h1 class="logo ft5 md-ft7 ls1 fwxxbold">
+            <h1 class="logo ft5 md-ft7 ls1 fwxxbold flex aic">
                 <a href="/" class="tc1 dim">
                     <span class="uppercase">Beard</span>
                 </a>
