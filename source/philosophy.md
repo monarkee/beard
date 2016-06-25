@@ -7,7 +7,7 @@ section: subpage_content
 
 <h3 class="tcg50 ft7 fw3 mb2 md-mb3">An Example of the Beard Workflow</h3>
 
-<p class="tcg50 ft5 fw3 mb4 lh2">For example, let&rsquo; pretend you are building a button component for your project. You want buttons to be able to have two background colors and two font colors. You may be tempted to write these classes:</p>
+<p class="tcg50 ft5 fw3 mb4 lh2">For example, let&rsquo;s pretend you are building a button component for your project. You want buttons to be able to have two background colors and two font colors. You may be tempted to write these classes:</p>
 
 <pre class="mb4"><code class="language-html">
 &lt;a class="button dark"&gt;Submit Me!&lt;/a&gt;
