@@ -22,7 +22,6 @@
                 <a href="/responsive-prefixes" class="tc1 dim lh1-5">Responsive Prefixes</a>
             </li>
             <li class="ft4 pv1 brdr1--bottom bcg10">
-                <a class="tcg50">Helpers</a>
                 <ul class="mt1">
                     <li class="ft4 mb1"><a href="/borders" class="tcg40 dim">Borders</a></li>
                     <li class="ft4 mb1"><a href="/border-radius" class="tcg40 dim">Border Radius</a></li>
