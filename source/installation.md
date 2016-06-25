@@ -34,4 +34,4 @@ section: subpage_content
 
 <h3 class="tcg50 ft8 fw3 mb2 md-mb3">Or&hellip;Just the Dead Simple Installation</h3>
 <p class="tcg50 ft5 fw3 mb2 lh2">Or you could just import it directly. We don't recommend it, but if you need something quick, go ahead!</p>
-<p class="tcg50 ft5 fw3 mb2 lh2"><code class="">@import '../bower_components/beard/beard'</code></p>
+<p class="tcg50 ft5 fw3 mb2 lh2"><code class="">@import '../node_modules/beardcss/beard'</code></p>
