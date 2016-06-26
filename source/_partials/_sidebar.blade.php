@@ -34,12 +34,12 @@
             <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/fonts" class="tc1 dim lh1-5">Fonts</a></li>
             <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/grid" class="tc1 dim lh1-5">Grid</a></li>
             <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/letter-spacing" class="tc1 dim lh1-5">Letter Spacing</a></li>
-            <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/line-heights" class="tc1 dim lh1-5">Line heights</a></li>
+            <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/line-heights" class="tc1 dim lh1-5">Line Heights</a></li>
             <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/misc" class="tc1 dim lh1-5">Misc</a></li>
             <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/overflow" class="tc1 dim lh1-5">Overflow</a></li>
             <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/position" class="tc1 dim lh1-5">Position</a></li>
             <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/spacing" class="tc1 dim lh1-5">Spacing</a></li>
-            <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/text-alignment" class="tc1 dim lh1-5">Text alignment</a></li>
+            <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/text-alignment" class="tc1 dim lh1-5">Text Alignment</a></li>
         </ul>
 
         <h2 class="ft6 pv1 tcg60 fw3">Tools</h2>
