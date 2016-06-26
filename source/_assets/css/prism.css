@@ -12,8 +12,8 @@ pre[class*="language-"] {
     white-space: pre;
     word-spacing: normal;
     word-break: normal;
-    font-size: 1.5rem;
-    line-height: 1.7em;
+    font-size: 1.4rem;
+    line-height: 1.5;
     tab-size: 4;
     hyphens: none;
 }
