@@ -35,9 +35,9 @@ section: subpage_content
 
 <h3 class="tcg50 ft6 fw3 mb2 md-mb3 flex aic acc">Example:</h3>
 
-<pre class="mb4"><code class="language-html">
-&lt;code class="code"&gt;Help&lt;/code&gt;
-</code></pre>
+```html
+<code class="code">Help</code>
+```
 
 <blockquote class="bg1 br3 pv2 ph2 mb6">
     <p class="tcw ft5 fw3 lh2"><strong>Note:</strong> The font family helpers are not responsive. That would just be silly.</p>
@@ -105,9 +105,9 @@ section: subpage_content
 
 <h3 class="tcg50 ft6 fw3 mb2 md-mb3 flex aic acc">Example:</h3>
 
-<pre class="mb6"><code class="language-html">
-&lt;p class="fw8"&gt;This text would be really bold&lt;/code&gt;
-</code></pre>
+```html
+<p class="fw8">This text would be really bold</code>
+```
 
 <hr class="mb6">
 
@@ -211,6 +211,6 @@ section: subpage_content
 
 <h3 class="tcg50 ft6 fw3 mb2 md-mb3 flex aic acc">Example:</h3>
 
-<pre class="mb4"><code class="language-html">
-&lt;h1 class="ft2 md-ft4 xlg-ft12"&gt;This Headline Gets Bigger With Space!&lt;/h1&gt;
-</code></pre>
+```html
+<h1 class="ft2 md-ft4 xlg-ft12">This Headline Gets Bigger With Space!</h1>
+```

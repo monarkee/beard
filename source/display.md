@@ -43,8 +43,8 @@ section: subpage_content
 
 <h3 class="tcg50 ft6 fw3 mb2 md-mb3 flex aic acc">Example:</h3>
 
-<pre class="mb4"><code class="language-html">
-&lt;div class="dn lg-df w100"&gt;
-    &lt;!-- Show content on large breakpoint --&gt;
-&lt;/div&gt;
-</code></pre>
+```html
+<div class="dn lg-df w100">
+    <!-- Show content on large breakpoint -->
+</div>
+```

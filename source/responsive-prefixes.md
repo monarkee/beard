@@ -58,21 +58,22 @@ section: subpage_content
 </table>
 
 <p class="tcg50 ft5 fw3 mb4 lh2">You can use responsive prefixes to specify when an element should be shown on a page. The following would hide the element on the `lg` breakpoint.</p>
-<pre class="mb4"><code class="language-html">
-&lt;div class="lg-dn"&gt;Show on the large breakpoint&lt;/div&gt;
-</code></pre>
+
+```html
+<div class="lg-dn">Show on the large breakpoint</div>
+```
 
 <h2 class="tcg50 ft8 fw3 mb2 md-mb3">Adding New Breakpoints</h2>
 <p class="tcg50 ft5 fw3 mb4 lh2">This mixin allows you to add a new breakpoint to be generated along with Beard&rsquo;s defaults. This will also cause every responsive-helper type to generate a new classes using this breakpoint's key</p>
 
-<pre class="mb4"><code class="language-scss">
+```scss
 // @import '../../../stylesheets/tools.breakpoints';
 
 // This has to go between Beard's tool and helper imports
 @include new-breakpoint(tablet, '(min-width: 600px)');
 
 // Helpers here
-</code></pre>
+```
 
 <blockquote class="bg1 br3 pv2 ph2 mb6">
 <p class="tcw ft5 fw3 lh2"><strong>Note:</strong> Calling this mixin will only work if you import each of Beard&rsquo;s partials individually, <a href="/installation" class="tcw fw6">as recommended by the installation guide</a>.</p>
@@ -80,20 +81,19 @@ section: subpage_content
 
 <h2 class="tcg50 ft8 fw3 mb2 md-mb3">Using breakpoints in Sass with <code>media()</code></h2>
 <p class="tcg50 ft5 fw3 mb4 lh2">Used inside a CSS declaration, this mixin will generate the appropriate media query based on the name registered in Beard's configuration. The media queries are configurable by overriding the default media queries or adding new ones with the <code>new-breakpoint</code> mixin.</p>
-<pre class="mb4"><code class="language-scss">
+
+```scss
 // This Scss
 .narcos {
     @include media(sm) {
         display: none;
     }
 }
-</code></pre>
 
-<pre class="mb4"><code class="language-scss">
 // Generates this CSS
 @media screen and (min-width: 300px) {
     .narcos {
         display: none;
     }
 }
-</code></pre>
+```

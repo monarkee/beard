@@ -66,14 +66,14 @@ section: subpage_content
 
 <h3 class="tcg50 ft6 fw3 mb2 md-mb3 flex aic acc">Example:</h3>
 
-<pre class="mb4"><code class="language-html">
-&lt;div class="mv2 md-mv4 lg-mv6 ph1 md-ph3 lg-ph6"&gt;This div has stuff in it&lt;/div&gt;
-</code></pre>
+```html
+<div class="mv2 md-mv4 lg-mv6 ph1 md-ph3 lg-ph6">This div has stuff in it</div>
+```
 
 <h3 class="tcg50 ft8 fw3 mb2 md-mb3">Adding New Spacing Helpers</h3>
 <p class="tcg50 ft5 fw3 mb4 lh2">This mixin allows you to add a value to be generated along with Beard's default spacing helpers, including responsive versions of each.</p>
 
-<pre class="mb4"><code class="language-scss">
+```scss
 // Tools & Mixins
 //-------------------------------------------------------------------------- */
 // @import '../../../stylesheets/tools.font-size';
@@ -84,7 +84,7 @@ section: subpage_content
 // Helpers
 //-------------------------------------------------------------------------- */
 // @import '../../../stylesheets/helpers.spacing';
-</code></pre>
+```
 
 <blockquote class="bg1 br3 pv2 ph2 mb6">
 <p class="tcw ft5 fw3 lh2"><strong>Note:</strong> Calling this mixin will only work if you import each of Beard&rsquo;s partials individually, <a href="/installation" class="tcw fw6">as recommended by the installation guide</a>.</p>

@@ -35,9 +35,9 @@ section: subpage_content
 
 <h3 class="tcg50 ft6 fw3 mb2 md-mb3 flex aic acc">Example:</h3>
 
-<pre class="mb4"><code class="language-html">
-&lt;div class="clearfix"&gt;
-    &lt;div class="md-fl"&gt;Floated left on medium breakpoint&lt;/div&gt;
-    &lt;div class="md-fr"&gt;Floated right on medium breakpoint&lt;/div&gt;
-&lt;/div&gt;
-</code></pre>
+```html
+<div class="clearfix">
+    <div class="md-fl">Floated left on medium breakpoint</div>
+    <div class="md-fr">Floated right on medium breakpoint</div>
+</div>
+```

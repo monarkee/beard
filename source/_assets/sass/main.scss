@@ -47,6 +47,11 @@ body {
 
 .main-content {
   max-width: 96rem;
+
+  & > pre {
+    @extend .mb2;
+    @extend .md-mb4;
+  }
 }
 
 .main-sidebar {

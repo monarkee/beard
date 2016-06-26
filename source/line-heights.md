@@ -73,8 +73,8 @@ section: subpage_content
 
 <h3 class="tcg50 ft6 fw3 mb2 md-mb3 flex aic acc">Example:</h3>
 
-<pre class="mb4"><code class="language-html">
-&lt;p class="lh1 lg-lh1-5"&gt;Text with responsive line-height.&lt;/p&gt;
-</code></pre>
+```html
+<p class="lh1 lg-lh1-5">Text with responsive line-height.</p>
+```
 
 <p class="tcg50 ft5 fw3 mb4 lh2">The text's line-height would have a value of '1' by default and a value of 1.5, starting on the large breakpoint.</p>

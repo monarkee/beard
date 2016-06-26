@@ -56,8 +56,8 @@ section: subpage_content
 
 <h3 class="tcg50 ft6 fw3 mb2 md-mb3 flex aic acc">Example:</h3>
 
-<pre class="mb4"><code class="language-html">
-&lt;h1 class="ls2 md-ls4 xlg-ls7"&gt;Eye-Catching Heading!!!&lt;/h1&gt;
-</code></pre>
+```html
+<h1 class="ls2 md-ls4 xlg-ls7">Eye-Catching Heading!!!</h1>
+```
 
 <p class="tcg50 ft5 fw3 mb4 lh2">The text above would be aligned left by default, center on the medium breakpoint, right on the large breakpoint, and back to left on the extra large breakpoint.</p>

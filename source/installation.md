@@ -16,7 +16,7 @@ section: subpage_content
 <h3 class="tcg50 ft8 fw3 mb2 md-mb3">The Recommended Way</h3>
 <p class="tcg50 ft5 fw3 mb4 lh2">The best way to add Beard to your project is to copy the contents of <code>beard/beard.scss</code> to your main Sass file. This allows for the best source ordering. From there, we recommend adding your site styles between the "Objects" and "Helpers" sections, like so:</p>
 
-<pre class="pre mb4 language-scss"><code class="code">
+```scss
 // Objects
 ...
 
@@ -24,7 +24,7 @@ section: subpage_content
 
 // Helpers
 ...
-</code></pre>
+```
 
 <blockquote class="bg1 br3 pv2 ph2">
     <p class="tcw ft5 fw3 lh2"><strong>Note:</strong> Don&rsquo;t forget to change the import paths to where you installed Beard.</p>
