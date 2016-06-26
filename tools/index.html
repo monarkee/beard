@@ -22,7 +22,7 @@
         </div>
         <div class="flex aic">
             <a href="https://github.com/monarkee/beard" class="dn md-dib btn--sm dim bgw tcg40 br3 ft3 md-ft4">View on GitHub</a>
-            <a href="https://github.com/monarkee/beard/archive/v2.0.15.zip" class="btn--sm dim bg1 tcw br3 ft3 md-ft4">Download</a>
+            <a href="https://github.com/monarkee/beard/tarball/master" class="btn--sm dim bg1 tcw br3 ft3 md-ft4">Download</a>
         </div>
     </div>
     <nav v-if="sidebarVisible" class="md-dn">
@@ -62,12 +62,12 @@
             <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/fonts" class="tc1 dim lh1-5">Fonts</a></li>
             <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/grid" class="tc1 dim lh1-5">Grid</a></li>
             <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/letter-spacing" class="tc1 dim lh1-5">Letter Spacing</a></li>
-            <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/line-heights" class="tc1 dim lh1-5">Line heights</a></li>
+            <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/line-heights" class="tc1 dim lh1-5">Line Heights</a></li>
             <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/misc" class="tc1 dim lh1-5">Misc</a></li>
             <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/overflow" class="tc1 dim lh1-5">Overflow</a></li>
             <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/position" class="tc1 dim lh1-5">Position</a></li>
             <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/spacing" class="tc1 dim lh1-5">Spacing</a></li>
-            <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/text-alignment" class="tc1 dim lh1-5">Text alignment</a></li>
+            <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/text-alignment" class="tc1 dim lh1-5">Text Alignment</a></li>
         </ul>
 
         <h2 class="ft6 pv1 tcg60 fw3">Tools</h2>
@@ -122,12 +122,12 @@
             <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/fonts" class="tc1 dim lh1-5">Fonts</a></li>
             <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/grid" class="tc1 dim lh1-5">Grid</a></li>
             <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/letter-spacing" class="tc1 dim lh1-5">Letter Spacing</a></li>
-            <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/line-heights" class="tc1 dim lh1-5">Line heights</a></li>
+            <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/line-heights" class="tc1 dim lh1-5">Line Heights</a></li>
             <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/misc" class="tc1 dim lh1-5">Misc</a></li>
             <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/overflow" class="tc1 dim lh1-5">Overflow</a></li>
             <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/position" class="tc1 dim lh1-5">Position</a></li>
             <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/spacing" class="tc1 dim lh1-5">Spacing</a></li>
-            <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/text-alignment" class="tc1 dim lh1-5">Text alignment</a></li>
+            <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/text-alignment" class="tc1 dim lh1-5">Text Alignment</a></li>
         </ul>
 
         <h2 class="ft6 pv1 tcg60 fw3">Tools</h2>
@@ -144,8 +144,7 @@
 <p><a id="appearance"></a></p>
 <h3 class="tcg50 ft8 fw3 mb2 md-mb3">appearance()</h3>
 <p class="tcg50 ft5 fw3 mb4 lh2">The appearance mixin provides an easy way to assign or remove platform-native styling on form elements.</p>
-<pre class="mb4"><code class="language-scss">
-// This Scss
+<pre><code class="language-scss">// This Scss
 .terry {
     @include appearance(none);
 }
@@ -155,13 +154,11 @@
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-}
-</code></pre>
+}</code></pre>
 <p><a id="font-size"></a></p>
 <h3 class="tcg50 ft8 fw3 mb2 md-mb3">font-size()</h3>
 <p class="tcg50 ft5 fw3 mb4 lh2">This mixin allows you to generate <code>font-size</code> declarations with rem units and uses pixels as a fallback value.</p>
-<pre class="mb4"><code class="language-scss">
-// This Scss
+<pre><code class="language-scss">// This Scss
 .heading {
     @include font-size(16);
 }
@@ -170,8 +167,7 @@
 .heading {
   font-size: 16px;
   font-size: 1.6rem;
-}
-</code></pre>
+}</code></pre>
 <blockquote class="mb4 bg1 br3 pv2 ph2">
     <p class="tcw ft5 fw3 lh2"><strong>Note:</strong> If you've modified the font-size on the html element, the generated values will not match. It's best to either leave the value at its default or create a mixin of your own which accomplishes the same result.</p>
 </blockquote>
