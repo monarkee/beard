@@ -11,7 +11,7 @@
         </div>
         <div class="flex aic">
             <a href="https://github.com/monarkee/beard" class="dn md-dib btn--sm dim bgw tcg40 br3 ft3 md-ft4">View on GitHub</a>
-            <a href="https://github.com/monarkee/beard/archive/v2.0.15.zip" class="btn--sm dim bg1 tcw br3 ft3 md-ft4">Download</a>
+            <a href="https://github.com/monarkee/beard/tarball/master" class="btn--sm dim bg1 tcw br3 ft3 md-ft4">Download</a>
         </div>
     </div>
     <nav v-if="sidebarVisible" class="md-dn">
