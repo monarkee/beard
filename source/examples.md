@@ -2,10 +2,14 @@
 extends: _layouts.subpage
 section: subpage_content
 ---
+<h3 class="tcg50 ft7 md-ft10 fw3 mb2 md-mb3 flex aic acc">Component Examples</h3>
+
+<h3 class="tcg50 ft7 fw3 mb2 md-mb3">Modal Window</h3>
+<h4 class="tcg50 ft4 fw6 mb2 md-mb3">Example:</h4>
 
 <div class="frame mb4">
     <div class="blk8">
-        <div class="relative br4 brdr1 bcg30">
+        <div class="relative br4 brdr1 bcg20">
             <button class="xbg dim absolute pin-top pin-right lh1 tcg30 ft9 mt1 mr1">&times;</button>
             <div class="brdr1--bottom bcg10 pv2 ph2">
                 <h2 class="tcg50 ft6 fw6">Modal Titles Are Hard</h2>
@@ -23,6 +27,7 @@ section: subpage_content
     </div>
 </div>
 
+<h4 class="tcg50 ft4 fw6 mb2 md-mb3">Code:</h4>
 ```html
 <div class="relative br4 brdr1 bcg30">
     <button class="xbg dim absolute pin-top pin-right lh1 tcg30 ft9 mt1 mr1">&times;</button>
@@ -41,28 +46,34 @@ section: subpage_content
 </div>
 ```
 
+<h3 class="tcg50 ft7 fw3 mb2 md-mb3">Tabbed View</h3>
+<h4 class="tcg50 ft4 fw6 mb2 md-mb3">Example:</h4>
+
 <div class="frame mb4">
     <div class="blk">
-        <div class="df brdr1--top brdr1--left brdr1--right bcg20">
-            <a href="#" class="brdr1--right bcg20 w100 pv2 tac ft3 fw6 uppercase ls2 tc1">Account</a>
-            <a href="#" class="brdr1--bottom bcg20 w100 pv2 tac ft3 fw6 uppercase ls2 bgg05 tcg30">Invoices</a>
-            <a href="#" class="brdr1--bottom bcg20 w100 pv2 tac ft3 fw6 uppercase ls2 bgg05 tcg30">Stripe</a>
-            <a href="#" class="brdr1--bottom bcg20 w100 pv2 tac ft3 fw6 uppercase ls2 bgg05 tcg30">Billing</a>
-        </div>
-        <div class="brdr1--bottom brdr1--left brdr1--right bcg20 pv4 ph4">
-            <p class="tcg50 ft4">Put your tab content here.</p>
+        <div class="brdr1 bcg20">
+            <div class="df">
+                <a href="#" class="brdr1--right bcg20 w100 pv2 tac ft3 fw6 uppercase ls2 tc1">Tab One</a>
+                <a href="#" class="brdr1--bottom bcg20 w100 pv2 tac ft3 fw6 uppercase ls2 bgg05 tcg30">Tab Two</a>
+                <a href="#" class="brdr1--bottom bcg20 w100 pv2 tac ft3 fw6 uppercase ls2 bgg05 tcg30">Tab Three</a>
+            </div>
+            <div class="pv4 ph4">
+                <p class="tcg50 ft4">Put your tab content here.</p>
+            </div>
         </div>
     </div>
 </div>
 
+<h4 class="tcg50 ft4 fw6 mb2 md-mb3">Code:</h4>
 ```html
-<div class="df brdr1--top brdr1--left brdr1--right bcg20">
-    <a href="#" class="brdr1--right bcg20 w100 pv2 tac ft3 fw6 uppercase ls2 tc1">Account</a>
-    <a href="#" class="brdr1--bottom bcg20 w100 pv2 tac ft3 fw6 uppercase ls2 bgg05 tcg30">Invoices</a>
-    <a href="#" class="brdr1--bottom bcg20 w100 pv2 tac ft3 fw6 uppercase ls2 bgg05 tcg30">Stripe</a>
-    <a href="#" class="brdr1--bottom bcg20 w100 pv2 tac ft3 fw6 uppercase ls2 bgg05 tcg30">Billing</a>
-</div>
-<div class="brdr1--bottom brdr1--left brdr1--right bcg20 pv4 ph4">
-    <p class="tcg50 ft4">Put your tab content here.</p>
+<div class="brdr1 bcg20">
+    <div class="df">
+        <a href="#" class="brdr1--right bcg20 w100 pv2 tac ft3 fw6 uppercase ls2 tc1">Tab One</a>
+        <a href="#" class="brdr1--bottom bcg20 w100 pv2 tac ft3 fw6 uppercase ls2 bgg05 tcg30">Tab Two</a>
+        <a href="#" class="brdr1--bottom bcg20 w100 pv2 tac ft3 fw6 uppercase ls2 bgg05 tcg30">Tab Three</a>
+    </div>
+    <div class="pv4 ph4">
+        <p class="tcg50 ft4">Put your tab content here.</p>
+    </div>
 </div>
 ```
