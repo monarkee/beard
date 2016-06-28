@@ -9,8 +9,8 @@ Beard focuses on developer speed, maintenance, and ease-of-use, versus "pretty" 
 
 Beard can be installed via [NPM](https://www.npmjs.com) or [Bower](bower.io), but just use [NPM](https://www.npmjs.com). Seriously.
 
-~~~~$ npm install beardcss
-~~~~<code>$ bower install beard</code></p>
+```$ npm install beardcss```
+```$ bower install beard```
 
 ---
 
@@ -37,4 +37,4 @@ The best way to add Beard to your project is to copy the contents of <code>beard
 ### Or&hellip;Just the Dead Simple Installation
 
 Or you could just import it directly. We don't recommend it, but if you need something quick, go ahead!
-~~~~@import '../node_modules/beardcss/beard'
+```@import '../node_modules/beardcss/beard'```
