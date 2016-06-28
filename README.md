@@ -10,6 +10,7 @@ Beard focuses on developer speed, maintenance, and ease-of-use, versus "pretty" 
 Beard can be installed via [NPM](https://www.npmjs.com) or [Bower](bower.io), but just use [NPM](https://www.npmjs.com). Seriously.
 
 ```$ npm install beardcss```
+
 ```$ bower install beard```
 
 ---
