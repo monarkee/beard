@@ -1,16 +1,15 @@
-// Tools to Generate Responsive Spacing Helper
+// Tools to Generate Responsive Spacing Helpers
 //-------------------------------------------------------------------------- */
-@function new-spacing-helper($size) {
-    $spacing-amounts: append($spacing-amounts, $size) !global;
-    @return $spacing-amounts;
-}
+@mixin new-spacing-helper($name, $size: null) {
+    @if $size == null {
+        $size: $name;
+    }
 
-@mixin new-spacing-helper($size) {
-    $spacing-amounts: new-spacing-helper($size);
+    $new-helper: ($name: $size);
+    $spacing-amounts: map-merge($spacing-amounts, $new-helper) !global;
 }
 
 // Build the initial list of spacing amounts
 @for $i from 1 through $beard-spacing-helper-amount {
-    $spacing-amounts: new-spacing-helper($i);
+    @include new-spacing-helper($i);
 }
-
