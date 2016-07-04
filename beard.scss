@@ -7,6 +7,7 @@
 //-------------------------------------------------------------------------- */
 @import 'stylesheets/tools.appearance';
 @import 'stylesheets/tools.breakpoints';
+@import 'stylesheets/tools.colors';
 @import 'stylesheets/tools.user-drag';
 @import 'stylesheets/tools.font-size';
 @import 'stylesheets/tools.spacing';
@@ -19,10 +20,12 @@
 //-------------------------------------------------------------------------- */
 @import 'stylesheets/base';
 
-// Custom breakpoints and spacing helpers
+// Custom colors, breakpoints and spacing helpers
 //-------------------------------------------------------------------------- */
 // @include new-breakpoint(tablet, '(min-width: 600px)');
-// @include new-spacing-helper('58');
+// @include new-spacing-helper('small', 0.3);
+// @include new-spacing-helper('wow', 58);
+// @include new-color('1--light', lighten($brand-color-1, 15%));
 
 // Put your site styles here
 //-------------------------------------------------------------------------- */
