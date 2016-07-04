@@ -216,7 +216,8 @@
 // @import '../../../stylesheets/tools.font-size';
 
 // This has to go between Beard's tool.font-size and helpers.spacing partials
-@include new-spacing-helper('16');
+@include new-spacing-helper(16); // Outputs responsive helpers like .pt16 { padding-top: 16rem !important }
+@include new-spacing-helper('--tiny', 0.3); // Outputs responsive helpers like .pt--tiny { padding-top: 0.3rem !important }
 
 // Helpers
 //-------------------------------------------------------------------------- */
