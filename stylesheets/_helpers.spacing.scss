@@ -1,5 +1,5 @@
 // Add the zero spacing helper manually so it's last in the source order
-@include new-spacing-helper('0');
+@include new-spacing-helper(0);
 
 // Spacing Helpers
 //-------------------------------------------------------------------------- */
@@ -12,62 +12,74 @@ $position-units: (
 //-------------------------------------------------------------------------- */
 @if $beard-enable-spacing-helpers == true {
     @each $id, $position in $position-units {
-        @each $i in $spacing-amounts {
-            .#{$position}t#{$i} {
+        @each $name, $i in $spacing-amounts {
+            .#{$position}a#{$name} {
+                #{$id}: #{$i}rem !important;
+            }
+
+            @each $key, $breakpoint in $breakpoints {
+                .#{$key}-#{$position}a#{$name} {
+                    @include media($key) {
+                        #{$id}: #{$i}rem !important;
+                    }
+                }
+            }
+
+            .#{$position}t#{$name} {
                 #{$id}-top: #{$i}rem !important;
             }
 
             @each $key, $breakpoint in $breakpoints {
-                .#{$key}-#{$position}t#{$i} {
+                .#{$key}-#{$position}t#{$name} {
                     @include media($key) {
                         #{$id}-top: #{$i}rem !important;
                     }
                 }
             }
 
-            .#{$position}r#{$i} {
+            .#{$position}r#{$name} {
                 #{$id}-right: #{$i}rem !important;
             }
 
             @each $key, $breakpoint in $breakpoints {
-                .#{$key}-#{$position}r#{$i} {
+                .#{$key}-#{$position}r#{$name} {
                     @include media($key) {
                         #{$id}-right: #{$i}rem !important;
                     }
                 }
             }
 
-            .#{$position}b#{$i} {
+            .#{$position}b#{$name} {
                 #{$id}-bottom: #{$i}rem !important;
             }
 
             @each $key, $breakpoint in $breakpoints {
-                .#{$key}-#{$position}b#{$i} {
+                .#{$key}-#{$position}b#{$name} {
                     @include media($key) {
                         #{$id}-bottom: #{$i}rem !important;
                     }
                 }
             }
 
-            .#{$position}l#{$i} {
+            .#{$position}l#{$name} {
                 #{$id}-left: #{$i}rem !important;
             }
 
             @each $key, $breakpoint in $breakpoints {
-                .#{$key}-#{$position}l#{$i} {
+                .#{$key}-#{$position}l#{$name} {
                     @include media($key) {
                         #{$id}-left: #{$i}rem !important;
                     }
                 }
             }
 
-            .#{$position}v#{$i} {
+            .#{$position}v#{$name} {
                 #{$id}-top: #{$i}rem !important;
                 #{$id}-bottom: #{$i}rem !important;
             }
 
             @each $key, $breakpoint in $breakpoints {
-                .#{$key}-#{$position}v#{$i} {
+                .#{$key}-#{$position}v#{$name} {
                     @include media($key) {
                         #{$id}-top: #{$i}rem !important;
                         #{$id}-bottom: #{$i}rem !important;
@@ -75,13 +87,13 @@ $position-units: (
                 }
             }
 
-            .#{$position}h#{$i} {
+            .#{$position}h#{$name} {
                 #{$id}-left: #{$i}rem !important;
                 #{$id}-right: #{$i}rem !important;
             }
 
             @each $key, $breakpoint in $breakpoints {
-                .#{$key}-#{$position}h#{$i} {
+                .#{$key}-#{$position}h#{$name} {
                     @include media($key) {
                         #{$id}-left: #{$i}rem !important;
                         #{$id}-right: #{$i}rem !important;

@@ -14,6 +14,10 @@ section: subpage_content
     </thead>
     <tbody>
         <tr class="brdr1--bottom bcg10">
+            <td class="pv1">Margin All</td>
+            <td class="pv1"><code>.ma</code></td>
+        </tr>
+        <tr class="brdr1--bottom bcg10">
             <td class="pv1">Margin Vertical</td>
             <td class="pv1"><code>.mv</code></td>
         </tr>
@@ -36,6 +40,10 @@ section: subpage_content
         <tr class="brdr1--bottom bcg10">
             <td class="pv1">Margin Left</td>
             <td class="pv1"><code>.ml</code></td>
+        </tr>
+        <tr class="brdr1--bottom bcg10">
+            <td class="pv1">Padding All</td>
+            <td class="pv1"><code>.pa</code></td>
         </tr>
         <tr class="brdr1--bottom bcg10">
             <td class="pv1">Padding Vertical</td>
