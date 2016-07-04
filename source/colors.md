@@ -162,3 +162,24 @@ section: subpage_content
     <button class="dib pv1 ph2 ft4 fw6 bg1 :bg2 ::bg3 @bg4 tcw brdr1 bc1">Click Me</button>
 </div>
 ```
+
+<h3 class="tcg50 ft8 fw3 mb2 md-mb3">Adding New Color Helpers</h3>
+<p class="tcg50 ft5 fw3 mb4 lh2">This mixin allows you to add colors to be generated along with Beard's default color helpers.</p>
+
+```scss
+// Tools & Mixins
+//-------------------------------------------------------------------------- */
+// @import '../../../stylesheets/tools.font-size';
+
+// This has to go between Beard's tool.font-size and helpers.spacing partials
+@include new-color('1--light', #85D7FF); // Outputs .bg1--light { background-color: #85D7FF !important }
+@include new-color('red', #FF0000); // Outputs .bgred { background-color: #FF0000 !important }
+
+// Helpers
+//-------------------------------------------------------------------------- */
+// @import '../../../stylesheets/helpers.spacing';
+```
+
+<blockquote class="bg1 br3 pv2 ph2 mb6">
+<p class="tcw ft5 fw3 lh2"><strong>Note:</strong> Calling this mixin will only work if you import each of Beard&rsquo;s partials individually, <a href="/installation" class="tcw fw6">as recommended by the installation guide</a>.</p>
+</blockquote>
