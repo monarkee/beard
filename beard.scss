@@ -2,10 +2,9 @@
 
 // Custom colors, breakpoints and spacing helpers
 //-------------------------------------------------------------------------- */
+// @include new-color('1--light', lighten($brand-color-1, 15%));
 // @include new-breakpoint(tablet, '(min-width: 600px)');
 // @include new-spacing-helper('small', 0.3);
-// @include new-spacing-helper('wow', 58);
-// @include new-color('1--light', lighten($brand-color-1, 15%));
 
 // Put your site styles here
 //-------------------------------------------------------------------------- */

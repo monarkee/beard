@@ -3,7 +3,6 @@ extends: _layouts.subpage
 section: subpage_content
 ---
 <h2 class="tcg50 ft10 fw3 mb2 md-mb3">Installation</h2>
-
 <p class="tcg50 ft5 fw3 mb4 lh2">Beard can be installed via <a href="https://www.npmjs.com" class="tc1 :tc2">NPM</a> or <a href="bower.io" class="tc1 :tc2">Bower</a>, but just use <a href="https://www.npmjs.com" class="tc1 :tc2">NPM</a>. Seriously.</p>
 
 <p class="tcg50 ft5 fw3 mb1 lh2"><code>$ npm install beardcss</code></p>
@@ -17,13 +16,18 @@ section: subpage_content
 <p class="tcg50 ft5 fw3 mb4 lh2">The best way to add Beard to your project is to copy the contents of <code>beard/beard.scss</code> to your main Sass file. This allows for the best source ordering. From there, we recommend adding your site styles between the "Objects" and "Helpers" sections, like so:</p>
 
 ```scss
-// Objects
-...
+@import '../node_modules/beard.before';
 
-// Your styles go here
+// Place custom spacing, color, and media query configuration here
 
-// Helpers
-...
+// @include new-spacing-helper('0-5', 0.5);
+// @include new-color('1--light', lightent($brand-color-1, 15%));
+@include new-breakpoint(tablet, '(min-width: 600px)');
+
+// Your site styles go here
+// @import 'app'
+
+@import '../node_modules/beard.after';
 ```
 
 <blockquote class="bg1 br3 pv2 ph2">
