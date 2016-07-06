@@ -20,47 +20,47 @@ section: subpage_content
         </tr>
         <tr class="brdr1--bottom bcg10">
             <td class="pv1">Level 1.1</td>
-            <td class="pv1"><code>.lh1-1</code></td>
+            <td class="pv1"><code>.lh1.1</code></td>
             <td class="pv1"><code>line-height: 1.1</code></td>
         </tr>
         <tr class="brdr1--bottom bcg10">
             <td class="pv1">Level 1.2</td>
-            <td class="pv1"><code>.lh1-2</code></td>
+            <td class="pv1"><code>.lh1.2</code></td>
             <td class="pv1"><code>line-height: 1.2</code></td>
         </tr>
         <tr class="brdr1--bottom bcg10">
             <td class="pv1">Level 1.3</td>
-            <td class="pv1"><code>.lh1-3</code></td>
+            <td class="pv1"><code>.lh1.3</code></td>
             <td class="pv1"><code>line-height: 1.3</code></td>
         </tr>
         <tr class="brdr1--bottom bcg10">
             <td class="pv1">Level 1.4</td>
-            <td class="pv1"><code>.lh1-4</code></td>
+            <td class="pv1"><code>.lh1.4</code></td>
             <td class="pv1"><code>line-height: 1.4</code></td>
         </tr>
         <tr class="brdr1--bottom bcg10">
             <td class="pv1">Level 1.5</td>
-            <td class="pv1"><code>.lh1-5</code></td>
+            <td class="pv1"><code>.lh1.5</code></td>
             <td class="pv1"><code>line-height: 1.5</code></td>
         </tr>
         <tr class="brdr1--bottom bcg10">
             <td class="pv1">Level 1.6</td>
-            <td class="pv1"><code>.lh1-6</code></td>
+            <td class="pv1"><code>.lh1.6</code></td>
             <td class="pv1"><code>line-height: 1.6</code></td>
         </tr>
         <tr class="brdr1--bottom bcg10">
             <td class="pv1">Level 1.7</td>
-            <td class="pv1"><code>.lh1-7</code></td>
+            <td class="pv1"><code>.lh1.7</code></td>
             <td class="pv1"><code>line-height: 1.7</code></td>
         </tr>
         <tr class="brdr1--bottom bcg10">
             <td class="pv1">Level 1.8</td>
-            <td class="pv1"><code>.lh1-8</code></td>
+            <td class="pv1"><code>.lh1.8</code></td>
             <td class="pv1"><code>line-height: 1.8</code></td>
         </tr>
         <tr class="brdr1--bottom bcg10">
             <td class="pv1">Level 1.9</td>
-            <td class="pv1"><code>.lh1-9</code></td>
+            <td class="pv1"><code>.lh1.9</code></td>
             <td class="pv1"><code>line-height: 1.9</code></td>
         </tr>
         <tr class="brdr1--bottom bcg10">
@@ -74,7 +74,7 @@ section: subpage_content
 <h3 class="tcg50 ft6 fw3 mb2 md-mb3 flex aic acc">Example:</h3>
 
 ```html
-<p class="lh1 lg-lh1-5">Text with responsive line-height.</p>
+<p class="lh1 lg-lh1.5">Text with responsive line-height.</p>
 ```
 
 <p class="tcg50 ft5 fw3 mb4 lh2">The text's line-height would have a value of '1' by default and a value of 1.5, starting on the large breakpoint.</p>
