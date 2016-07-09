@@ -44,7 +44,11 @@
 
         <h2 class="ft6 pv1 tcg60 fw3">Tools</h2>
         <ul class="mb3">
-        <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/tools#appearance" class="tc1 dim lh1-5">appearance()</a></li>
+            <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/tools#appearance" class="tc1 dim lh1-5">appearance()</a></li>
             <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/tools#font-size" class="tc1 dim lh1-5">font-size()</a></li>
+            <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/tools#media" class="tc1 dim lh1-5">media()</a></li>
+            <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/tools#new-breakpoint" class="tc1 dim lh1-5">new-breakpoint()</a></li>
+            <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/tools#new-color" class="tc1 dim lh1-5">new-color()</a></li>
+            <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/tools#new-spacing-helper" class="tc1 dim lh1-5">new-spacing-helper()</a></li>
         </div>
 </aside>
