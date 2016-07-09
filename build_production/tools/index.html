@@ -57,7 +57,7 @@
             <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/border-radius" class="tc1 dim lh1-5">Border Radius</a></li>
             <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/colors" class="tc1 dim lh1-5">Colors</a></li>
             <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/display" class="tc1 dim lh1-5">Display</a></li>
-            <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/flex" class="tc1 dim lh1-5">Flex</a></li>
+            <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/flexbox" class="tc1 dim lh1-5">Flexbox</a></li>
             <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/floats" class="tc1 dim lh1-5">Floats</a></li>
             <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/fonts" class="tc1 dim lh1-5">Fonts</a></li>
             <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/grid" class="tc1 dim lh1-5">Grid</a></li>
@@ -72,8 +72,12 @@
 
         <h2 class="ft6 pv1 tcg60 fw3">Tools</h2>
         <ul class="mb3">
-        <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/tools#appearance" class="tc1 dim lh1-5">appearance()</a></li>
+            <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/tools#appearance" class="tc1 dim lh1-5">appearance()</a></li>
             <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/tools#font-size" class="tc1 dim lh1-5">font-size()</a></li>
+            <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/tools#media" class="tc1 dim lh1-5">media()</a></li>
+            <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/tools#new-breakpoint" class="tc1 dim lh1-5">new-breakpoint()</a></li>
+            <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/tools#new-color" class="tc1 dim lh1-5">new-color()</a></li>
+            <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/tools#new-spacing-helper" class="tc1 dim lh1-5">new-spacing-helper()</a></li>
         </div>
 </aside>    </nav>
 </header>
@@ -117,7 +121,7 @@
             <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/border-radius" class="tc1 dim lh1-5">Border Radius</a></li>
             <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/colors" class="tc1 dim lh1-5">Colors</a></li>
             <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/display" class="tc1 dim lh1-5">Display</a></li>
-            <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/flex" class="tc1 dim lh1-5">Flex</a></li>
+            <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/flexbox" class="tc1 dim lh1-5">Flexbox</a></li>
             <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/floats" class="tc1 dim lh1-5">Floats</a></li>
             <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/fonts" class="tc1 dim lh1-5">Fonts</a></li>
             <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/grid" class="tc1 dim lh1-5">Grid</a></li>
@@ -132,8 +136,12 @@
 
         <h2 class="ft6 pv1 tcg60 fw3">Tools</h2>
         <ul class="mb3">
-        <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/tools#appearance" class="tc1 dim lh1-5">appearance()</a></li>
+            <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/tools#appearance" class="tc1 dim lh1-5">appearance()</a></li>
             <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/tools#font-size" class="tc1 dim lh1-5">font-size()</a></li>
+            <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/tools#media" class="tc1 dim lh1-5">media()</a></li>
+            <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/tools#new-breakpoint" class="tc1 dim lh1-5">new-breakpoint()</a></li>
+            <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/tools#new-color" class="tc1 dim lh1-5">new-color()</a></li>
+            <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/tools#new-spacing-helper" class="tc1 dim lh1-5">new-spacing-helper()</a></li>
         </div>
 </aside>            </div>
             <section class="w100">
@@ -171,6 +179,38 @@
 <blockquote class="mb4 bg1 br3 pv2 ph2">
     <p class="tcw ft5 fw3 lh2"><strong>Note:</strong> If you've modified the font-size on the html element, the generated values will not match. It's best to either leave the value at its default or create a mixin of your own which accomplishes the same result.</p>
 </blockquote>
+<p><a id="media"></a></p>
+<h3 class="tcg50 ft8 fw3 mb2 md-mb3">media()</h3>
+<p class="tcg50 ft5 fw3 mb4 lh2">This mixin allows you to use the breakpoints from Beard inside of your Sass. </p>
+<pre><code class="language-scss">// This Scss
+.narcos {
+    @include media(sm) {
+        display: none;
+    }
+}
+
+// Generates this CSS
+@media screen and (min-width: 300px) {
+    .narcos {
+        display: none;
+    }
+}</code></pre>
+<p class="tcg50 ft5 fw3 mb4 lh2">See also: <a href="/responsive-prefixes#media" class="tc1 dim">Responsive Prefixes</a></p>
+<p><a id="new-breakpoint"></a></p>
+<h3 class="tcg50 ft8 fw3 mb2 md-mb3">new-breakpoint()</h3>
+<p class="tcg50 ft5 fw3 mb4 lh2">This mixin allows you to add breakpoints to Beard&rsquo;s configuration.</p>
+<pre><code class="language-scss">@include new-breakpoint('tablet', '(min-width: 600px)');</code></pre>
+<p class="tcg50 ft5 fw3 mb4 lh2">See also: <a href="/responsive-prefixes#adding-new-breakpoints" class="tc1 dim">Adding New Breakpoints</a></p>
+<p><a id="new-color"></a></p>
+<h3 class="tcg50 ft8 fw3 mb2 md-mb3">new-color()</h3>
+<p class="tcg50 ft5 fw3 mb4 lh2">This mixin allows you to add a color to Beard&rsquo;s configuration.</p>
+<pre><code class="language-scss">@include new-color('red', #FF0000);</code></pre>
+<p class="tcg50 ft5 fw3 mb4 lh2">See also: <a href="/colors#adding-new-color-helpers" class="tc1 dim">Adding New Color Helpers</a></p>
+<p><a id="new-spacing-helper"></a></p>
+<h3 class="tcg50 ft8 fw3 mb2 md-mb3">new-spacing-helper()</h3>
+<p class="tcg50 ft5 fw3 mb4 lh2">This mixin allows you to add a set of responsive spacing helpers to Beard&rsquo;s configuration.</p>
+<pre><code class="language-scss">@include new-spacing-helper('tiny', 0.3);</code></pre>
+<p class="tcg50 ft5 fw3 mb4 lh2">See also: <a href="/spacing#adding-new-spacing-helpers" class="tc1 dim">Adding New Spacing Helpers</a></p>
     </div>
 </div>
             </section>
