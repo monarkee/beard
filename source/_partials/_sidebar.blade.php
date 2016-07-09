@@ -29,7 +29,7 @@
             <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/border-radius" class="tc1 dim lh1-5">Border Radius</a></li>
             <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/colors" class="tc1 dim lh1-5">Colors</a></li>
             <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/display" class="tc1 dim lh1-5">Display</a></li>
-            <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/flex" class="tc1 dim lh1-5">Flex</a></li>
+            <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/flexbox" class="tc1 dim lh1-5">Flexbox</a></li>
             <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/floats" class="tc1 dim lh1-5">Floats</a></li>
             <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/fonts" class="tc1 dim lh1-5">Fonts</a></li>
             <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/grid" class="tc1 dim lh1-5">Grid</a></li>
