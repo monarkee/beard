@@ -6,8 +6,13 @@ section: subpage_content
 
 <p class="tcg50 ft5 fw3 mb4 lh2">Beard can be installed via <a href="https://www.npmjs.com" class="tc1 :tc2">NPM</a> or <a href="bower.io" class="tc1 :tc2">Bower</a>, but just use <a href="https://www.npmjs.com" class="tc1 :tc2">NPM</a>. Seriously.</p>
 
-<p class="tcg50 ft5 fw3 mb1 lh2"><code>$ npm install beardcss</code></p>
-<p class="tcg50 ft5 fw3 mb4 lh2"><code>$ bower install beard</code></p>
+```sh
+npm install beard
+```
+
+```sh
+bower install beardcss
+```
 
 <hr class="mb4">
 
