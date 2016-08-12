@@ -14,6 +14,12 @@ npm install beard
 bower install beardcss
 ```
 
+<h3 class="tcg50 ft6 fw6 mb2 md-mb3">Or link it from the CDN</h3>
+
+```html
+<link rel="stylesheet" href="https://npmcdn.com/beardcss/dist/beard.css">
+```
+
 <hr class="mb4">
 
 <h2 class="tcg50 ft10 fw3 mb2 md-mb3">Adding Beard into your project</h2>
