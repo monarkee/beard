@@ -2,7 +2,7 @@
 extends: _layouts.subpage
 section: subpage_content
 ---
-<h3 class="tcg50 ft7 fw3 mb2 md-mb3">Border Radius Helpers</h3>
+<h2 class="tcg50 ft10 fw3 mb2 md-mb3">Border Radius Helpers</h2>
 
 <table class="w100 ft4 mb6 lh2">
     <thead>

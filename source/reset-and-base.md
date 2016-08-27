@@ -2,7 +2,7 @@
 extends: _layouts.subpage
 section: subpage_content
 ---
-<h2 class="tcg50 ft10 fw3 mb2 md-mb3">Reset</h2>
+<h2 class="tcg50 ft10 fw3 mb2 md-mb3">Reset &amp; Base</h2>
 <p class="tcg50 ft5 fw3 mb4 lh2">Beard is designed to be highly useful for web applications. To this end, we've added a hard reset in place of other options like <a href="http://normalizecss.com" class="tc1">Normalize.css</a>. We feel this provides the best method of "setting an even playing field" for building out front-end components.</p>
 <p class="tcg50 ft5 fw3 mb4 lh2">Of course, you don't have to use this reset, and can instead opt to use your own. If you'd like to disable Beard's reset, simply set the flag before you import Beard.</p>
 
