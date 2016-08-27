@@ -68,16 +68,11 @@ section: subpage_content
 <p class="tcg50 ft5 fw3 mb4 lh2">This mixin allows you to add a new breakpoint to be generated along with Beard&rsquo;s defaults. This will also cause every responsive-helper type to generate a new classes using this breakpoint's key</p>
 
 ```scss
-// @import '../../../stylesheets/tools.breakpoints';
-
-// This has to go between Beard's tool and helper imports
-@include new-breakpoint('tablet', '(min-width: 600px)');
-
-// Helpers here
+@include new-breakpoint(tablet, '(min-width: 600px)');
 ```
 
 <blockquote class="bg1 br3 pv2 ph2 mb6">
-<p class="tcw ft5 fw3 lh2"><strong>Note:</strong> Calling this mixin will only work if you import each of Beard&rsquo;s partials individually, <a href="/installation" class="tcw fw6">as recommended by the installation guide</a>.</p>
+<p class="tcw ft5 fw3 lh2"><strong>Note:</strong> Calling this mixin will only work if you import Beard&rsquo;s before and after partials, <a href="/installation" class="tcw fw6">as recommended by the installation guide</a>.</p>
 </blockquote>
 
 <a id="media"></a>

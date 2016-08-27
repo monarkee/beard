@@ -83,19 +83,10 @@ section: subpage_content
 <p class="tcg50 ft5 fw3 mb4 lh2">This mixin allows you to add a value to be generated along with Beard's default spacing helpers, including responsive versions of each.</p>
 
 ```scss
-// Tools & Mixins
-//-------------------------------------------------------------------------- */
-// @import '../../../stylesheets/tools.font-size';
-
-// This has to go between Beard's tool.font-size and helpers.spacing partials
 @include new-spacing-helper(16); // Outputs responsive helpers like .pt16 { padding-top: 16rem !important }
 @include new-spacing-helper('--tiny', 0.3); // Outputs responsive helpers like .pt--tiny { padding-top: 0.3rem !important }
-
-// Helpers
-//-------------------------------------------------------------------------- */
-// @import '../../../stylesheets/helpers.spacing';
 ```
 
 <blockquote class="bg1 br3 pv2 ph2 mb6">
-<p class="tcw ft5 fw3 lh2"><strong>Note:</strong> Calling this mixin will only work if you import each of Beard&rsquo;s partials individually, <a href="/installation" class="tcw fw6">as recommended by the installation guide</a>.</p>
+<p class="tcw ft5 fw3 lh2"><strong>Note:</strong> Calling this mixin will only work if you import Beard&rsquo;s before and after partials, <a href="/installation" class="tcw fw6">as recommended by the installation guide</a>.</p>
 </blockquote>
