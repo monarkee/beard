@@ -10,6 +10,7 @@ Beard focuses on developer speed, maintenance, and ease-of-use, versus "pretty" 
 ## Installation
 
 Beard can be installed via [NPM](https://www.npmjs.com).
+
 ```$ npm install beardcss```
 
 ---
