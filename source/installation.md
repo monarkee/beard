@@ -22,18 +22,18 @@ npm install beardcss
 <p class="tcg50 ft5 fw3 mb4 lh2">The best way to add Beard to your project is to copy the contents of <code>beard/beard.scss</code> to your main Sass file. This allows for the best source ordering. From there, we recommend adding your site styles between the "Objects" and "Helpers" sections, like so:</p>
 
 ```scss
-@import '../node_modules/beard.before';
+@import '../node_modules/beardcss/stylesheets/beard.before';
 
 // Place custom spacing, color, and media query configuration here
 
 // @include new-spacing-helper('0-5', 0.5);
-// @include new-color('1--light', lightent($brand-color-1, 15%));
+// @include new-color('1--light', lighten($brand-color-1, 15%));
 @include new-breakpoint(tablet, '(min-width: 600px)');
 
 // Your site styles go here
 // @import 'app'
 
-@import '../node_modules/beard.after';
+@import '../node_modules/beardcss/stylesheets/beard.after';
 ```
 
 <blockquote class="bg1 br3 pv2 ph2">

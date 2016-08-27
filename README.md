@@ -9,11 +9,8 @@ Beard focuses on developer speed, maintenance, and ease-of-use, versus "pretty" 
 
 ## Installation
 
-Beard can be installed via [NPM](https://www.npmjs.com) or [Bower](bower.io), but just use [NPM](https://www.npmjs.com). Seriously.
-
+Beard can be installed via [NPM](https://www.npmjs.com).
 ```$ npm install beardcss```
-
-```$ bower install beard```
 
 ---
 
@@ -24,16 +21,19 @@ Beard can be installed via [NPM](https://www.npmjs.com) or [Bower](bower.io), bu
 The best way to add Beard to your project is to copy the contents of <code>beard/beard.scss</code> to your main Sass file. This allows for the best source ordering. From there, we recommend adding your site styles between the "Objects" and "Helpers" sections, like so:
 
 ```scss
-// Objects
-...
+@import '../node_modules/beardcss/stylesheets/beard.before';
 
-// Your styles go here
+// Place custom spacing, color, and media query configuration here
 
-// Helpers
-...
+// @include new-spacing-helper('0-5', 0.5);
+// @include new-color('1--light', lighten($brand-color-1, 15%));
+@include new-breakpoint(tablet, '(min-width: 600px)');
+
+// Your site styles go here
+// @import 'app'
+
+@import '../node_modules/beardcss/stylesheets/beard.after';
 ```
-
-> **Note**: Don&rsquo;t forget to change the import paths to where you installed Beard.
 
 ---
 
