@@ -4,14 +4,10 @@ section: subpage_content
 ---
 <h2 class="tcg50 ft10 fw3 mb2 md-mb3">Installation</h2>
 
-<p class="tcg50 ft5 fw3 mb4 lh2">Beard can be installed via <a href="https://www.npmjs.com" class="tc1 :tc2">NPM</a> or <a href="bower.io" class="tc1 :tc2">Bower</a>, but just use <a href="https://www.npmjs.com" class="tc1 :tc2">NPM</a>. Seriously.</p>
+<h3 class="tcg50 ft6 fw6 mb2 md-mb3">Beard can be installed via NPM:</h3>
 
 ```sh
-npm install beard
-```
-
-```sh
-bower install beardcss
+npm install beardcss
 ```
 
 <h3 class="tcg50 ft6 fw6 mb2 md-mb3">Or link it from the CDN</h3>
@@ -19,8 +15,6 @@ bower install beardcss
 ```html
 <link rel="stylesheet" href="https://npmcdn.com/beardcss/dist/beard.css">
 ```
-
-<hr class="mb4">
 
 <h2 class="tcg50 ft10 fw3 mb2 md-mb3">Adding Beard into your project</h2>
 

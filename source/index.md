@@ -4,12 +4,10 @@ section: subpage_content
 ---
 <h2 class="tcg50 ft10 fw3 mb2 md-mb3">Quickstart</h2>
 
-```sh
-npm install beard
-```
+<h3 class="tcg50 ft6 fw6 mb2 md-mb3">Beard can be installed via NPM:</h3>
 
 ```sh
-bower install beardcss
+npm install beardcss
 ```
 
 <h3 class="tcg50 ft6 fw6 mb2 md-mb3">Or link it from the CDN</h3>
