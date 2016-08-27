@@ -63,6 +63,7 @@ section: subpage_content
 <div class="lg-dn">Show on the large breakpoint</div>
 ```
 
+<a id="adding-new-breakpoints"></a>
 <h2 class="tcg50 ft8 fw3 mb2 md-mb3">Adding New Breakpoints</h2>
 <p class="tcg50 ft5 fw3 mb4 lh2">This mixin allows you to add a new breakpoint to be generated along with Beard&rsquo;s defaults. This will also cause every responsive-helper type to generate a new classes using this breakpoint's key</p>
 
@@ -74,8 +75,9 @@ section: subpage_content
 <p class="tcw ft5 fw3 lh2"><strong>Note:</strong> Calling this mixin will only work if you import Beard&rsquo;s before and after partials, <a href="/installation" class="tcw fw6">as recommended by the installation guide</a>.</p>
 </blockquote>
 
+<a id="media"></a>
 <h2 class="tcg50 ft8 fw3 mb2 md-mb3">Using breakpoints in Sass with <code>media()</code></h2>
-<p class="tcg50 ft5 fw3 mb4 lh2">Used inside a CSS declaration, this mixin will generate the appropriate media query based on the name registered in Beard's configuration. The media queries are configurable by overriding the default media queries or adding new ones with the <code>new-breakpoint</code> mixin.</p>
+<p class="tcg50 ft5 fw3 mb4 lh2">Used inside a CSS declaration, this mixin will generate the appropriate media query based on the name registered in Beard's configuration. The media queries are configurable by overriding the settings in <code>_config.scss</code> or by adding new ones with the <code>new-breakpoint()</code> mixin.</p>
 
 ```scss
 // This Scss

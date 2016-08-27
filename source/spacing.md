@@ -78,6 +78,7 @@ section: subpage_content
 <div class="mv2 md-mv4 lg-mv6 ph1 md-ph3 lg-ph6">This div has stuff in it</div>
 ```
 
+<a name="adding-new-spacing-helpers"></a>
 <h3 class="tcg50 ft8 fw3 mb2 md-mb3">Adding New Spacing Helpers</h3>
 <p class="tcg50 ft5 fw3 mb4 lh2">This mixin allows you to add a value to be generated along with Beard's default spacing helpers, including responsive versions of each.</p>
 

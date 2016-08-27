@@ -57,7 +57,7 @@
             <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/border-radius" class="tc1 dim lh1-5">Border Radius</a></li>
             <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/colors" class="tc1 dim lh1-5">Colors</a></li>
             <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/display" class="tc1 dim lh1-5">Display</a></li>
-            <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/flex" class="tc1 dim lh1-5">Flex</a></li>
+            <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/flexbox" class="tc1 dim lh1-5">Flexbox</a></li>
             <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/floats" class="tc1 dim lh1-5">Floats</a></li>
             <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/fonts" class="tc1 dim lh1-5">Fonts</a></li>
             <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/grid" class="tc1 dim lh1-5">Grid</a></li>
@@ -72,8 +72,12 @@
 
         <h2 class="ft6 pv1 tcg60 fw3">Tools</h2>
         <ul class="mb3">
-        <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/tools#appearance" class="tc1 dim lh1-5">appearance()</a></li>
+            <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/tools#appearance" class="tc1 dim lh1-5">appearance()</a></li>
             <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/tools#font-size" class="tc1 dim lh1-5">font-size()</a></li>
+            <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/tools#media" class="tc1 dim lh1-5">media()</a></li>
+            <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/tools#new-breakpoint" class="tc1 dim lh1-5">new-breakpoint()</a></li>
+            <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/tools#new-color" class="tc1 dim lh1-5">new-color()</a></li>
+            <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/tools#new-spacing-helper" class="tc1 dim lh1-5">new-spacing-helper()</a></li>
         </div>
 </aside>    </nav>
 </header>
@@ -117,7 +121,7 @@
             <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/border-radius" class="tc1 dim lh1-5">Border Radius</a></li>
             <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/colors" class="tc1 dim lh1-5">Colors</a></li>
             <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/display" class="tc1 dim lh1-5">Display</a></li>
-            <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/flex" class="tc1 dim lh1-5">Flex</a></li>
+            <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/flexbox" class="tc1 dim lh1-5">Flexbox</a></li>
             <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/floats" class="tc1 dim lh1-5">Floats</a></li>
             <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/fonts" class="tc1 dim lh1-5">Fonts</a></li>
             <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/grid" class="tc1 dim lh1-5">Grid</a></li>
@@ -132,18 +136,22 @@
 
         <h2 class="ft6 pv1 tcg60 fw3">Tools</h2>
         <ul class="mb3">
-        <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/tools#appearance" class="tc1 dim lh1-5">appearance()</a></li>
+            <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/tools#appearance" class="tc1 dim lh1-5">appearance()</a></li>
             <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/tools#font-size" class="tc1 dim lh1-5">font-size()</a></li>
+            <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/tools#media" class="tc1 dim lh1-5">media()</a></li>
+            <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/tools#new-breakpoint" class="tc1 dim lh1-5">new-breakpoint()</a></li>
+            <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/tools#new-color" class="tc1 dim lh1-5">new-color()</a></li>
+            <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/tools#new-spacing-helper" class="tc1 dim lh1-5">new-spacing-helper()</a></li>
         </div>
 </aside>            </div>
             <section class="w100">
                 <div class="wrap wrap--pad">
     <div class="main-content md-ph6 pv3 md-pv6">
     <h2 class="tcg50 ft10 fw3 mb2 md-mb3">Installation</h2>
-<p class="tcg50 ft5 fw3 mb4 lh2">Beard can be installed via <a href="https://www.npmjs.com" class="tc1 :tc2">NPM</a> or <a href="bower.io" class="tc1 :tc2">Bower</a>, but just use <a href="https://www.npmjs.com" class="tc1 :tc2">NPM</a>. Seriously.</p>
-<p class="tcg50 ft5 fw3 mb1 lh2"><code>$ npm install beardcss</code></p>
-<p class="tcg50 ft5 fw3 mb4 lh2"><code>$ bower install beard</code></p>
-<hr class="mb4">
+<h3 class="tcg50 ft6 fw6 mb2 md-mb3">Beard can be installed via NPM:</h3>
+<pre><code class="language-sh">npm install beardcss</code></pre>
+<h3 class="tcg50 ft6 fw6 mb2 md-mb3">Or link it from the CDN</h3>
+<pre><code class="language-html">&lt;link rel="stylesheet" href="https://npmcdn.com/beardcss/dist/beard.css"&gt;</code></pre>
 <h2 class="tcg50 ft10 fw3 mb2 md-mb3">Adding Beard into your project</h2>
 <h3 class="tcg50 ft8 fw3 mb2 md-mb3">The Recommended Way</h3>
 <p class="tcg50 ft5 fw3 mb4 lh2">The best way to add Beard to your project is to copy the contents of <code>beard/beard.scss</code> to your main Sass file. This allows for the best source ordering. From there, we recommend adding your site styles between the "Objects" and "Helpers" sections, like so:</p>

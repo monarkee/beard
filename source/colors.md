@@ -163,6 +163,7 @@ section: subpage_content
 </div>
 ```
 
+<a name="adding-new-color-helpers"></a>
 <h3 class="tcg50 ft8 fw3 mb2 md-mb3">Adding New Color Helpers</h3>
 <p class="tcg50 ft5 fw3 mb4 lh2">This mixin allows you to add colors to be generated along with Beard's default color helpers.</p>
 

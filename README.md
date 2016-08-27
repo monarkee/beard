@@ -1,6 +1,8 @@
 Beard
 =====
 
+[![Join the chat at https://gitter.im/monarkee/beard](https://badges.gitter.im/monarkee/beard.svg)](https://gitter.im/monarkee/beard?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Beard is an extremely pragmatic and utility-focused CSS framework. Actually, don't call it that.
 
 Beard focuses on developer speed, maintenance, and ease-of-use, versus "pretty" markup.

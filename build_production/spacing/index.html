@@ -57,7 +57,7 @@
             <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/border-radius" class="tc1 dim lh1-5">Border Radius</a></li>
             <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/colors" class="tc1 dim lh1-5">Colors</a></li>
             <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/display" class="tc1 dim lh1-5">Display</a></li>
-            <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/flex" class="tc1 dim lh1-5">Flex</a></li>
+            <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/flexbox" class="tc1 dim lh1-5">Flexbox</a></li>
             <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/floats" class="tc1 dim lh1-5">Floats</a></li>
             <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/fonts" class="tc1 dim lh1-5">Fonts</a></li>
             <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/grid" class="tc1 dim lh1-5">Grid</a></li>
@@ -72,8 +72,12 @@
 
         <h2 class="ft6 pv1 tcg60 fw3">Tools</h2>
         <ul class="mb3">
-        <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/tools#appearance" class="tc1 dim lh1-5">appearance()</a></li>
+            <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/tools#appearance" class="tc1 dim lh1-5">appearance()</a></li>
             <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/tools#font-size" class="tc1 dim lh1-5">font-size()</a></li>
+            <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/tools#media" class="tc1 dim lh1-5">media()</a></li>
+            <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/tools#new-breakpoint" class="tc1 dim lh1-5">new-breakpoint()</a></li>
+            <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/tools#new-color" class="tc1 dim lh1-5">new-color()</a></li>
+            <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/tools#new-spacing-helper" class="tc1 dim lh1-5">new-spacing-helper()</a></li>
         </div>
 </aside>    </nav>
 </header>
@@ -117,7 +121,7 @@
             <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/border-radius" class="tc1 dim lh1-5">Border Radius</a></li>
             <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/colors" class="tc1 dim lh1-5">Colors</a></li>
             <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/display" class="tc1 dim lh1-5">Display</a></li>
-            <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/flex" class="tc1 dim lh1-5">Flex</a></li>
+            <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/flexbox" class="tc1 dim lh1-5">Flexbox</a></li>
             <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/floats" class="tc1 dim lh1-5">Floats</a></li>
             <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/fonts" class="tc1 dim lh1-5">Fonts</a></li>
             <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/grid" class="tc1 dim lh1-5">Grid</a></li>
@@ -132,8 +136,12 @@
 
         <h2 class="ft6 pv1 tcg60 fw3">Tools</h2>
         <ul class="mb3">
-        <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/tools#appearance" class="tc1 dim lh1-5">appearance()</a></li>
+            <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/tools#appearance" class="tc1 dim lh1-5">appearance()</a></li>
             <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/tools#font-size" class="tc1 dim lh1-5">font-size()</a></li>
+            <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/tools#media" class="tc1 dim lh1-5">media()</a></li>
+            <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/tools#new-breakpoint" class="tc1 dim lh1-5">new-breakpoint()</a></li>
+            <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/tools#new-color" class="tc1 dim lh1-5">new-color()</a></li>
+            <li class="ft4 pv1 brdr1--bottom bcg10"><a href="/tools#new-spacing-helper" class="tc1 dim lh1-5">new-spacing-helper()</a></li>
         </div>
 </aside>            </div>
             <section class="w100">
@@ -209,6 +217,7 @@
 </table>
 <h3 class="tcg50 ft6 fw3 mb2 md-mb3 flex aic acc">Example:</h3>
 <pre><code class="language-html">&lt;div class="mv2 md-mv4 lg-mv6 ph1 md-ph3 lg-ph6"&gt;This div has stuff in it&lt;/div&gt;</code></pre>
+<p><a name="adding-new-spacing-helpers"></a></p>
 <h3 class="tcg50 ft8 fw3 mb2 md-mb3">Adding New Spacing Helpers</h3>
 <p class="tcg50 ft5 fw3 mb4 lh2">This mixin allows you to add a value to be generated along with Beard's default spacing helpers, including responsive versions of each.</p>
 <pre><code class="language-scss">@include new-spacing-helper(16); // Outputs responsive helpers like .pt16 { padding-top: 16rem !important }
