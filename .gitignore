@@ -2,3 +2,4 @@ build_local
 node_modules
 vendor
 npm-debug.log
+.DS_Store

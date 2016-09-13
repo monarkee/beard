@@ -1,21 +1,21 @@
 // Settings
 //-------------------------------------------------------------------------- */
-@import 'stylesheets/settings';
-@import 'stylesheets/settings.colors';
+@import 'settings';
+@import 'settings.colors';
 
 // Tools & Mixins
 //-------------------------------------------------------------------------- */
-@import 'stylesheets/tools.appearance';
-@import 'stylesheets/tools.breakpoints';
-@import 'stylesheets/tools.colors';
-@import 'stylesheets/tools.user-drag';
-@import 'stylesheets/tools.font-size';
-@import 'stylesheets/tools.spacing';
+@import 'tools.appearance';
+@import 'tools.breakpoints';
+@import 'tools.colors';
+@import 'tools.user-drag';
+@import 'tools.font-size';
+@import 'tools.spacing';
 
 // Generic
 //-------------------------------------------------------------------------- */
-@import 'stylesheets/generic.reset';
+@import 'generic.reset';
 
 // Base
 //-------------------------------------------------------------------------- */
-@import 'stylesheets/base';
+@import 'base';
