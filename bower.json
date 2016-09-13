@@ -1,10 +1,10 @@
 {
   "name": "beard",
-  "description": "A front-end framework for scruffy web projects",
+  "description": "A CSS framework for people with better things to do",
   "main": [
       "beard.scss"
   ],
-  "version": "2.2.0",
+  "version": "2.2.1",
   "homepage": "https://github.com/monarkee/beard",
   "authors": [
     "David Hemphill <davidlee.hemphill@gmail.com>"
