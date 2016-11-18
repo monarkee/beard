@@ -14,6 +14,17 @@ $brand-color-3: darken($brand-color-2, 5%) !default;
 $brand-color-4: darken($brand-color-3, 5%) !default;
 $brand-color-5: darken($brand-color-4, 5%) !default;
 
+$g05: darken($white, 5%) !default;
+$g10: darken($white, 10%) !default;
+$g20: darken($white, 20%) !default;
+$g30: darken($white, 30%) !default;
+$g40: darken($white, 40%) !default;
+$g50: darken($white, 50%) !default;
+$g60: darken($white, 60%) !default;
+$g70: darken($white, 70%) !default;
+$g80: darken($white, 80%) !default;
+$g90: darken($white, 90%) !default;
+
 $beard-colors: (
   b: $black,
   w: $white,
@@ -25,16 +36,16 @@ $beard-colors: (
   success: $beard-success-color,
   warning: $beard-warning-color,
   danger: $beard-danger-color,
-  g05: darken($white, 5%),
-  g10: darken($white, 10%),
-  g20: darken($white, 20%),
-  g30: darken($white, 30%),
-  g40: darken($white, 40%),
-  g50: darken($white, 50%),
-  g60: darken($white, 60%),
-  g70: darken($white, 70%),
-  g80: darken($white, 80%),
-  g90: darken($white, 90%),
+  g05: $g05,
+  g10: $g10,
+  g20: $g20,
+  g30: $g30,
+  g40: $g40,
+  g50: $g50,
+  g60: $g60,
+  g70: $g70,
+  g80: $g80,
+  g90: $g90,
 ) !default;
 
 // Define brand color variables
