@@ -1,6 +1,6 @@
 {
   "name": "beardcss",
-  "version": "2.2.3",
+  "version": "2.2.4",
   "description": "A CSS framework for people with better things to do",
   "main": "beard.scss",
   "repository": {
