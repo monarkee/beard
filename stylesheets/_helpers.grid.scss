@@ -16,16 +16,20 @@
     margin-left: -$beard-grid-gutter;
     margin-right: -$beard-grid-gutter;
 
-    @include media(md) {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
+    @if $beard-enable-responsive == true {
+        @include media(md) {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+        }
     }
 }
 
 .frame--stay {
-    @include media(only-sm) {
-        display: flex;
+    @if $beard-enable-responsive == true {
+        @include media(only-sm) {
+            display: flex;
+        }
     }
 }
 
