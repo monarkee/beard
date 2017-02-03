@@ -11,7 +11,7 @@ $position-units: (
 // Generate Responsive Spacing Helpers
 //-------------------------------------------------------------------------- */
 @each $id, $position in $position-units {
-    @each $name, $i in $spacing-amounts {
+    @each $name, $i in $beard-spacing-amounts {
         .#{$position}a#{$name} {
             #{$id}: #{$i}rem !important;
         }

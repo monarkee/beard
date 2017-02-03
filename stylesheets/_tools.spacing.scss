@@ -6,10 +6,5 @@
     }
 
     $new-helper: ($name: $size);
-    $spacing-amounts: map-merge($spacing-amounts, $new-helper) !global;
-}
-
-// Build the initial list of spacing amounts
-@for $i from 1 through $beard-spacing-helper-amount {
-    @include new-spacing-helper($i);
+    $beard-spacing-amounts: map-merge($beard-spacing-amounts, $new-helper) !global;
 }

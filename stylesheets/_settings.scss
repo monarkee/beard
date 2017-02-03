@@ -9,9 +9,6 @@
 $beard-reset: true !default;
 $beard-base: true !default;
 
-// Allow the user to specify how many spacing helper amounts to generate
-$beard-spacing-helper-amount: 10 !default;
-
 // Responsive Breakpoints
 //-------------------------------------------------------------------------- */
 $beard-breakpoint-sm: '(min-width: 30rem)' !default;
@@ -126,6 +123,27 @@ $circle-img-radius: 50% !default;
 //-------------------------------------------------------------------------- */
 $beard-border-size-amount: 3 !default;
 
-// Create an empty spacing-amount list
+// Default spacing amounts
 //-------------------------------------------------------------------------- */
-$spacing-amounts: ();
+$beard-spacing-amounts: (
+    1: 1,
+    '1\\.5': 1.5,
+    2: 2,
+    '2\\.5': 2.5,
+    3: 3,
+    '3\\.5': 3.5,
+    4: 4,
+    '4\\.5': 4.5,
+    5: 5,
+    '5\\.5': 5.5,
+    6: 6,
+    '6\\.5': 6.5,
+    7: 7,
+    '7\\.5': 7.5,
+    8: 8,
+    '8\\.5': 8.5,
+    9: 9,
+    '9\\.5': 9.5,
+    10: 10,
+) !default;
+
