@@ -10,36 +10,34 @@
 
 // Responsive Display Helpers
 //-------------------------------------------------------------------------- */
-@if $beard-enable-responsive == true {
-    @each $key, $breakpoint in $breakpoints {
-          .#{$key}-db {
-            @include media($key) {
-                display: block !important;
-            }
+@each $key, $breakpoint in $breakpoints {
+      .#{$key}-db {
+        @include media($key) {
+            display: block !important;
         }
+    }
 
-        .#{$key}-di {
-            @include media($key) {
-                display: inline !important;
-            }
+    .#{$key}-di {
+        @include media($key) {
+            display: inline !important;
         }
+    }
 
-        .#{$key}-dib {
-            @include media($key) {
-                display: inline-block !important;
-            }
+    .#{$key}-dib {
+        @include media($key) {
+            display: inline-block !important;
         }
+    }
 
-        .#{$key}-dn {
-            @include media($key) {
-                display: none !important;
-            }
+    .#{$key}-dn {
+        @include media($key) {
+            display: none !important;
         }
+    }
 
-        .#{$key}-df {
-            @include media($key) {
-                display: flex !important;
-            }
+    .#{$key}-df {
+        @include media($key) {
+            display: flex !important;
         }
     }
 }

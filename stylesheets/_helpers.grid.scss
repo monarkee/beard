@@ -16,21 +16,19 @@
     margin-left: -$beard-grid-gutter;
     margin-right: -$beard-grid-gutter;
 
-    @if $beard-enable-responsive == true {
-        @include media(md) {
-          display: flex;
-          flex-direction: row;
-          flex-wrap: wrap;
-        }
-    }
+    // TODO Figure out if we should keep this
+    // @include media(md) {
+    //   display: flex;
+    //   flex-direction: row;
+    //   flex-wrap: wrap;
+    // }
 }
 
 .frame--stay {
-    @if $beard-enable-responsive == true {
-        @include media(only-sm) {
-            display: flex;
-        }
-    }
+    // TODO Figure out if we should keep this
+    // @include media(only-sm) {
+    //     display: flex;
+    // }
 }
 
 // Adds the ability to add grids without padding in their blocks
@@ -70,15 +68,13 @@ $block-width: 100% / $beard-grid-block-count;
 }
 
 // Generate responsive sizing helpers
-@if $beard-enable-responsive == true {
-    @each $key, $breakpoint in $breakpoints {
-        @for $i from 1 through $beard-grid-block-count {
-            .#{$key}-blk#{$i} {
-                @extend %blk-relative;
-                @extend %blk-padding;
-                @include media($key) {
-                    flex-basis: $i * $block-width;
-                }
+@each $key, $breakpoint in $breakpoints {
+    @for $i from 1 through $beard-grid-block-count {
+        .#{$key}-blk#{$i} {
+            @extend %blk-relative;
+            @extend %blk-padding;
+            @include media($key) {
+                flex-basis: $i * $block-width;
             }
         }
     }
@@ -94,13 +90,11 @@ $block-width: 100% / $beard-grid-block-count;
 }
 
 // Responsive Offsets
-@if $beard-enable-responsive == true {
-    @each $key, $breakpoint in $breakpoints {
-        @for $i from 1 through $beard-grid-block-count {
-            .#{$key}-blk--offset#{$i} {
-                @include media($key) {
-                    margin-left: $i * $block-width;
-                }
+@each $key, $breakpoint in $breakpoints {
+    @for $i from 1 through $beard-grid-block-count {
+        .#{$key}-blk--offset#{$i} {
+            @include media($key) {
+                margin-left: $i * $block-width;
             }
         }
     }
@@ -114,13 +108,11 @@ $block-width: 100% / $beard-grid-block-count;
 }
 
 // Responsive Pushers
-@if $beard-enable-responsive == true {
-    @each $key, $breakpoint in $breakpoints {
-        @for $i from 1 through $beard-grid-block-count {
-            .#{$key}-blk--push#{$i} {
-                @include media($key) {
-                    left: $i * $block-width;
-                }
+@each $key, $breakpoint in $breakpoints {
+    @for $i from 1 through $beard-grid-block-count {
+        .#{$key}-blk--push#{$i} {
+            @include media($key) {
+                left: $i * $block-width;
             }
         }
     }
@@ -134,13 +126,11 @@ $block-width: 100% / $beard-grid-block-count;
 }
 
 // Responsive Pullers
-@if $beard-enable-responsive == true {
-    @each $key, $breakpoint in $breakpoints {
-        @for $i from 1 through $beard-grid-block-count {
-            .#{$key}-blk--pull#{$i} {
-                @include media($key) {
-                    right: $i * $block-width;
-                }
+@each $key, $breakpoint in $breakpoints {
+    @for $i from 1 through $beard-grid-block-count {
+        .#{$key}-blk--pull#{$i} {
+            @include media($key) {
+                right: $i * $block-width;
             }
         }
     }
@@ -154,9 +144,7 @@ $block-width: 100% / $beard-grid-block-count;
 .blk--last { order: 1; }
 
 // Responsive first and last helpers
-@if $beard-enable-responsive == true {
-    @each $key, $breakpoint in $breakpoints {
-        .#{$key}-blk--first { @include media($key) { order: 0; } }
-        .#{$key}-blk--last { @include media($key) { order: 1; } }
-    }
+@each $key, $breakpoint in $breakpoints {
+    .#{$key}-blk--first { @include media($key) { order: 0; } }
+    .#{$key}-blk--last { @include media($key) { order: 1; } }
 }

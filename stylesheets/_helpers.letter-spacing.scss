@@ -20,12 +20,10 @@ $letter-spacing-values: (
 @each $name, $amount in $letter-spacing-values {
     .#{$name} { letter-spacing: $amount }
 
-    @if $beard-enable-responsive == true {
-        @each $key, $breakpoint in $breakpoints {
-            .#{$key}-#{$name} {
-                @include media($key) {
-                    letter-spacing: $amount;
-                }
+    @each $key, $breakpoint in $breakpoints {
+        .#{$key}-#{$name} {
+            @include media($key) {
+                letter-spacing: $amount;
             }
         }
     }

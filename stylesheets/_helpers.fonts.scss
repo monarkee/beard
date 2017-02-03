@@ -3,12 +3,10 @@
 @each $name, $amount in $font-size-values {
     .#{$name} { @include font-size($amount) }
 
-    @if $beard-enable-responsive == true {
-        @each $key, $breakpoint in $breakpoints {
-            .#{$key}-#{$name} {
-                @include media($key) {
-                    @include font-size($amount);
-                }
+    @each $key, $breakpoint in $breakpoints {
+        .#{$key}-#{$name} {
+            @include media($key) {
+                @include font-size($amount);
             }
         }
     }

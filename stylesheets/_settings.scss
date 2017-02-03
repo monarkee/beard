@@ -8,7 +8,6 @@
 //-------------------------------------------------------------------------- */
 $beard-reset: true !default;
 $beard-base: true !default;
-$beard-enable-responsive: true !default;
 
 // Allow the user to specify how many spacing helper amounts to generate
 $beard-spacing-helper-amount: 10 !default;
@@ -18,28 +17,26 @@ $beard-enable-spacing-helpers: true !default;
 
 // Responsive Breakpoints
 //-------------------------------------------------------------------------- */
-@if $beard-enable-responsive == true {
-    $beard-breakpoint-sm: '(min-width: 30rem)' !default;
-    $beard-breakpoint-md: '(min-width: 60rem)' !default;
-    $beard-breakpoint-lg: '(min-width: 90rem)' !default;
-    $beard-breakpoint-xlg: '(min-width: 144rem)' !default;
+$beard-breakpoint-sm: '(min-width: 30rem)' !default;
+$beard-breakpoint-md: '(min-width: 60rem)' !default;
+$beard-breakpoint-lg: '(min-width: 90rem)' !default;
+$beard-breakpoint-xlg: '(min-width: 144rem)' !default;
 
-    $beard-breakpoint-only-sm: '(max-width: 59.99999rem)' !default;
-    $beard-breakpoint-only-md: '(min-width: 60rem) and (max-width: 89.99999rem)' !default;
-    $beard-breakpoint-only-lg: '(min-width: 90rem) and (max-width: 143.99999rem)' !default;
-    $beard-breakpoint-only-xlg: '(min-width: 144rem)' !default;
+$beard-breakpoint-only-sm: '(max-width: 59.99999rem)' !default;
+$beard-breakpoint-only-md: '(min-width: 60rem) and (max-width: 89.99999rem)' !default;
+$beard-breakpoint-only-lg: '(min-width: 90rem) and (max-width: 143.99999rem)' !default;
+$beard-breakpoint-only-xlg: '(min-width: 144rem)' !default;
 
-    $breakpoints: (
-        sm: $beard-breakpoint-sm,
-        only-sm: $beard-breakpoint-only-sm,
-        md: $beard-breakpoint-md,
-        only-md: $beard-breakpoint-only-md,
-        lg: $beard-breakpoint-lg,
-        only-lg: $beard-breakpoint-only-lg,
-        xlg: $beard-breakpoint-xlg,
-        only-xlg: $beard-breakpoint-only-xlg
-    ) !global;
-}
+$breakpoints: (
+    sm: $beard-breakpoint-sm,
+    only-sm: $beard-breakpoint-only-sm,
+    md: $beard-breakpoint-md,
+    only-md: $beard-breakpoint-only-md,
+    lg: $beard-breakpoint-lg,
+    only-lg: $beard-breakpoint-only-lg,
+    xlg: $beard-breakpoint-xlg,
+    only-xlg: $beard-breakpoint-only-xlg
+) !global;
 
 // Block Grid
 //-------------------------------------------------------------------------- */

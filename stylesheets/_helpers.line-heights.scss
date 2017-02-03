@@ -12,18 +12,16 @@
 .lh1-9 { line-height: 1.9 !important; }
 .lh2 { line-height: 2 !important; }
 
-@if $beard-enable-responsive == true {
-    @each $key, $breakpoint in $breakpoints {
-        .#{$key}-lh1 { @include media($key) { line-height: 1 !important; } }
-        .#{$key}-lh1-1 { @include media($key) { line-height: 1.1 !important; } }
-        .#{$key}-lh1-2 { @include media($key) { line-height: 1.2 !important; } }
-        .#{$key}-lh1-3 { @include media($key) { line-height: 1.3 !important; } }
-        .#{$key}-lh1-4 { @include media($key) { line-height: 1.4 !important; } }
-        .#{$key}-lh1-5 { @include media($key) { line-height: 1.5 !important; } }
-        .#{$key}-lh1-6 { @include media($key) { line-height: 1.6 !important; } }
-        .#{$key}-lh1-7 { @include media($key) { line-height: 1.7 !important; } }
-        .#{$key}-lh1-8 { @include media($key) { line-height: 1.8 !important; } }
-        .#{$key}-lh1-9 { @include media($key) { line-height: 1.9 !important; } }
-        .#{$key}-lh2 { @include media($key) { line-height: 2 !important; } }
-    }
+@each $key, $breakpoint in $breakpoints {
+    .#{$key}-lh1 { @include media($key) { line-height: 1 !important; } }
+    .#{$key}-lh1-1 { @include media($key) { line-height: 1.1 !important; } }
+    .#{$key}-lh1-2 { @include media($key) { line-height: 1.2 !important; } }
+    .#{$key}-lh1-3 { @include media($key) { line-height: 1.3 !important; } }
+    .#{$key}-lh1-4 { @include media($key) { line-height: 1.4 !important; } }
+    .#{$key}-lh1-5 { @include media($key) { line-height: 1.5 !important; } }
+    .#{$key}-lh1-6 { @include media($key) { line-height: 1.6 !important; } }
+    .#{$key}-lh1-7 { @include media($key) { line-height: 1.7 !important; } }
+    .#{$key}-lh1-8 { @include media($key) { line-height: 1.8 !important; } }
+    .#{$key}-lh1-9 { @include media($key) { line-height: 1.9 !important; } }
+    .#{$key}-lh2 { @include media($key) { line-height: 2 !important; } }
 }
